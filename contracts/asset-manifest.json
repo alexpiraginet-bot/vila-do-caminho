@@ -1,0 +1,185 @@
+{
+  "manifestVersion": 1,
+  "atlas": {
+    "width": 512,
+    "height": 512,
+    "generated": true
+  },
+  "assets": [
+    {
+      "id": "grass",
+      "source": "public/world.js#createAtlas",
+      "rect": [
+        0,
+        0,
+        16,
+        16
+      ],
+      "kind": "procedural"
+    },
+    {
+      "id": "sand",
+      "source": "public/world.js#createAtlas",
+      "rect": [
+        16,
+        0,
+        16,
+        16
+      ],
+      "kind": "procedural"
+    },
+    {
+      "id": "path",
+      "source": "public/world.js#createAtlas",
+      "rect": [
+        32,
+        0,
+        16,
+        16
+      ],
+      "kind": "procedural"
+    },
+    {
+      "id": "water",
+      "source": "public/world.js#createAtlas",
+      "rect": [
+        48,
+        0,
+        16,
+        16
+      ],
+      "kind": "procedural"
+    },
+    {
+      "id": "shelter",
+      "source": "public/world.js#createAtlas",
+      "rect": [
+        0,
+        24,
+        144,
+        136
+      ],
+      "kind": "procedural"
+    },
+    {
+      "id": "olive",
+      "source": "public/world.js#createAtlas",
+      "rect": [
+        152,
+        24,
+        88,
+        104
+      ],
+      "kind": "procedural"
+    },
+    {
+      "id": "boat",
+      "source": "public/world.js#createAtlas",
+      "rect": [
+        248,
+        24,
+        88,
+        48
+      ],
+      "kind": "procedural"
+    },
+    {
+      "id": "net",
+      "source": "public/world.js#createAtlas",
+      "rect": [
+        344,
+        24,
+        48,
+        56
+      ],
+      "kind": "procedural"
+    },
+    {
+      "id": "jar",
+      "source": "public/world.js#createAtlas",
+      "rect": [
+        248,
+        80,
+        28,
+        36
+      ],
+      "kind": "procedural"
+    },
+    {
+      "id": "basket",
+      "source": "public/world.js#createAtlas",
+      "rect": [
+        280,
+        80,
+        28,
+        28
+      ],
+      "kind": "procedural"
+    },
+    {
+      "id": "firepit",
+      "source": "public/world.js#createAtlas",
+      "rect": [
+        312,
+        88,
+        48,
+        32
+      ],
+      "kind": "procedural"
+    },
+    {
+      "id": "bread",
+      "source": "public/world.js#createAtlas",
+      "rect": [
+        368,
+        88,
+        20,
+        16
+      ],
+      "kind": "procedural"
+    },
+    {
+      "id": "rocks",
+      "source": "public/world.js#createAtlas",
+      "rect": [
+        248,
+        128,
+        48,
+        32
+      ],
+      "kind": "procedural"
+    },
+    {
+      "id": "reeds",
+      "source": "public/world.js#createAtlas",
+      "rect": [
+        304,
+        128,
+        32,
+        32
+      ],
+      "kind": "procedural"
+    },
+    {
+      "id": "bush",
+      "source": "public/world.js#createAtlas",
+      "rect": [
+        344,
+        128,
+        32,
+        24
+      ],
+      "kind": "procedural"
+    }
+  ],
+  "characters": {
+    "source": "public/world.js#drawCharacter",
+    "frameSize": [
+      32,
+      48
+    ],
+    "directions": 4,
+    "framesPerDirection": 3,
+    "roles": 2
+  }
+}

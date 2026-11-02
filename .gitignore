@@ -1,0 +1,10 @@
+.env
+.env.*
+.openai/
+.git/
+node_modules/
+__pycache__/
+*.log
+.DS_Store
+artifacts/
+private/

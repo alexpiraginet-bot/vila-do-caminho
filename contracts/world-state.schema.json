@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Vila world state v1 minimal interchange envelope",
+  "description": "Documentation contract. Runtime does not load this schema. Additional runtime fields remain compatible; not a full security validator.",
+  "type": "object",
+  "required": ["schemaVersion", "mapVersion", "entities", "residents", "props"],
+  "properties": {
+    "schemaVersion": {"const": 1},
+    "mapVersion": {"const": "topdown-v2"},
+    "entities": {"type": "object", "required": ["resident"], "properties": {"resident": {"$ref": "#/$defs/actor"}, "traveler": {"$ref": "#/$defs/actor"}}},
+    "residents": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "props": {"type": "object"},
+    "buildings": {"type": "array", "description": "Reserved extension: absent from current UI runtime", "items": {"type": "object", "required": ["id", "assetId", "stage", "revision"], "properties": {"id": {"type": "string"}, "assetId": {"type": "string"}, "stage": {"enum": ["planned", "foundation", "frame", "roof", "complete"]}, "revision": {"type": "integer", "minimum": 0}}}}
+  },
+  "$defs": {"actor": {"type": "object", "required": ["id", "x", "y", "visible"], "properties": {"id": {"type": "string"}, "x": {"type": "number"}, "y": {"type": "number"}, "visible": {"type": "boolean"}}}}
+}
