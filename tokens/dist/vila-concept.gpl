@@ -1,0 +1,111 @@
+GIMP Palette
+Name: Vila do Caminho - referência e temporada (medidas)
+Columns: 8
+# Gerado por tools/tokens/build.cjs a partir de tokens/vila.tokens.json. Não editar à mão.
+ 47  31  27	reference.outline.1
+ 67  44  34	reference.outline.2
+112 125  43	reference.grass.1
+180 163  50	reference.grass.2
+187 168  51	reference.grass.3
+196 175  53	reference.grass.4
+129 119  45	reference.groundShadow.1
+ 59  66  48	reference.foliage.1
+100 100  53	reference.foliage.2
+168 156  61	reference.foliage.3
+206 188  71	reference.foliage.4
+ 67  44  38	reference.bark.1
+119  75  52	reference.bark.2
+178 113  64	reference.bark.3
+206 142  71	reference.path.1
+229 162  82	reference.path.2
+238 171  86	reference.path.3
+242 176  90	reference.path.4
+220 154  75	reference.sand.1
+238 171  86	reference.sand.2
+243 177  91	reference.sand.3
+ 20 100 144	reference.water.1
+ 20 107 153	reference.water.2
+ 48 150 183	reference.water.3
+ 74 172 189	reference.water.4
+ 83 182 179	reference.shoreEdge.1
+176 106  48	reference.thatch.1
+216 141  63	reference.thatch.2
+250 187  94	reference.thatch.3
+253 203 110	reference.thatch.4
+ 66  42  33	reference.wood.1
+126  77  44	reference.wood.2
+196 124  58	reference.wood.3
+243 173  82	reference.wood.4
+ 90  50  28	reference.wicker.1
+150  88  43	reference.wicker.2
+232 162  70	reference.wicker.3
+ 79  65  64	reference.stone.1
+100  81  77	reference.stone.2
+128 104  95	reference.stone.3
+147 121 109	reference.stone.4
+127  64  36	reference.terracotta.1
+197 100  44	reference.terracotta.2
+241 140  58	reference.terracotta.3
+244 218 166	reference.net.1
+253 243 205	reference.net.2
+232  65  21	reference.fire.1
+248 175  64	reference.fire.2
+251 205  75	reference.fire.3
+ 61  42  37	reference.hair.1
+ 88  58  47	reference.hair.2
+203 166 114	reference.clothWhite.1
+243 209 149	reference.clothWhite.2
+248 223 162	reference.clothWhite.3
+141  61  39	reference.clothRed.1
+207  86  45	reference.clothRed.2
+171 112  50	season.thatchB.1
+225 149  60	season.thatchB.2
+247 181  87	season.thatchB.3
+253 205 113	season.thatchB.4
+144 105  68	season.stoneWall.1
+170 127  85	season.stoneWall.2
+190 145  97	season.stoneWall.3
+247 206 143	season.stoneWall.4
+ 31  53  43	season.cypress.1
+ 52  73  51	season.cypress.2
+100 116  60	season.cypress.3
+239 161  49	season.wheat.2
+250 189  71	season.wheat.3
+253 214 103	season.wheat.4
+ 81  49  28	season.soil.1
+121  73  37	season.soil.2
+155  98  50	season.soil.3
+243 210 163	season.wool.1
+252 228 181	season.wool.2
+204 157 104	season.sail.1
+247 206 146	season.sail.2
+ 85  96  51	season.clothGreen.1
+118 124  59	season.clothGreen.2
+ 66  85 106	season.clothBlue.1
+ 82 102 125	season.clothBlue.2
+225 185 126	season.clothBrown.2
+134  50  35	season.clothRedC.1
+184  70  45	season.clothRedC.2
+132 199 248	season.sky.1
+176 215 243	season.sky.2
+131 157 185	season.farHills.1
+157 183 206	season.farHills.2
+180 179 171	season.fog.1
+199 197 196	season.fog.2
+207 205 205	season.fog.3
+159  87  44	skin.fisherman.1
+219 133  69	skin.fisherman.2
+244 164  92	skin.fisherman.3
+147  84  47	skin.farmer.1
+241 160  87	skin.farmer.2
+244 167  95	skin.farmer.3
+204 122  56	skin.shepherd.2
+238 158  85	skin.carpenter.2
+245 168  94	skin.carpenter.3
+137  74  38	skin.mason.1
+181 106  54	skin.mason.3
+241 160  86	skin.baker.2
+244 167  92	skin.baker.3
+134  79  45	skin.reference.1
+241 159  85	skin.reference.2
+247 180 103	skin.reference.3
