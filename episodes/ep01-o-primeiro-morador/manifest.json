@@ -1,0 +1,266 @@
+{
+ "episode": 1,
+ "title": "O primeiro morador",
+ "account": "@viladocaminho.historias",
+ "video": {
+  "file": "vila-ep01-o-primeiro-morador.mp4",
+  "codec": "h264",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30.0,
+  "frames": 1206,
+  "duration_s": 40.213,
+  "size_mb": 30.6,
+  "audio": {
+   "codec": "aac",
+   "sample_rate": 48000,
+   "channels": 2,
+   "integrated_lufs": -14.1,
+   "true_peak_dbfs": -1.9
+  }
+ },
+ "cover": {
+  "file": "capa.jpg",
+  "size": "1080,1920"
+ },
+ "caption_chars": 754,
+ "checks": {
+  "whisper": {
+   "words_expected": 69,
+   "words_heard": 69,
+   "match": true,
+   "diff": "[]"
+  },
+  "safe_zone": [
+   {
+    "t": 0.0,
+    "shot": "s1",
+    "overlay_box": [
+     224,
+     267,
+     850,
+     1556
+    ],
+    "inside_safe_zone": true
+   },
+   {
+    "t": 1.5,
+    "shot": "s1",
+    "overlay_box": [
+     222,
+     267,
+     850,
+     1556
+    ],
+    "inside_safe_zone": true
+   },
+   {
+    "t": 3.4,
+    "shot": "s2",
+    "overlay_box": [
+     271,
+     267,
+     802,
+     1504
+    ],
+    "inside_safe_zone": true
+   },
+   {
+    "t": 4.9,
+    "shot": "s3",
+    "overlay_box": [
+     340,
+     267,
+     739,
+     1499
+    ],
+    "inside_safe_zone": true
+   },
+   {
+    "t": 6.5,
+    "shot": "s4",
+    "overlay_box": [
+     221,
+     267,
+     853,
+     1499
+    ],
+    "inside_safe_zone": true
+   },
+   {
+    "t": 9.5,
+    "shot": "s5",
+    "overlay_box": [
+     321,
+     267,
+     753,
+     1545
+    ],
+    "inside_safe_zone": true
+   },
+   {
+    "t": 12.0,
+    "shot": "s5",
+    "overlay_box": [
+     271,
+     267,
+     802,
+     1556
+    ],
+    "inside_safe_zone": true
+   },
+   {
+    "t": 14.6,
+    "shot": "s5",
+    "overlay_box": [
+     290,
+     267,
+     782,
+     1550
+    ],
+    "inside_safe_zone": true
+   },
+   {
+    "t": 16.6,
+    "shot": "s5",
+    "overlay_box": [
+     307,
+     267,
+     767,
+     1545
+    ],
+    "inside_safe_zone": true
+   },
+   {
+    "t": 18.6,
+    "shot": "s5",
+    "overlay_box": [
+     340,
+     267,
+     739,
+     1545
+    ],
+    "inside_safe_zone": true
+   },
+   {
+    "t": 21.0,
+    "shot": "s7",
+    "overlay_box": [
+     193,
+     267,
+     880,
+     1545
+    ],
+    "inside_safe_zone": true
+   },
+   {
+    "t": 23.2,
+    "shot": "s7",
+    "overlay_box": [
+     263,
+     267,
+     816,
+     1545
+    ],
+    "inside_safe_zone": true
+   },
+   {
+    "t": 25.5,
+    "shot": "s8",
+    "overlay_box": [
+     316,
+     267,
+     757,
+     1545
+    ],
+    "inside_safe_zone": true
+   },
+   {
+    "t": 27.6,
+    "shot": "s8",
+    "overlay_box": [
+     333,
+     267,
+     739,
+     1510
+    ],
+    "inside_safe_zone": true
+   },
+   {
+    "t": 33.0,
+    "shot": "s10",
+    "overlay_box": [
+     285,
+     267,
+     788,
+     1547
+    ],
+    "inside_safe_zone": true
+   },
+   {
+    "t": 35.0,
+    "shot": "s10",
+    "overlay_box": [
+     202,
+     267,
+     871,
+     1556
+    ],
+    "inside_safe_zone": true
+   },
+   {
+    "t": 37.0,
+    "shot": "s11",
+    "overlay_box": [
+     282,
+     267,
+     792,
+     1499
+    ],
+    "inside_safe_zone": true
+   },
+   {
+    "t": 38.6,
+    "shot": "s11",
+    "overlay_box": [
+     276,
+     267,
+     796,
+     1545
+    ],
+    "inside_safe_zone": true
+   },
+   {
+    "t": 39.6,
+    "shot": "s11",
+    "overlay_box": [
+     316,
+     267,
+     761,
+     1505
+    ],
+    "inside_safe_zone": true
+   },
+   {
+    "t": 40.1,
+    "shot": "s11",
+    "overlay_box": [
+     316,
+     267,
+     761,
+     1505
+    ],
+    "inside_safe_zone": true
+   }
+  ],
+  "frames_checked": 20,
+  "all_inside_safe_zone": true
+ },
+ "sha256": {
+  "vila-ep01-o-primeiro-morador.mp4": "587df7b764cb7df63d476a4119ab5bb93e125d7e48578ac4ab143fe2ed88b779",
+  "capa.jpg": "bc29105152152a9e14d09f175c524c2460df91cbdfc7f7597bd52368fa789174",
+  "legenda.txt": "753cfaf0cc50987e4a2150a091e266159c33f83877e536d5a87c4ec0ed034064",
+  "comentario-fixado.txt": "282af65509045852c2624901f4b0569cabeecdebc1aafb16b8c1f9c360999b8e",
+  "roteiro.txt": "f5a15266b478d1b5c5abfce8fbb0198457f5067f2d8fd35a6d0b0c08319b362e"
+ }
+}
