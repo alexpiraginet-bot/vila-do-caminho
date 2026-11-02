@@ -149,3 +149,16 @@ test('validator rejects dangerous path segments before render can pollute protot
     delete Object.prototype[probe];
   }
 });
+
+test('CIEDE2000 reproduces the Sharma, Wu and Dalal (2005) test pairs',()=>{
+  // Lab pairs and published dE00 from Sharma, Wu, Dalal, "The CIEDE2000 color-difference formula", Table 1 (pairs 1-4, 7, 17, 25, 27, 31, 34)
+  const {deltaE2000}=require('../tools/tokens/color.cjs');
+  const pairs=[[[50,2.6772,-79.7751],[50,0,-82.7485],2.0425],[[50,3.1571,-77.2803],[50,0,-82.7485],2.8615],[[50,2.8361,-74.02],[50,0,-82.7485],3.4412],
+    [[50,-1.3802,-84.2814],[50,0,-82.7485],1.0000],[[50,0,0],[50,-1,2],2.3669],[[50,2.49,-0.001],[50,-2.49,0.0009],7.1792],
+    [[60.2574,-34.0099,36.2677],[60.4626,-34.1751,39.4387],1.2644],[[22.7233,20.0904,-46.694],[23.0331,14.973,-42.5619],2.0373],
+    [[90.8027,-2.0831,1.441],[91.1528,-1.6435,0.0447],1.4441],[[2.0776,0.0795,-1.135],[0.9033,-0.0636,-0.5514],0.9082]];
+  for(const [a,b,expected] of pairs){
+    assert.ok(Math.abs(deltaE2000(a,b)-expected)<1e-4,`${JSON.stringify(a)} vs ${JSON.stringify(b)}`);
+    assert.ok(Math.abs(deltaE2000(b,a)-expected)<1e-4,'symmetric');
+  }
+});
