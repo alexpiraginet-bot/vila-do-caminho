@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "image": "assets/shore-kit.png",
+  "sprites": {
+    "shelter": {
+      "source": [
+        12,
+        43,
+        490,
+        438
+      ]
+    },
+    "olive": {
+      "source": [
+        521,
+        13,
+        495,
+        486
+      ]
+    },
+    "boat": {
+      "source": [
+        1037,
+        153,
+        485,
+        252
+      ]
+    },
+    "net": {
+      "source": [
+        12,
+        552,
+        486,
+        449
+      ]
+    },
+    "jar": {
+      "source": [
+        603,
+        565,
+        328,
+        424
+      ]
+    },
+    "basket": {
+      "source": [
+        1068,
+        574,
+        420,
+        404
+      ]
+    }
+  },
+  "provenance": {
+    "method": "Generated modular pixel-art assets; reference-guided palette and silhouettes. Individual cells are cropped only at Canvas draw time.",
+    "sha256": "ce0339d9b3dfa71450b77002b3d42f57a959b5e005ee0f5ff523525ce0c34807",
+    "palette": "Reference token ramps guided the brief; exact palette quantization is not claimed."
+  }
+}

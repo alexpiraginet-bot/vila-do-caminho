@@ -243,10 +243,9 @@ function evaluateEpisode(timeSeconds) {
   return state;
 }
 
-/* Fixed, original pixel-art assets for the interactive prototype.
- * topdown-v0.2 follows the approved reference's composition and palette.
- * Artwork is constructed as separate atlas sprites; no downloaded artwork,
- * external textures, personal photographs, randomness, or wall-clock animation. */
+/* Fixed procedural fallback atlas. A local, generated modular sprite kit may
+ * replace six props through VilaVisualAssets. Map, collision and actor state
+ * remain independent from artwork. See assets/shore-kit.json for provenance. */
 const T = 16;
 const P = Object.freeze({grass:'#b3ae3f',grassHi:'#c4bd4a',grassLo:'#7b842d',grassDark:'#617329',
   path:'#e6ac62',pathHi:'#efc079',pathLo:'#c48a46',ink:'#4a3825',soil:'#947335',
@@ -408,7 +407,20 @@ function createAtlas(){
   for(let role=0;role<2;role++)for(let dir=0;dir<4;dir++)for(let f=0;f<3;f++)local(c,role*112+f*32,176+dir*48,()=>drawCharacter(c,role,dir,f));
   cachedAtlas=a;return a;
 }
-function sprite(c,a,name,x,y){const[sx,sy,w,h]=CELLS[name];c.drawImage(a,sx,sy,w,h,Math.round(x),Math.round(y),w,h);}
+function sprite(c,a,name,x,y){
+  const[sx,sy,w,h]=CELLS[name];
+  const kit=globalThis.VilaVisualAssets;
+  const scale=({jar:.72,basket:.9,boat:.88,net:.9})[name]||1;
+  const dw=Math.round(w*scale),dh=Math.round(h*scale),dx=Math.round(x+(w-dw)/2),dy=Math.round(y+h-dh);
+  if(kit?.isReady()&&['shelter','olive','jar','basket','boat','net'].includes(name)){
+    // Small stepped contact shadow, aligned to the existing sprite baseline.
+    c.save();c.globalAlpha=.18;c.fillStyle=P.ink;
+    c.fillRect(Math.round(dx+dw*.2),dy+dh-4,Math.round(dw*.6),5);
+    c.fillRect(Math.round(dx+dw*.32),dy+dh+1,Math.round(dw*.36),2);c.restore();
+    if(kit.drawSprite(c,name,dx,dy,dw,dh))return;
+  }
+  c.drawImage(a,sx,sy,w,h,Math.round(x),Math.round(y),w,h);
+}
 function pathWidth(){return WORLD.pathWidth;}
 function terrainBase(){
   if(cachedTerrain)return cachedTerrain;
@@ -439,9 +451,11 @@ function terrainBase(){
   }
   cachedTerrain=a;return a;
 }
-let expandedTerrain=null;
+let expandedTerrain=null,expandedTerrainKitReady=false;
 function terrain(c,a,time){
-  if(!expandedTerrain){
+  const kitReady=Boolean(globalThis.VilaVisualAssets?.isReady());
+  if(!expandedTerrain||expandedTerrainKitReady!==kitReady){
+    expandedTerrainKitReady=kitReady;
     expandedTerrain=document.createElement('canvas');expandedTerrain.width=1536;expandedTerrain.height=1536;
     const e=expandedTerrain.getContext('2d');e.translate(576,384);
     for(let y=-24;y<72;y++)for(let x=-36;x<60;x++){
