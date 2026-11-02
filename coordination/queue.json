@@ -13,21 +13,56 @@
   "tasks": [
     {
       "id": "design-tokens-receipt",
-      "status": "awaiting_contribution",
+      "status": "completed",
       "owner": "integration",
-      "paths": [],
+      "paths": [
+        "tests/tokens.test.cjs",
+        "tokens/README.md",
+        "tokens/dist/preview.html",
+        "tokens/dist/vila-concept.gpl",
+        "tokens/dist/vila-runtime-named.hex",
+        "tokens/dist/vila-runtime.gpl",
+        "tokens/dist/vila-tokens.css",
+        "tokens/dist/vila-tokens.js",
+        "tokens/vila.tokens.json",
+        "tools/tokens/build.cjs",
+        "tools/tokens/color.cjs"
+      ],
       "dependsOn": [],
-      "nextAction": "Locate the delivered design tokens and generator in a verifiable commit or PR; record exact paths and SHA."
+      "nextAction": "Receipt complete; continue through design-tokens-review.",
+      "receivedCommit": "7992e7cf566c4c2e0565d557bd28a1d7e9216d25",
+      "verification": "11 Git blob hashes match the received source. No runtime change."
     },
     {
-      "id": "visual-integration",
-      "status": "blocked",
-      "owner": "visual-and-integration",
-      "paths": [],
+      "id": "design-tokens-review",
+      "status": "completed",
+      "owner": "integration",
+      "paths": [
+        "tools/tokens/build.cjs",
+        "tests/tokens.test.cjs",
+        "tokens/README.md",
+        "tokens/dist/preview.html"
+      ],
       "dependsOn": [
         "design-tokens-receipt"
       ],
-      "nextAction": "Validate the concrete contract, integrate in an isolated branch, and inspect a real scene capture and short motion."
+      "nextAction": "Token foundation reviewed; proceed with a separate visual integration and real scene comparison.",
+      "verification": {
+        "staticReview": true,
+        "testsPassed": 18,
+        "generatedFilesCurrent": true,
+        "previewDesktopMobile": true
+      }
+    },
+    {
+      "id": "visual-integration",
+      "status": "ready",
+      "owner": "visual-and-integration",
+      "paths": [],
+      "dependsOn": [
+        "design-tokens-review"
+      ],
+      "nextAction": "Prepare one small visible asset improvement using the reviewed tokens; compare a real scene at fixed camera with the approved reference before a full Motion. Image-derived measurements remain unverified until source images are available."
     },
     {
       "id": "world-continuity",
