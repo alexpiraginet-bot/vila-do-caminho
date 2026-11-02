@@ -30,6 +30,6 @@ Próxima frente: integração recebe o diff concreto e identifica os arquivos; d
 
 ## Entrega de tokens recebida e revisada
 
-Contribuição `7992e7cf566c4c2e0565d557bd28a1d7e9216d25`, 11 blobs conferidos. Revisão e correções em [reviews/design-tokens-7992e7c.md](reviews/design-tokens-7992e7c.md). Geração e 18 testes passaram; prévia de tokens inspecionada em desktop/mobile. O runtime e a direção visual do jogo não foram alterados.
+Contribuição inicial `7992e7cf566c4c2e0565d557bd28a1d7e9216d25`, atualizada para `c6e5de6016610ca317e1bbd2e8e361112ee88ebc` antes de integrar: 11 blobs conferidos e 347 tokens. A referência aprovada é o alvo; o runtime rejeitado é apenas estado medido. Revisão e correções em [reviews/design-tokens-7992e7c.md](reviews/design-tokens-7992e7c.md). Geração e 18 testes passaram; prévia de tokens inspecionada em desktop/mobile. O runtime e a direção visual do jogo não foram alterados.
 
 Próximos responsáveis: direção visual e integração. Próxima ação: preparar uma melhoria pequena de asset, aplicar em cena real com câmera fixa e registrar comparação antes/depois; conferir continuidade de mapa e estado antes de outro Motion.

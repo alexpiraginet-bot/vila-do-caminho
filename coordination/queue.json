@@ -30,8 +30,9 @@
       ],
       "dependsOn": [],
       "nextAction": "Receipt complete; continue through design-tokens-review.",
-      "receivedCommit": "7992e7cf566c4c2e0565d557bd28a1d7e9216d25",
-      "verification": "11 Git blob hashes match the received source. No runtime change."
+      "receivedCommit": "c6e5de6016610ca317e1bbd2e8e361112ee88ebc",
+      "verification": "11 latest Git blobs verified. Reference-first revision received before merge; runtime unchanged.",
+      "priorReceivedCommit": "7992e7cf566c4c2e0565d557bd28a1d7e9216d25"
     },
     {
       "id": "design-tokens-review",
