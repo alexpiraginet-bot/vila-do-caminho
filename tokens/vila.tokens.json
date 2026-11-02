@@ -8,8 +8,9 @@
         "runtime": "valor lido no código do repo (arquivo:linha)",
         "measured": "medido na arte-conceito",
         "derived": "calculado a partir de runtime e medidas (fórmula registrada)",
-        "proposed": "cor medida sem equivalente no runtime (dE2000 >= 3), para arte nova após revisão"
+        "proposed": "cor medida nos conceitos de temporada sem equivalente na referência aprovada (dE2000 >= 3), para arte nova após revisão"
       },
+      "target": "a referência aprovada; o runtime atual é o estado medido (arte procedural reprovada em coordination/queue.json)",
       "reuseThresholdDE2000": 3.0,
       "conceptImages": {
         "reference": {
@@ -114,7 +115,7 @@
   "color": {
     "$type": "color",
     "runtime": {
-      "$description": "Paleta nomeada P do runtime (public/world.js:251). É a paleta a preservar.",
+      "$description": "Estado atual: paleta nomeada P do runtime (public/world.js:251). A arte procedural atual foi reprovada (coordination/queue.json); estes valores servem para medir a distância até a referência e pegar mudança no código, não como paleta para arte nova.",
       "grass": {
         "$value": {
           "colorSpace": "srgb",
@@ -2712,7 +2713,7 @@
       }
     },
     "reference": {
-      "$description": "Medida na imagem de referência aprovada (pescador). Rampas do escuro (1) ao claro. Valores de comparação, não substituem P.",
+      "$description": "Alvo: medida na imagem de referência aprovada (pescador). Rampas do escuro (1) ao claro. É a primeira fonte de cor para arte nova.",
       "outline": {
         "$description": "contorno",
         "1": {
@@ -5166,7 +5167,7 @@
       }
     },
     "season": {
-      "$description": "Medida nos conceitos de temporada (A, B, C) para arte nova. Cor a menos de dE2000 3.0 de uma cor do runtime vira alias dela; as demais são propostas.",
+      "$description": "Medida nos conceitos de temporada (A, B, C) para arte nova. Cor a menos de dE2000 3.0 de uma cor da referência aprovada vira alias dela; as demais são propostas.",
       "thatchB": {
         "$description": "palha das casas",
         "1": {
@@ -5207,24 +5208,21 @@
               "nearestRuntime": {
                 "token": "color.runtime.terra",
                 "dE2000": 7.82
+              },
+              "nearestReference": {
+                "token": "color.reference.thatch.1",
+                "dE2000": 3.55
               }
             }
           }
         },
         "2": {
-          "$value": {
-            "colorSpace": "srgb",
-            "components": [
-              0.8824,
-              0.5843,
-              0.2353
-            ],
-            "hex": "#e1953c"
-          },
+          "$value": "{color.reference.sand.1}",
           "$extensions": {
             "com.viladocaminho": {
-              "source": "proposed",
-              "from": "conceitos de temporada, faixas de luminância L*",
+              "source": "derived",
+              "from": "conceitos de temporada, faixas de luminância L*; medida #e1953c, reaproveita a referência aprovada (dE2000 2.39 < 3.0)",
+              "measured": "#e1953c",
               "band": [
                 0.12,
                 0.5
@@ -5249,24 +5247,21 @@
               "nearestRuntime": {
                 "token": "color.runtime.terraHi",
                 "dE2000": 5.46
+              },
+              "nearestReference": {
+                "token": "color.reference.sand.1",
+                "dE2000": 2.39
               }
             }
           }
         },
         "3": {
-          "$value": {
-            "colorSpace": "srgb",
-            "components": [
-              0.9686,
-              0.7098,
-              0.3412
-            ],
-            "hex": "#f7b557"
-          },
+          "$value": "{color.reference.thatch.3}",
           "$extensions": {
             "com.viladocaminho": {
-              "source": "proposed",
-              "from": "conceitos de temporada, faixas de luminância L*",
+              "source": "derived",
+              "from": "conceitos de temporada, faixas de luminância L*; medida #f7b557, reaproveita a referência aprovada (dE2000 1.54 < 3.0)",
+              "measured": "#f7b557",
               "band": [
                 0.5,
                 0.88
@@ -5291,24 +5286,21 @@
               "nearestRuntime": {
                 "token": "color.runtime.path",
                 "dE2000": 4.19
+              },
+              "nearestReference": {
+                "token": "color.reference.thatch.3",
+                "dE2000": 1.54
               }
             }
           }
         },
         "4": {
-          "$value": {
-            "colorSpace": "srgb",
-            "components": [
-              0.9922,
-              0.8039,
-              0.4431
-            ],
-            "hex": "#fdcd71"
-          },
+          "$value": "{color.reference.thatch.4}",
           "$extensions": {
             "com.viladocaminho": {
-              "source": "proposed",
-              "from": "conceitos de temporada, faixas de luminância L*",
+              "source": "derived",
+              "from": "conceitos de temporada, faixas de luminância L*; medida #fdcd71, reaproveita a referência aprovada (dE2000 0.65 < 3.0)",
+              "measured": "#fdcd71",
               "band": [
                 0.88,
                 1
@@ -5333,6 +5325,10 @@
               "nearestRuntime": {
                 "token": "color.runtime.pathHi",
                 "dE2000": 4.8
+              },
+              "nearestReference": {
+                "token": "color.reference.thatch.4",
+                "dE2000": 0.65
               }
             }
           }
@@ -5385,6 +5381,10 @@
               "nearestRuntime": {
                 "token": "color.runtime.skinLo",
                 "dE2000": 3.69
+              },
+              "nearestReference": {
+                "token": "color.reference.wicker.2",
+                "dE2000": 7.43
               }
             }
           }
@@ -5434,6 +5434,10 @@
               "nearestRuntime": {
                 "token": "color.runtime.skin",
                 "dE2000": 4.81
+              },
+              "nearestReference": {
+                "token": "color.reference.bark.3",
+                "dE2000": 6.38
               }
             }
           }
@@ -5483,24 +5487,21 @@
               "nearestRuntime": {
                 "token": "color.runtime.skin",
                 "dE2000": 3.16
+              },
+              "nearestReference": {
+                "token": "color.reference.path.1",
+                "dE2000": 5.64
               }
             }
           }
         },
         "4": {
-          "$value": {
-            "colorSpace": "srgb",
-            "components": [
-              0.9686,
-              0.8078,
-              0.5608
-            ],
-            "hex": "#f7ce8f"
-          },
+          "$value": "{color.reference.clothWhite.2}",
           "$extensions": {
             "com.viladocaminho": {
-              "source": "proposed",
-              "from": "conceitos de temporada, faixas de luminância L*",
+              "source": "derived",
+              "from": "conceitos de temporada, faixas de luminância L*; medida #f7ce8f, reaproveita a referência aprovada (dE2000 1.99 < 3.0)",
+              "measured": "#f7ce8f",
               "band": [
                 0.88,
                 1
@@ -5532,6 +5533,10 @@
               "nearestRuntime": {
                 "token": "color.runtime.pathHi",
                 "dE2000": 3.7
+              },
+              "nearestReference": {
+                "token": "color.reference.clothWhite.2",
+                "dE2000": 1.99
               }
             }
           }
@@ -5584,6 +5589,10 @@
               "nearestRuntime": {
                 "token": "color.runtime.leafDeep",
                 "dE2000": 11.94
+              },
+              "nearestReference": {
+                "token": "color.reference.foliage.1",
+                "dE2000": 8.55
               }
             }
           }
@@ -5633,6 +5642,10 @@
               "nearestRuntime": {
                 "token": "color.runtime.leafDeep",
                 "dE2000": 5.01
+              },
+              "nearestReference": {
+                "token": "color.reference.foliage.1",
+                "dE2000": 5.95
               }
             }
           }
@@ -5682,6 +5695,10 @@
               "nearestRuntime": {
                 "token": "color.runtime.grassDark",
                 "dE2000": 3.61
+              },
+              "nearestReference": {
+                "token": "color.reference.grass.1",
+                "dE2000": 6.23
               }
             }
           }
@@ -5690,12 +5707,19 @@
       "wheat": {
         "$description": "trigo",
         "1": {
-          "$value": "{color.runtime.woodHi}",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.7451,
+              0.5255,
+              0.2
+            ],
+            "hex": "#be8633"
+          },
           "$extensions": {
             "com.viladocaminho": {
-              "source": "derived",
-              "from": "conceitos de temporada, faixas de luminância L*; medida #be8633, reaproveita runtime (dE2000 2.95 < 3.0)",
-              "measured": "#be8633",
+              "source": "proposed",
+              "from": "conceitos de temporada, faixas de luminância L*",
               "band": [
                 0,
                 0.12
@@ -5713,24 +5737,21 @@
               "nearestRuntime": {
                 "token": "color.runtime.woodHi",
                 "dE2000": 2.95
+              },
+              "nearestReference": {
+                "token": "color.reference.path.1",
+                "dE2000": 4.87
               }
             }
           }
         },
         "2": {
-          "$value": {
-            "colorSpace": "srgb",
-            "components": [
-              0.9373,
-              0.6314,
-              0.1922
-            ],
-            "hex": "#efa131"
-          },
+          "$value": "{color.reference.wicker.3}",
           "$extensions": {
             "com.viladocaminho": {
-              "source": "proposed",
-              "from": "conceitos de temporada, faixas de luminância L*",
+              "source": "derived",
+              "from": "conceitos de temporada, faixas de luminância L*; medida #efa131, reaproveita a referência aprovada (dE2000 2.49 < 3.0)",
+              "measured": "#efa131",
               "band": [
                 0.12,
                 0.5
@@ -5748,6 +5769,10 @@
               "nearestRuntime": {
                 "token": "color.runtime.path",
                 "dE2000": 6.02
+              },
+              "nearestReference": {
+                "token": "color.reference.wicker.3",
+                "dE2000": 2.49
               }
             }
           }
@@ -5783,6 +5808,10 @@
               "nearestRuntime": {
                 "token": "color.runtime.pathHi",
                 "dE2000": 6.86
+              },
+              "nearestReference": {
+                "token": "color.reference.thatch.3",
+                "dE2000": 3.83
               }
             }
           }
@@ -5818,6 +5847,10 @@
               "nearestRuntime": {
                 "token": "color.runtime.strawHi",
                 "dE2000": 6.01
+              },
+              "nearestReference": {
+                "token": "color.reference.fire.3",
+                "dE2000": 3.15
               }
             }
           }
@@ -5826,19 +5859,12 @@
       "soil": {
         "$description": "terra arada",
         "1": {
-          "$value": {
-            "colorSpace": "srgb",
-            "components": [
-              0.3176,
-              0.1922,
-              0.1098
-            ],
-            "hex": "#51311c"
-          },
+          "$value": "{color.reference.wicker.1}",
           "$extensions": {
             "com.viladocaminho": {
-              "source": "proposed",
-              "from": "conceitos de temporada, faixas de luminância L*",
+              "source": "derived",
+              "from": "conceitos de temporada, faixas de luminância L*; medida #51311c, reaproveita a referência aprovada (dE2000 2.82 < 3.0)",
+              "measured": "#51311c",
               "band": [
                 0,
                 0.2
@@ -5856,24 +5882,21 @@
               "nearestRuntime": {
                 "token": "color.runtime.ink",
                 "dE2000": 6.45
+              },
+              "nearestReference": {
+                "token": "color.reference.wicker.1",
+                "dE2000": 2.82
               }
             }
           }
         },
         "2": {
-          "$value": {
-            "colorSpace": "srgb",
-            "components": [
-              0.4745,
-              0.2863,
-              0.1451
-            ],
-            "hex": "#794925"
-          },
+          "$value": "{color.reference.wood.2}",
           "$extensions": {
             "com.viladocaminho": {
-              "source": "proposed",
-              "from": "conceitos de temporada, faixas de luminância L*",
+              "source": "derived",
+              "from": "conceitos de temporada, faixas de luminância L*; medida #794925, reaproveita a referência aprovada (dE2000 1.85 < 3.0)",
+              "measured": "#794925",
               "band": [
                 0.2,
                 0.8
@@ -5891,6 +5914,10 @@
               "nearestRuntime": {
                 "token": "color.runtime.wood",
                 "dE2000": 6.05
+              },
+              "nearestReference": {
+                "token": "color.reference.wood.2",
+                "dE2000": 1.85
               }
             }
           }
@@ -5926,6 +5953,10 @@
               "nearestRuntime": {
                 "token": "color.runtime.terra",
                 "dE2000": 3.37
+              },
+              "nearestReference": {
+                "token": "color.reference.wicker.2",
+                "dE2000": 3.65
               }
             }
           }
@@ -5978,24 +6009,21 @@
               "nearestRuntime": {
                 "token": "color.runtime.cream",
                 "dE2000": 6.13
+              },
+              "nearestReference": {
+                "token": "color.reference.clothWhite.2",
+                "dE2000": 3.14
               }
             }
           }
         },
         "2": {
-          "$value": {
-            "colorSpace": "srgb",
-            "components": [
-              0.9882,
-              0.8941,
-              0.7098
-            ],
-            "hex": "#fce4b5"
-          },
+          "$value": "{color.reference.net.1}",
           "$extensions": {
             "com.viladocaminho": {
-              "source": "proposed",
-              "from": "conceitos de temporada, faixas de luminância L*",
+              "source": "derived",
+              "from": "conceitos de temporada, faixas de luminância L*; medida #fce4b5, reaproveita a referência aprovada (dE2000 2.53 < 3.0)",
+              "measured": "#fce4b5",
               "band": [
                 0.5,
                 1
@@ -6027,6 +6055,10 @@
               "nearestRuntime": {
                 "token": "color.runtime.creamHi",
                 "dE2000": 3.81
+              },
+              "nearestReference": {
+                "token": "color.reference.net.1",
+                "dE2000": 2.53
               }
             }
           }
@@ -6072,24 +6104,21 @@
               "nearestRuntime": {
                 "token": "color.runtime.skinHi",
                 "dE2000": 4.18
+              },
+              "nearestReference": {
+                "token": "color.reference.clothWhite.1",
+                "dE2000": 3.58
               }
             }
           }
         },
         "2": {
-          "$value": {
-            "colorSpace": "srgb",
-            "components": [
-              0.9686,
-              0.8078,
-              0.5725
-            ],
-            "hex": "#f7ce92"
-          },
+          "$value": "{color.reference.clothWhite.2}",
           "$extensions": {
             "com.viladocaminho": {
-              "source": "proposed",
-              "from": "conceitos de temporada, faixas de luminância L*",
+              "source": "derived",
+              "from": "conceitos de temporada, faixas de luminância L*; medida #f7ce92, reaproveita a referência aprovada (dE2000 2.13 < 3.0)",
+              "measured": "#f7ce92",
               "band": [
                 0.5,
                 1
@@ -6114,6 +6143,10 @@
               "nearestRuntime": {
                 "token": "color.runtime.pathHi",
                 "dE2000": 3.97
+              },
+              "nearestReference": {
+                "token": "color.reference.clothWhite.2",
+                "dE2000": 2.13
               }
             }
           }
@@ -6152,6 +6185,10 @@
               "nearestRuntime": {
                 "token": "color.runtime.leafLo",
                 "dE2000": 6.49
+              },
+              "nearestReference": {
+                "token": "color.reference.foliage.2",
+                "dE2000": 4.64
               }
             }
           }
@@ -6187,6 +6224,10 @@
               "nearestRuntime": {
                 "token": "color.runtime.grassLo",
                 "dE2000": 4.46
+              },
+              "nearestReference": {
+                "token": "color.reference.grass.1",
+                "dE2000": 3.2
               }
             }
           }
@@ -6225,6 +6266,10 @@
               "nearestRuntime": {
                 "token": "color.runtime.waterDeep",
                 "dE2000": 10.86
+              },
+              "nearestReference": {
+                "token": "color.reference.water.1",
+                "dE2000": 10.1
               }
             }
           }
@@ -6260,6 +6305,10 @@
               "nearestRuntime": {
                 "token": "color.runtime.waterDeep",
                 "dE2000": 9.56
+              },
+              "nearestReference": {
+                "token": "color.reference.water.1",
+                "dE2000": 9.22
               }
             }
           }
@@ -6268,11 +6317,11 @@
       "clothBrown": {
         "$description": "roupa marrom (pastor)",
         "1": {
-          "$value": "{color.runtime.skinLo}",
+          "$value": "{color.reference.wicker.2}",
           "$extensions": {
             "com.viladocaminho": {
               "source": "derived",
-              "from": "conceitos de temporada, faixas de luminância L*; medida #945e31, reaproveita runtime (dE2000 2.42 < 3.0)",
+              "from": "conceitos de temporada, faixas de luminância L*; medida #945e31, reaproveita a referência aprovada (dE2000 2.56 < 3.0)",
               "measured": "#945e31",
               "band": [
                 0,
@@ -6291,6 +6340,10 @@
               "nearestRuntime": {
                 "token": "color.runtime.skinLo",
                 "dE2000": 2.42
+              },
+              "nearestReference": {
+                "token": "color.reference.wicker.2",
+                "dE2000": 2.56
               }
             }
           }
@@ -6326,6 +6379,10 @@
               "nearestRuntime": {
                 "token": "color.runtime.pathHi",
                 "dE2000": 3.25
+              },
+              "nearestReference": {
+                "token": "color.reference.clothWhite.1",
+                "dE2000": 5.43
               }
             }
           }
@@ -6371,6 +6428,10 @@
               "nearestRuntime": {
                 "token": "color.runtime.wood",
                 "dE2000": 15.76
+              },
+              "nearestReference": {
+                "token": "color.reference.clothRed.1",
+                "dE2000": 3.51
               }
             }
           }
@@ -6413,6 +6474,10 @@
               "nearestRuntime": {
                 "token": "color.runtime.terra",
                 "dE2000": 10.85
+              },
+              "nearestReference": {
+                "token": "color.reference.clothRed.2",
+                "dE2000": 7.53
               }
             }
           }
@@ -6451,6 +6516,10 @@
               "nearestRuntime": {
                 "token": "color.runtime.waterHi",
                 "dE2000": 16.7
+              },
+              "nearestReference": {
+                "token": "color.reference.water.4",
+                "dE2000": 15.07
               }
             }
           }
@@ -6486,6 +6555,10 @@
               "nearestRuntime": {
                 "token": "color.runtime.foam",
                 "dE2000": 20.42
+              },
+              "nearestReference": {
+                "token": "color.reference.water.4",
+                "dE2000": 17.67
               }
             }
           }
@@ -6524,6 +6597,10 @@
               "nearestRuntime": {
                 "token": "color.runtime.waterHi",
                 "dE2000": 12.13
+              },
+              "nearestReference": {
+                "token": "color.reference.water.3",
+                "dE2000": 12.69
               }
             }
           }
@@ -6559,6 +6636,10 @@
               "nearestRuntime": {
                 "token": "color.runtime.waterHi",
                 "dE2000": 16.29
+              },
+              "nearestReference": {
+                "token": "color.reference.water.4",
+                "dE2000": 14.9
               }
             }
           }
@@ -6611,6 +6692,10 @@
               "nearestRuntime": {
                 "token": "color.runtime.stoneHi",
                 "dE2000": 11.24
+              },
+              "nearestReference": {
+                "token": "color.reference.clothWhite.1",
+                "dE2000": 16.87
               }
             }
           }
@@ -6660,6 +6745,10 @@
               "nearestRuntime": {
                 "token": "color.runtime.stoneHi",
                 "dE2000": 16.34
+              },
+              "nearestReference": {
+                "token": "color.reference.net.2",
+                "dE2000": 16.93
               }
             }
           }
@@ -6709,6 +6798,10 @@
               "nearestRuntime": {
                 "token": "color.runtime.creamHi",
                 "dE2000": 17.06
+              },
+              "nearestReference": {
+                "token": "color.reference.net.2",
+                "dE2000": 16.35
               }
             }
           }
@@ -6720,19 +6813,12 @@
       "fisherman": {
         "$description": "pescador",
         "1": {
-          "$value": {
-            "colorSpace": "srgb",
-            "components": [
-              0.6235,
-              0.3412,
-              0.1725
-            ],
-            "hex": "#9f572c"
-          },
+          "$value": "{color.reference.wicker.2}",
           "$extensions": {
             "com.viladocaminho": {
-              "source": "proposed",
-              "from": "rosto recortado, faixas de luminância L*",
+              "source": "derived",
+              "from": "rosto recortado, faixas de luminância L*; medida #9f572c, reaproveita a referência aprovada (dE2000 2.75 < 3.0)",
+              "measured": "#9f572c",
               "band": [
                 0,
                 0.2
@@ -6750,6 +6836,10 @@
               "nearestRuntime": {
                 "token": "color.runtime.terra",
                 "dE2000": 3.0
+              },
+              "nearestReference": {
+                "token": "color.reference.wicker.2",
+                "dE2000": 2.75
               }
             }
           }
@@ -6785,24 +6875,21 @@
               "nearestRuntime": {
                 "token": "color.runtime.terraHi",
                 "dE2000": 3.5
+              },
+              "nearestReference": {
+                "token": "color.reference.terracotta.3",
+                "dE2000": 4.7
               }
             }
           }
         },
         "3": {
-          "$value": {
-            "colorSpace": "srgb",
-            "components": [
-              0.9569,
-              0.6431,
-              0.3608
-            ],
-            "hex": "#f4a45c"
-          },
+          "$value": "{color.skin.reference.2}",
           "$extensions": {
             "com.viladocaminho": {
-              "source": "proposed",
-              "from": "rosto recortado, faixas de luminância L*",
+              "source": "derived",
+              "from": "rosto recortado, faixas de luminância L*; medida #f4a45c, reaproveita a referência aprovada (dE2000 1.29 < 3.0)",
+              "measured": "#f4a45c",
               "band": [
                 0.8,
                 1
@@ -6820,6 +6907,10 @@
               "nearestRuntime": {
                 "token": "color.runtime.skinHi",
                 "dE2000": 5.57
+              },
+              "nearestReference": {
+                "token": "color.skin.reference.2",
+                "dE2000": 1.29
               }
             }
           }
@@ -6828,19 +6919,12 @@
       "farmer": {
         "$description": "agricultor",
         "1": {
-          "$value": {
-            "colorSpace": "srgb",
-            "components": [
-              0.5765,
-              0.3294,
-              0.1843
-            ],
-            "hex": "#93542f"
-          },
+          "$value": "{color.reference.wicker.2}",
           "$extensions": {
             "com.viladocaminho": {
-              "source": "proposed",
-              "from": "rosto recortado, faixas de luminância L*",
+              "source": "derived",
+              "from": "rosto recortado, faixas de luminância L*; medida #93542f, reaproveita a referência aprovada (dE2000 2.68 < 3.0)",
+              "measured": "#93542f",
               "band": [
                 0,
                 0.2
@@ -6872,24 +6956,21 @@
               "nearestRuntime": {
                 "token": "color.runtime.wood",
                 "dE2000": 4.92
+              },
+              "nearestReference": {
+                "token": "color.reference.wicker.2",
+                "dE2000": 2.68
               }
             }
           }
         },
         "2": {
-          "$value": {
-            "colorSpace": "srgb",
-            "components": [
-              0.9451,
-              0.6275,
-              0.3412
-            ],
-            "hex": "#f1a057"
-          },
+          "$value": "{color.skin.reference.2}",
           "$extensions": {
             "com.viladocaminho": {
-              "source": "proposed",
-              "from": "rosto recortado, faixas de luminância L*",
+              "source": "derived",
+              "from": "rosto recortado, faixas de luminância L*; medida #f1a057, reaproveita a referência aprovada (dE2000 0.3 < 3.0)",
+              "measured": "#f1a057",
               "band": [
                 0.2,
                 0.8
@@ -6921,24 +7002,21 @@
               "nearestRuntime": {
                 "token": "color.runtime.skinHi",
                 "dE2000": 5.82
+              },
+              "nearestReference": {
+                "token": "color.skin.reference.2",
+                "dE2000": 0.3
               }
             }
           }
         },
         "3": {
-          "$value": {
-            "colorSpace": "srgb",
-            "components": [
-              0.9569,
-              0.6549,
-              0.3725
-            ],
-            "hex": "#f4a75f"
-          },
+          "$value": "{color.skin.reference.2}",
           "$extensions": {
             "com.viladocaminho": {
-              "source": "proposed",
-              "from": "rosto recortado, faixas de luminância L*",
+              "source": "derived",
+              "from": "rosto recortado, faixas de luminância L*; medida #f4a75f, reaproveita a referência aprovada (dE2000 2.09 < 3.0)",
+              "measured": "#f4a75f",
               "band": [
                 0.8,
                 1
@@ -6970,6 +7048,10 @@
               "nearestRuntime": {
                 "token": "color.runtime.path",
                 "dE2000": 5.04
+              },
+              "nearestReference": {
+                "token": "color.skin.reference.2",
+                "dE2000": 2.09
               }
             }
           }
@@ -6978,11 +7060,11 @@
       "shepherd": {
         "$description": "pastor",
         "1": {
-          "$value": "{color.runtime.terra}",
+          "$value": "{color.reference.wicker.2}",
           "$extensions": {
             "com.viladocaminho": {
               "source": "derived",
-              "from": "rosto recortado, faixas de luminância L*; medida #9b5b2e, reaproveita runtime (dE2000 2.47 < 3.0)",
+              "from": "rosto recortado, faixas de luminância L*; medida #9b5b2e, reaproveita a referência aprovada (dE2000 1.4 < 3.0)",
               "measured": "#9b5b2e",
               "band": [
                 0,
@@ -7015,24 +7097,21 @@
               "nearestRuntime": {
                 "token": "color.runtime.terra",
                 "dE2000": 2.47
+              },
+              "nearestReference": {
+                "token": "color.reference.wicker.2",
+                "dE2000": 1.4
               }
             }
           }
         },
         "2": {
-          "$value": {
-            "colorSpace": "srgb",
-            "components": [
-              0.8,
-              0.4784,
-              0.2196
-            ],
-            "hex": "#cc7a38"
-          },
+          "$value": "{color.reference.wood.3}",
           "$extensions": {
             "com.viladocaminho": {
-              "source": "proposed",
-              "from": "rosto recortado, faixas de luminância L*",
+              "source": "derived",
+              "from": "rosto recortado, faixas de luminância L*; medida #cc7a38, reaproveita a referência aprovada (dE2000 2.36 < 3.0)",
+              "measured": "#cc7a38",
               "band": [
                 0.2,
                 0.8
@@ -7064,16 +7143,20 @@
               "nearestRuntime": {
                 "token": "color.runtime.terraHi",
                 "dE2000": 5.08
+              },
+              "nearestReference": {
+                "token": "color.reference.wood.3",
+                "dE2000": 2.36
               }
             }
           }
         },
         "3": {
-          "$value": "{color.runtime.terraHi}",
+          "$value": "{color.reference.thatch.2}",
           "$extensions": {
             "com.viladocaminho": {
               "source": "derived",
-              "from": "rosto recortado, faixas de luminância L*; medida #df8b43, reaproveita runtime (dE2000 2.84 < 3.0)",
+              "from": "rosto recortado, faixas de luminância L*; medida #df8b43, reaproveita a referência aprovada (dE2000 2.88 < 3.0)",
               "measured": "#df8b43",
               "band": [
                 0.8,
@@ -7106,6 +7189,10 @@
               "nearestRuntime": {
                 "token": "color.runtime.terraHi",
                 "dE2000": 2.84
+              },
+              "nearestReference": {
+                "token": "color.reference.thatch.2",
+                "dE2000": 2.88
               }
             }
           }
@@ -7114,11 +7201,11 @@
       "carpenter": {
         "$description": "carpinteiro",
         "1": {
-          "$value": "{color.runtime.wood}",
+          "$value": "{color.reference.wicker.2}",
           "$extensions": {
             "com.viladocaminho": {
               "source": "derived",
-              "from": "rosto recortado, faixas de luminância L*; medida #8c562f, reaproveita runtime (dE2000 2.45 < 3.0)",
+              "from": "rosto recortado, faixas de luminância L*; medida #8c562f, reaproveita a referência aprovada (dE2000 2.59 < 3.0)",
               "measured": "#8c562f",
               "band": [
                 0,
@@ -7151,24 +7238,21 @@
               "nearestRuntime": {
                 "token": "color.runtime.wood",
                 "dE2000": 2.45
+              },
+              "nearestReference": {
+                "token": "color.reference.wicker.2",
+                "dE2000": 2.59
               }
             }
           }
         },
         "2": {
-          "$value": {
-            "colorSpace": "srgb",
-            "components": [
-              0.9333,
-              0.6196,
-              0.3333
-            ],
-            "hex": "#ee9e55"
-          },
+          "$value": "{color.skin.reference.2}",
           "$extensions": {
             "com.viladocaminho": {
-              "source": "proposed",
-              "from": "rosto recortado, faixas de luminância L*",
+              "source": "derived",
+              "from": "rosto recortado, faixas de luminância L*; medida #ee9e55, reaproveita a referência aprovada (dE2000 0.56 < 3.0)",
+              "measured": "#ee9e55",
               "band": [
                 0.2,
                 0.8
@@ -7200,24 +7284,21 @@
               "nearestRuntime": {
                 "token": "color.runtime.skinHi",
                 "dE2000": 5.77
+              },
+              "nearestReference": {
+                "token": "color.skin.reference.2",
+                "dE2000": 0.56
               }
             }
           }
         },
         "3": {
-          "$value": {
-            "colorSpace": "srgb",
-            "components": [
-              0.9608,
-              0.6588,
-              0.3686
-            ],
-            "hex": "#f5a85e"
-          },
+          "$value": "{color.skin.reference.2}",
           "$extensions": {
             "com.viladocaminho": {
-              "source": "proposed",
-              "from": "rosto recortado, faixas de luminância L*",
+              "source": "derived",
+              "from": "rosto recortado, faixas de luminância L*; medida #f5a85e, reaproveita a referência aprovada (dE2000 2.39 < 3.0)",
+              "measured": "#f5a85e",
               "band": [
                 0.8,
                 1
@@ -7249,6 +7330,10 @@
               "nearestRuntime": {
                 "token": "color.runtime.path",
                 "dE2000": 4.82
+              },
+              "nearestReference": {
+                "token": "color.skin.reference.2",
+                "dE2000": 2.39
               }
             }
           }
@@ -7257,19 +7342,12 @@
       "mason": {
         "$description": "pedreiro",
         "1": {
-          "$value": {
-            "colorSpace": "srgb",
-            "components": [
-              0.5373,
-              0.2902,
-              0.149
-            ],
-            "hex": "#894a26"
-          },
+          "$value": "{color.skin.reference.1}",
           "$extensions": {
             "com.viladocaminho": {
-              "source": "proposed",
-              "from": "rosto recortado, faixas de luminância L*",
+              "source": "derived",
+              "from": "rosto recortado, faixas de luminância L*; medida #894a26, reaproveita a referência aprovada (dE2000 2.13 < 3.0)",
+              "measured": "#894a26",
               "band": [
                 0,
                 0.2
@@ -7301,17 +7379,28 @@
               "nearestRuntime": {
                 "token": "color.runtime.wood",
                 "dE2000": 6.39
+              },
+              "nearestReference": {
+                "token": "color.skin.reference.1",
+                "dE2000": 2.13
               }
             }
           }
         },
         "2": {
-          "$value": "{color.runtime.terra}",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.6784,
+              0.3922,
+              0.2
+            ],
+            "hex": "#ad6433"
+          },
           "$extensions": {
             "com.viladocaminho": {
-              "source": "derived",
-              "from": "rosto recortado, faixas de luminância L*; medida #ad6433, reaproveita runtime (dE2000 2.72 < 3.0)",
-              "measured": "#ad6433",
+              "source": "proposed",
+              "from": "rosto recortado, faixas de luminância L*",
               "band": [
                 0.2,
                 0.8
@@ -7343,24 +7432,21 @@
               "nearestRuntime": {
                 "token": "color.runtime.terra",
                 "dE2000": 2.72
+              },
+              "nearestReference": {
+                "token": "color.reference.thatch.1",
+                "dE2000": 3.17
               }
             }
           }
         },
         "3": {
-          "$value": {
-            "colorSpace": "srgb",
-            "components": [
-              0.7098,
-              0.4157,
-              0.2118
-            ],
-            "hex": "#b56a36"
-          },
+          "$value": "{color.reference.thatch.1}",
           "$extensions": {
             "com.viladocaminho": {
-              "source": "proposed",
-              "from": "rosto recortado, faixas de luminância L*",
+              "source": "derived",
+              "from": "rosto recortado, faixas de luminância L*; medida #b56a36, reaproveita a referência aprovada (dE2000 2.29 < 3.0)",
+              "measured": "#b56a36",
               "band": [
                 0.8,
                 1
@@ -7392,6 +7478,10 @@
               "nearestRuntime": {
                 "token": "color.runtime.terra",
                 "dE2000": 5.2
+              },
+              "nearestReference": {
+                "token": "color.reference.thatch.1",
+                "dE2000": 2.29
               }
             }
           }
@@ -7400,12 +7490,19 @@
       "baker": {
         "$description": "padeiro",
         "1": {
-          "$value": "{color.runtime.terra}",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.6667,
+              0.3843,
+              0.2118
+            ],
+            "hex": "#aa6236"
+          },
           "$extensions": {
             "com.viladocaminho": {
-              "source": "derived",
-              "from": "rosto recortado, faixas de luminância L*; medida #aa6236, reaproveita runtime (dE2000 1.72 < 3.0)",
-              "measured": "#aa6236",
+              "source": "proposed",
+              "from": "rosto recortado, faixas de luminância L*",
               "band": [
                 0,
                 0.2
@@ -7437,24 +7534,21 @@
               "nearestRuntime": {
                 "token": "color.runtime.terra",
                 "dE2000": 1.72
+              },
+              "nearestReference": {
+                "token": "color.reference.thatch.1",
+                "dE2000": 4.6
               }
             }
           }
         },
         "2": {
-          "$value": {
-            "colorSpace": "srgb",
-            "components": [
-              0.9451,
-              0.6275,
-              0.3373
-            ],
-            "hex": "#f1a056"
-          },
+          "$value": "{color.skin.reference.2}",
           "$extensions": {
             "com.viladocaminho": {
-              "source": "proposed",
-              "from": "rosto recortado, faixas de luminância L*",
+              "source": "derived",
+              "from": "rosto recortado, faixas de luminância L*; medida #f1a056, reaproveita a referência aprovada (dE2000 0.31 < 3.0)",
+              "measured": "#f1a056",
               "band": [
                 0.2,
                 0.8
@@ -7486,24 +7580,21 @@
               "nearestRuntime": {
                 "token": "color.runtime.skinHi",
                 "dE2000": 5.87
+              },
+              "nearestReference": {
+                "token": "color.skin.reference.2",
+                "dE2000": 0.31
               }
             }
           }
         },
         "3": {
-          "$value": {
-            "colorSpace": "srgb",
-            "components": [
-              0.9569,
-              0.6549,
-              0.3608
-            ],
-            "hex": "#f4a75c"
-          },
+          "$value": "{color.skin.reference.2}",
           "$extensions": {
             "com.viladocaminho": {
-              "source": "proposed",
-              "from": "rosto recortado, faixas de luminância L*",
+              "source": "derived",
+              "from": "rosto recortado, faixas de luminância L*; medida #f4a75c, reaproveita a referência aprovada (dE2000 2.22 < 3.0)",
+              "measured": "#f4a75c",
               "band": [
                 0.8,
                 1
@@ -7535,6 +7626,10 @@
               "nearestRuntime": {
                 "token": "color.runtime.path",
                 "dE2000": 4.74
+              },
+              "nearestReference": {
+                "token": "color.skin.reference.2",
+                "dE2000": 2.22
               }
             }
           }
@@ -9818,6 +9913,49 @@
           "com.viladocaminho": {
             "source": "derived",
             "from": "altura do personagem no runtime (39.0 px) / altura do pescador na referência (21.92 art px)"
+          }
+        }
+      },
+      "runtimePxPerReferenceArtPxSprites": {
+        "$value": 2.294,
+        "$extensions": {
+          "com.viladocaminho": {
+            "source": "derived",
+            "from": "mediana de (tamanho do sprite no runtime, sem sombra / tamanho do objeto na referência, em px de arte), largura e altura de 8 objetos",
+            "perObject": {
+              "shelter": [
+                2.228,
+                2.28
+              ],
+              "olive": [
+                2.092,
+                2.386
+              ],
+              "boat": [
+                2.905,
+                2.662
+              ],
+              "jar": [
+                2.212,
+                2.439
+              ],
+              "basket": [
+                1.942,
+                1.917
+              ],
+              "firepit": [
+                2.308,
+                2.642
+              ],
+              "net": [
+                1.917,
+                2.573
+              ],
+              "rocks": [
+                2.432,
+                1.949
+              ]
+            }
           }
         }
       },
