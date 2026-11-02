@@ -84,7 +84,7 @@ test('every recorded dE2000 and contrast ratio recomputes from the hex values',(
     for(const key of ['nearestReference','nearestRuntime','nearestNamed']){
       if(!e[key])continue;
       const other=get(e[key].token);
-      const here=key==='nearestRuntime'&&isAlias(t.token.$value)?e.measured:t.resolved.hex;
+      const here=isAlias(t.token.$value)?e.measured:t.resolved.hex;
       assert.ok(Math.abs(deltaEHex(here,other.resolved.hex)-e[key].dE2000)<=0.02,`${t.path} ${key}`);checked++;
     }
     if(e.contrast){
@@ -96,13 +96,14 @@ test('every recorded dE2000 and contrast ratio recomputes from the hex values',(
   assert.ok(checked>=200,`only ${checked} checks: the loop must not pass by checking nothing`);
 });
 
-test('season colours reuse a runtime colour only under the threshold, and propose new ones only above it',()=>{
+test('season colours reuse an approved-reference colour only under the threshold, and propose new ones only above it',()=>{
   const limit=doc.$extensions[NS].reuseThresholdDE2000;
   for(const t of tokens.values()){
     if(!t.path.startsWith('color.season.')&&!(t.path.startsWith('color.skin.')&&!t.path.startsWith('color.skin.reference.')))continue;
     const e=ext(t);
-    if(isAlias(t.token.$value)){assert.equal(e.source,'derived');assert.ok(e.nearestRuntime.dE2000<limit,t.path);assert.equal(t.token.$value,`{${e.nearestRuntime.token}}`);}
-    else{assert.equal(e.source,'proposed');assert.ok(e.nearestRuntime.dE2000>=limit,t.path);}
+    assert.ok(/^color\.(reference|skin\.reference)\./.test(e.nearestReference.token),t.path);
+    if(isAlias(t.token.$value)){assert.equal(e.source,'derived');assert.ok(e.nearestReference.dE2000<limit,t.path);assert.equal(t.token.$value,`{${e.nearestReference.token}}`);}
+    else{assert.equal(e.source,'proposed');assert.ok(e.nearestReference.dE2000>=limit,t.path);}
   }
 });
 

@@ -218,9 +218,9 @@ td.num{font-family:var(--vila-font-family-canvas);white-space:nowrap}.scroll{ove
 <p>Cada valor diz de onde veio: <b>runtime</b> (lido em public/world.js ou style.css), <b>measured</b> (medido na arte-conceito), <b>derived</b> (calculado) ou <b>proposed</b> (cor nova medida, ainda sem equivalente no runtime, com borda tracejada). ΔE é CIEDE2000.</p>
 <section><h2>Quanto o runtime reproduz a referência</h2><p>Pixels da referência aprovada levados à cor mais próxima de cada paleta. Erro em ΔE2000; abaixo de 5 a diferença é pequena em pixel art.</p>
 <div class="scroll"><table><tr><th>paleta</th><th>cores</th><th>média</th><th>mediana</th><th>p90</th><th>ΔE &lt; 5</th></tr>${covRows}</table></div></section>
-${section('Paleta do runtime (P)', 'color.runtime.', 'A paleta nomeada que o jogo usa hoje. Abaixo de cada cor, a cor medida mais próxima na referência.')}
-${section('Referência aprovada (medida)', 'color.reference.', 'Rampas medidas na imagem aprovada, do escuro (1) ao claro.')}
-${section('Temporada (medida, para arte nova)', 'color.season.', 'Materiais que a cena ainda não tem. Alias = reaproveita uma cor do runtime.')}
+${section('Referência aprovada (alvo)', 'color.reference.', 'Rampas medidas na imagem aprovada, do escuro (1) ao claro. É a primeira fonte de cor para arte nova.')}
+${section('Temporada (medida, para arte nova)', 'color.season.', 'Materiais que a cena ainda não tem. Alias = reaproveita uma cor da referência aprovada.')}
+${section('Paleta do runtime atual (P)', 'color.runtime.', 'O que o protótipo desenha hoje (arte reprovada). Abaixo de cada cor, a cor medida mais próxima na referência.')}
 ${section('Pele por ofício', 'color.skin.', '1 sombra, 2 base, 3 luz, medidas por rosto.')}
 ${section('Página e luz', 'color.ui.', 'Cores do CSS publicado, com contraste calculado.')}
 ${section('Luz', 'color.light.', 'Véu da noite e brilho da fogueira.')}
@@ -253,12 +253,16 @@ function readmeBlock(doc) {
   lines.push('### Proporção dos sprites em relação ao personagem', '', '1,00 = mesma proporção da referência; 1,30 = 30% maior no runtime.', '',
     '| sprite | largura | altura |', '|---|---:|---:|', ...Object.entries(per).map(([k, [w, h]]) => `| ${k} | ${br(w)} | ${br(h)} |`), '',
     `Mediana: ${br(prop.resolved)}.`, '');
-  const sc = tokens.get('number.scale.runtimePxPerReferenceArtPx');
+  const sc = tokens.get('number.scale.runtimePxPerReferenceArtPx'), ss = tokens.get('number.scale.runtimePxPerReferenceArtPxSprites');
   const fig = tokens.get('dimension.character.figure.height'), vil = meta.referenceVillagerArtPx;
   const proposed = all.filter(t => e(t).source === 'proposed').length, aliases = all.filter(t => isAlias(t.token.$value)).length;
+  const lo = Math.min(sc.resolved, ss.resolved), hi = Math.max(sc.resolved, ss.resolved);
+  const ints = [1, 2, 3, 4, 5, 6].filter(k => k >= lo && k <= hi);
   lines.push('### Escala e contagem', '',
-    `- 1 pixel de arte da referência = ${br(sc.resolved, 3)} px no runtime: personagem do runtime com ${br(e(fig).median, 1)} px de altura (mediana dos ${e(fig).frames} quadros, sem sombra) e pescador da referência com ${br(vil[0], 1)} × ${br(vil[1], 1)} px de arte.`,
-    `- ${tokens.size} tokens: ${all.filter(t => t.type === 'color').length} cores (${meta.runtimeDeclaredColors.named} nomeadas em P e ${meta.runtimeDeclaredColors.inline} literais do runtime), ${proposed} cores propostas e ${aliases} aliases.`,
+    `- Pelo personagem, 1 pixel de arte da referência = ${br(sc.resolved, 3)} px no runtime (personagem do runtime com ${br(e(fig).median, 1)} px de altura, mediana dos ${e(fig).frames} quadros sem sombra; pescador da referência com ${br(vil[0], 1)} × ${br(vil[1], 1)} px de arte).`,
+    `- Pelos objetos, 1 pixel de arte da referência = ${br(ss.resolved, 3)} px no runtime (mediana de largura e altura de ${Object.keys(e(ss).perObject).length} sprites).`,
+    `- Pixel nítido pede uma escala inteira; ${ints.length ? `entre as duas medidas cabe ${ints.join(' ou ')}` : 'nenhum inteiro cabe entre as duas medidas'}. A escolha é da direção visual.`,
+    `- ${tokens.size} tokens: ${all.filter(t => t.type === 'color').length} cores (${meta.runtimeDeclaredColors.named} nomeadas em P e ${meta.runtimeDeclaredColors.inline} literais do runtime), ${proposed} cores propostas e ${aliases} cores de temporada que reaproveitam a referência (aliases).`,
     `- Variação de altura dos moradores no conceito de temporada: ${br(meta.seasonVillagerHeightSpread * 100, 1)}% (por isso os tamanhos vindos dele têm faixa).`, '');
   return lines.join('\n');
 }

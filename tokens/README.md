@@ -1,6 +1,6 @@
 # Tokens da Vila do Caminho
 
-O jogo 2D em números: cores, tamanhos, câmera e tempos que o runtime usa hoje (lidos no código), as cores e proporções da referência aprovada (medidas na imagem) e a distância entre os dois. Com isso o jogo público chega ao conceito sem chute, e qualquer mudança no runtime aparece nos testes.
+O jogo 2D em números. A referência aprovada é o alvo: suas cores e proporções foram medidas na imagem. O runtime atual é o estado medido: cores, tamanhos, câmera e tempos lidos no código, com a distância até a referência. A arte procedural atual foi reprovada (`coordination/queue.json`), então o runtime serve para medir e pegar mudança no código, não como modelo. Com isso o jogo público chega ao conceito sem chute.
 
 Nada aqui altera `public/`. Trocar uma cor de P ou redimensionar um sprite continua sendo decisão do integrador.
 
@@ -31,12 +31,12 @@ Todo token tem `$extensions["com.viladocaminho"]` com `source` e `from`:
 - `runtime`: lido em `public/world.js` ou `public/style.css` (arquivo:linha). O teste confere que P, os literais de cor, `CELLS`, `T`, `WORLD`, câmera, tempos e o CSS ainda batem com o código.
 - `measured`: medido na referência aprovada (caixa na imagem, faixa de luminância, número de pixels).
 - `derived`: calculado a partir dos outros, com a fórmula registrada.
-- `proposed`: cor medida nos conceitos de temporada sem cor parecida no runtime (ΔE2000 ≥ 3). Pode entrar em arte nova depois de revisão. Abaixo de 3, o token já é um alias da cor do runtime.
+- `proposed`: cor medida nos conceitos de temporada sem cor parecida na referência aprovada (ΔE2000 ≥ 3). Pode entrar em arte nova depois de revisão. Abaixo de 3, o token já é um alias da cor da referência.
 
 Os grupos:
 
-- `color.runtime`: a paleta P (nomeada) e `color.runtime.inline.<função>`, os literais que cada função de desenho usa. É a paleta a preservar.
-- `color.reference`: rampas medidas na referência aprovada, do escuro (1) ao claro. Servem de comparação; não substituem P.
+- `color.reference`: o alvo. Rampas medidas na referência aprovada, do escuro (1) ao claro.
+- `color.runtime`: o estado atual. A paleta P (nomeada) e `color.runtime.inline.<função>`, os literais que cada função de desenho usa, cada um com a distância até a referência.
 - `color.season` e `color.skin`: materiais e tons de pele dos conceitos de temporada (casas de pedra, trigo, lã, vela, roupas por ofício), para arte nova.
 - `color.ui` e `color.light`: página (com contraste calculado) e luz do mundo.
 - `dimension`, `number`, `duration`, `fontFamily`: tile, atlas, sprites, câmera, movimento, tempos de animação e fontes.
@@ -44,9 +44,9 @@ Os grupos:
 
 ## Regras para arte nova
 
-- Procure a cor em `color.runtime` antes de criar uma. Cor de temporada parecida com uma do runtime já é alias dela.
-- Escala do runtime: tile de 16 px, quadro de personagem 32 × 48, retângulos do atlas em `dimension.sprite`.
-- Sprites novos seguem a escala do runtime, não a da referência, enquanto o integrador não decidir alinhar os dois (veja a proporção abaixo).
+- Procure a cor em `color.reference` antes de criar uma. Cor de temporada parecida com uma da referência já é alias dela; `proposed` precisa de revisão.
+- `color.runtime` não é paleta de arte nova: é o que o protótipo reprovado desenha hoje.
+- Escala: o runtime atual usa tile de 16 px e quadro de personagem 32 × 48. Personagem e objetos do runtime estão em escalas diferentes em relação à referência; as duas medidas e o inteiro que cabe entre elas estão no bloco abaixo. A escala final é decisão da direção visual.
 
 ## O que a medição mostrou
 
@@ -116,8 +116,10 @@ Mediana: 1,29.
 
 ### Escala e contagem
 
-- 1 pixel de arte da referência = 1,779 px no runtime: personagem do runtime com 39 px de altura (mediana dos 24 quadros, sem sombra) e pescador da referência com 12,2 × 21,9 px de arte.
-- 346 tokens: 253 cores (34 nomeadas em P e 74 literais do runtime), 48 cores propostas e 7 aliases.
+- Pelo personagem, 1 pixel de arte da referência = 1,779 px no runtime (personagem do runtime com 39 px de altura, mediana dos 24 quadros sem sombra; pescador da referência com 12,2 × 21,9 px de arte).
+- Pelos objetos, 1 pixel de arte da referência = 2,294 px no runtime (mediana de largura e altura de 8 sprites).
+- Pixel nítido pede uma escala inteira; entre as duas medidas cabe 2. A escolha é da direção visual.
+- 347 tokens: 253 cores (34 nomeadas em P e 74 literais do runtime), 30 cores propostas e 25 cores de temporada que reaproveitam a referência (aliases).
 - Variação de altura dos moradores no conceito de temporada: 25,6% (por isso os tamanhos vindos dele têm faixa).
 <!-- gerado por tools/tokens/build.cjs: fim -->
 
