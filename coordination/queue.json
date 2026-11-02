@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "repository": "alexpiraginet-bot/vila-do-caminho",
+  "baseline": {
+    "branch": "main",
+    "commit": "9c755eaa5506182fb0ac73fa92e72ee6ebe25211",
+    "checkedAt": "2026-11-02T23:05:57Z",
+    "testsPassed": 7,
+    "syntaxPassed": true,
+    "checksumsPassed": true
+  },
+  "visualStatus": "previous_implementation_rejected",
+  "tasks": [
+    {
+      "id": "design-tokens-receipt",
+      "status": "awaiting_contribution",
+      "owner": "integration",
+      "paths": [],
+      "dependsOn": [],
+      "nextAction": "Locate the delivered design tokens and generator in a verifiable commit or PR; record exact paths and SHA."
+    },
+    {
+      "id": "visual-integration",
+      "status": "blocked",
+      "owner": "visual-and-integration",
+      "paths": [],
+      "dependsOn": [
+        "design-tokens-receipt"
+      ],
+      "nextAction": "Validate the concrete contract, integrate in an isolated branch, and inspect a real scene capture and short motion."
+    },
+    {
+      "id": "world-continuity",
+      "status": "blocked",
+      "owner": "continuity",
+      "paths": [],
+      "dependsOn": [
+        "visual-integration"
+      ],
+      "nextAction": "Verify geography, one-resident historical start, and explicit permanent state changes."
+    },
+    {
+      "id": "incremental-buildings",
+      "status": "backlog",
+      "owner": "unassigned",
+      "paths": [],
+      "dependsOn": [
+        "visual-integration"
+      ],
+      "nextAction": "Review the delivered buildings module against INSTRUCTIONS-CLAUDE.md before implementing an adapter."
+    }
+  ]
+}
