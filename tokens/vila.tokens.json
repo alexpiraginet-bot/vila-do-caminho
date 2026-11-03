@@ -69,18 +69,18 @@
       "seasonVillagerHeightSpread": 0.256,
       "coverageOfReference": {
         "runtime_P": {
-          "colors": 34,
-          "mean": 4.48,
-          "median": 4.19,
-          "p90": 6.5,
-          "share_lt_5": 0.792
+          "colors": 53,
+          "mean": 1.92,
+          "median": 1.39,
+          "p90": 4.3,
+          "share_lt_5": 0.925
         },
         "runtime_drawn": {
-          "colors": 98,
-          "mean": 3.97,
-          "median": 3.85,
-          "p90": 4.91,
-          "share_lt_5": 0.909
+          "colors": 91,
+          "mean": 1.8,
+          "median": 1.37,
+          "p90": 3.73,
+          "share_lt_5": 0.949
         },
         "reference_measured": {
           "colors": 59,
@@ -95,44 +95,51 @@
         }
       },
       "runtimeDeclaredColors": {
-        "named": 34,
-        "inline": 74
+        "named": 53,
+        "inline": 55
       },
       "notDrawnInAtlasOrTerrain": [
-        "#2a88a7",
-        "#85b8aa",
-        "#947335",
-        "#a54b24",
-        "#c5c19a",
-        "#e57824",
-        "#efb94b",
-        "#f1c258",
-        "#f3ad39",
-        "#f8d77a"
+        "#33415a",
+        "#42556a",
+        "#4aacbd",
+        "#52667d",
+        "#5a321c",
+        "#5ec2c2",
+        "#81772d",
+        "#863223",
+        "#93796d",
+        "#ad6433",
+        "#b8462d",
+        "#e8a246",
+        "#f4daa6",
+        "#f8af40",
+        "#fbc114",
+        "#fbe88f",
+        "#fdf3cd"
       ]
     }
   },
   "color": {
     "$type": "color",
     "runtime": {
-      "$description": "Estado atual: paleta nomeada P do runtime (public/world.js:251). A arte procedural atual foi reprovada (coordination/queue.json); estes valores servem para medir a distância até a referência e pegar mudança no código, não como paleta para arte nova.",
+      "$description": "Estado atual: paleta nomeada P do runtime (public/world.js:250). A arte procedural atual foi reprovada (coordination/queue.json); estes valores servem para medir a distância até a referência e pegar mudança no código, não como paleta para arte nova.",
       "grass": {
         "$value": {
           "colorSpace": "srgb",
           "components": [
-            0.702,
-            0.6824,
-            0.2471
+            0.7059,
+            0.6392,
+            0.1961
           ],
-          "hex": "#b3ae3f"
+          "hex": "#b4a332"
         },
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:251 P.grass",
+            "from": "public/world.js:250 P.grass",
             "nearestReference": {
-              "token": "color.reference.grass.3",
-              "dE2000": 4.19
+              "token": "color.reference.grass.2",
+              "dE2000": 0.0
             }
           }
         }
@@ -142,18 +149,18 @@
           "colorSpace": "srgb",
           "components": [
             0.7686,
-            0.7412,
-            0.2902
+            0.6863,
+            0.2078
           ],
-          "hex": "#c4bd4a"
+          "hex": "#c4af35"
         },
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:251 P.grassHi",
+            "from": "public/world.js:250 P.grassHi",
             "nearestReference": {
-              "token": "color.reference.foliage.4",
-              "dE2000": 3.03
+              "token": "color.reference.grass.4",
+              "dE2000": 0.0
             }
           }
         }
@@ -162,19 +169,19 @@
         "$value": {
           "colorSpace": "srgb",
           "components": [
-            0.4824,
+            0.5529,
             0.5176,
-            0.1765
+            0.2196
           ],
-          "hex": "#7b842d"
+          "hex": "#8d8438"
         },
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:251 P.grassLo",
+            "from": "public/world.js:250 P.grassLo",
             "nearestReference": {
-              "token": "color.reference.grass.1",
-              "dE2000": 3.32
+              "token": "color.reference.groundShadow.1",
+              "dE2000": 4.93
             }
           }
         }
@@ -183,19 +190,19 @@
         "$value": {
           "colorSpace": "srgb",
           "components": [
-            0.3804,
-            0.451,
-            0.1608
+            0.3059,
+            0.3882,
+            0.149
           ],
-          "hex": "#617329"
+          "hex": "#4e6326"
         },
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:251 P.grassDark",
+            "from": "public/world.js:250 P.grassDark",
             "nearestReference": {
-              "token": "color.reference.grass.1",
-              "dE2000": 4.69
+              "token": "color.reference.foliage.2",
+              "dE2000": 7.08
             }
           }
         }
@@ -204,19 +211,19 @@
         "$value": {
           "colorSpace": "srgb",
           "components": [
-            0.902,
-            0.6745,
-            0.3843
+            0.9333,
+            0.6706,
+            0.3373
           ],
-          "hex": "#e6ac62"
+          "hex": "#eeab56"
         },
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:251 P.path",
+            "from": "public/world.js:250 P.path",
             "nearestReference": {
               "token": "color.reference.path.3",
-              "dE2000": 2.31
+              "dE2000": 0.0
             }
           }
         }
@@ -225,19 +232,19 @@
         "$value": {
           "colorSpace": "srgb",
           "components": [
-            0.9373,
-            0.7529,
-            0.4745
+            0.9608,
+            0.7333,
+            0.4039
           ],
-          "hex": "#efc079"
+          "hex": "#f5bb67"
         },
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:251 P.pathHi",
+            "from": "public/world.js:250 P.pathHi",
             "nearestReference": {
               "token": "color.reference.thatch.3",
-              "dE2000": 4.51
+              "dE2000": 1.53
             }
           }
         }
@@ -246,19 +253,19 @@
         "$value": {
           "colorSpace": "srgb",
           "components": [
-            0.7686,
-            0.5412,
-            0.2745
+            0.7804,
+            0.5451,
+            0.2471
           ],
-          "hex": "#c48a46"
+          "hex": "#c78b3f"
         },
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:251 P.pathLo",
+            "from": "public/world.js:250 P.pathLo",
             "nearestReference": {
               "token": "color.reference.path.1",
-              "dE2000": 2.2
+              "dE2000": 2.15
             }
           }
         }
@@ -267,19 +274,19 @@
         "$value": {
           "colorSpace": "srgb",
           "components": [
-            0.2902,
-            0.2196,
-            0.1451
+            0.2627,
+            0.1725,
+            0.1333
           ],
-          "hex": "#4a3825"
+          "hex": "#432c22"
         },
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:251 P.ink",
+            "from": "public/world.js:250 P.ink",
             "nearestReference": {
               "token": "color.reference.outline.2",
-              "dE2000": 6.93
+              "dE2000": 0.0
             }
           }
         }
@@ -288,19 +295,19 @@
         "$value": {
           "colorSpace": "srgb",
           "components": [
-            0.5804,
-            0.451,
-            0.2078
+            0.5059,
+            0.4667,
+            0.1765
           ],
-          "hex": "#947335"
+          "hex": "#81772d"
         },
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:251 P.soil",
+            "from": "public/world.js:250 P.soil",
             "nearestReference": {
               "token": "color.reference.groundShadow.1",
-              "dE2000": 8.6
+              "dE2000": 0.0
             },
             "note": "declarada e nunca desenhada no atlas, no terreno ou no quadro"
           }
@@ -311,18 +318,18 @@
           "colorSpace": "srgb",
           "components": [
             0.0784,
-            0.4667,
-            0.6314
+            0.4196,
+            0.6
           ],
-          "hex": "#1477a1"
+          "hex": "#146b99"
         },
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:251 P.water",
+            "from": "public/world.js:250 P.water",
             "nearestReference": {
               "token": "color.reference.water.2",
-              "dE2000": 4.76
+              "dE2000": 0.0
             }
           }
         }
@@ -331,19 +338,19 @@
         "$value": {
           "colorSpace": "srgb",
           "components": [
-            0.098,
-            0.4078,
-            0.5412
+            0.0784,
+            0.3922,
+            0.5647
           ],
-          "hex": "#19688a"
+          "hex": "#146490"
         },
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:251 P.waterDeep",
+            "from": "public/world.js:250 P.waterDeep",
             "nearestReference": {
               "token": "color.reference.water.1",
-              "dE2000": 3.6
+              "dE2000": 0.0
             }
           }
         }
@@ -352,19 +359,19 @@
         "$value": {
           "colorSpace": "srgb",
           "components": [
-            0.2078,
-            0.5843,
-            0.7216
+            0.1882,
+            0.5882,
+            0.7176
           ],
-          "hex": "#3595b8"
+          "hex": "#3096b7"
         },
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:251 P.waterHi",
+            "from": "public/world.js:250 P.waterHi",
             "nearestReference": {
               "token": "color.reference.water.3",
-              "dE2000": 1.04
+              "dE2000": 0.0
             }
           }
         }
@@ -373,19 +380,19 @@
         "$value": {
           "colorSpace": "srgb",
           "components": [
-            0.5216,
-            0.7216,
-            0.6667
+            0.3255,
+            0.7137,
+            0.702
           ],
-          "hex": "#85b8aa"
+          "hex": "#53b6b3"
         },
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:251 P.foam",
+            "from": "public/world.js:250 P.foam",
             "nearestReference": {
               "token": "color.reference.shoreEdge.1",
-              "dE2000": 7.95
+              "dE2000": 0.0
             }
           }
         }
@@ -394,19 +401,19 @@
         "$value": {
           "colorSpace": "srgb",
           "components": [
-            0.4431,
-            0.5333,
-            0.1725
+            0.6588,
+            0.6118,
+            0.2392
           ],
-          "hex": "#71882c"
+          "hex": "#a89c3d"
         },
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:251 P.leaf",
+            "from": "public/world.js:250 P.leaf",
             "nearestReference": {
-              "token": "color.reference.grass.1",
-              "dE2000": 4.28
+              "token": "color.reference.foliage.3",
+              "dE2000": 0.0
             }
           }
         }
@@ -415,19 +422,19 @@
         "$value": {
           "colorSpace": "srgb",
           "components": [
-            0.6078,
-            0.6392,
-            0.2353
+            0.8078,
+            0.7373,
+            0.2784
           ],
-          "hex": "#9ba33c"
+          "hex": "#cebc47"
         },
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:251 P.leafHi",
+            "from": "public/world.js:250 P.leafHi",
             "nearestReference": {
-              "token": "color.reference.foliage.3",
-              "dE2000": 5.69
+              "token": "color.reference.foliage.4",
+              "dE2000": 0.0
             }
           }
         }
@@ -436,19 +443,19 @@
         "$value": {
           "colorSpace": "srgb",
           "components": [
-            0.298,
-            0.4196,
-            0.1647
+            0.3922,
+            0.3922,
+            0.2078
           ],
-          "hex": "#4c6b2a"
+          "hex": "#646435"
         },
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:251 P.leafLo",
+            "from": "public/world.js:250 P.leafLo",
             "nearestReference": {
               "token": "color.reference.foliage.2",
-              "dE2000": 9.09
+              "dE2000": 0.0
             }
           }
         }
@@ -457,19 +464,19 @@
         "$value": {
           "colorSpace": "srgb",
           "components": [
-            0.2039,
-            0.298,
-            0.1529
+            0.2314,
+            0.2588,
+            0.1882
           ],
-          "hex": "#344c27"
+          "hex": "#3b4230"
         },
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:251 P.leafDeep",
+            "from": "public/world.js:250 P.leafDeep",
             "nearestReference": {
               "token": "color.reference.foliage.1",
-              "dE2000": 8.74
+              "dE2000": 0.0
             }
           }
         }
@@ -478,19 +485,19 @@
         "$value": {
           "colorSpace": "srgb",
           "components": [
-            0.5412,
-            0.349,
-            0.1765
+            0.4941,
+            0.302,
+            0.1725
           ],
-          "hex": "#8a592d"
+          "hex": "#7e4d2c"
         },
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:251 P.wood",
+            "from": "public/world.js:250 P.wood",
             "nearestReference": {
-              "token": "color.reference.wicker.2",
-              "dE2000": 3.59
+              "token": "color.reference.wood.2",
+              "dE2000": 0.0
             }
           }
         }
@@ -499,19 +506,19 @@
         "$value": {
           "colorSpace": "srgb",
           "components": [
-            0.7765,
-            0.549,
-            0.2627
+            0.7686,
+            0.4863,
+            0.2275
           ],
-          "hex": "#c68c43"
+          "hex": "#c47c3a"
         },
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:251 P.woodHi",
+            "from": "public/world.js:250 P.woodHi",
             "nearestReference": {
-              "token": "color.reference.path.1",
-              "dE2000": 2.12
+              "token": "color.reference.wood.3",
+              "dE2000": 0.0
             }
           }
         }
@@ -520,19 +527,19 @@
         "$value": {
           "colorSpace": "srgb",
           "components": [
-            0.3882,
-            0.2745,
+            0.2588,
+            0.1647,
             0.1294
           ],
-          "hex": "#634621"
+          "hex": "#422a21"
         },
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:251 P.woodLo",
+            "from": "public/world.js:250 P.woodLo",
             "nearestReference": {
-              "token": "color.reference.wood.2",
-              "dE2000": 8.25
+              "token": "color.reference.wood.1",
+              "dE2000": 0.0
             }
           }
         }
@@ -541,19 +548,19 @@
         "$value": {
           "colorSpace": "srgb",
           "components": [
-            0.7647,
-            0.6431,
-            0.2941
+            0.8471,
+            0.5529,
+            0.2471
           ],
-          "hex": "#c3a44b"
+          "hex": "#d88d3f"
         },
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:251 P.straw",
+            "from": "public/world.js:250 P.straw",
             "nearestReference": {
-              "token": "color.reference.grass.3",
-              "dE2000": 5.27
+              "token": "color.reference.thatch.2",
+              "dE2000": 0.0
             }
           }
         }
@@ -562,19 +569,19 @@
         "$value": {
           "colorSpace": "srgb",
           "components": [
-            0.8745,
-            0.7765,
-            0.4196
+            0.9804,
+            0.7333,
+            0.3686
           ],
-          "hex": "#dfc66b"
+          "hex": "#fabb5e"
         },
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:251 P.strawHi",
+            "from": "public/world.js:250 P.strawHi",
             "nearestReference": {
-              "token": "color.reference.foliage.4",
-              "dE2000": 5.12
+              "token": "color.reference.thatch.3",
+              "dE2000": 0.0
             }
           }
         }
@@ -583,19 +590,19 @@
         "$value": {
           "colorSpace": "srgb",
           "components": [
-            0.6118,
-            0.4824,
-            0.1922
+            0.6902,
+            0.4157,
+            0.1882
           ],
-          "hex": "#9c7b31"
+          "hex": "#b06a30"
         },
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:251 P.strawLo",
+            "from": "public/world.js:250 P.strawLo",
             "nearestReference": {
-              "token": "color.reference.groundShadow.1",
-              "dE2000": 8.49
+              "token": "color.reference.thatch.1",
+              "dE2000": 0.0
             }
           }
         }
@@ -604,19 +611,19 @@
         "$value": {
           "colorSpace": "srgb",
           "components": [
-            0.8941,
-            0.8314,
-            0.6314
+            0.9529,
+            0.8196,
+            0.5843
           ],
-          "hex": "#e4d4a1"
+          "hex": "#f3d195"
         },
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:251 P.cream",
+            "from": "public/world.js:250 P.cream",
             "nearestReference": {
-              "token": "color.reference.net.1",
-              "dE2000": 3.74
+              "token": "color.reference.clothWhite.2",
+              "dE2000": 0.0
             }
           }
         }
@@ -625,19 +632,19 @@
         "$value": {
           "colorSpace": "srgb",
           "components": [
-            0.9569,
-            0.9059,
-            0.7255
+            0.9725,
+            0.8745,
+            0.6353
           ],
-          "hex": "#f4e7b9"
+          "hex": "#f8dfa2"
         },
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:251 P.creamHi",
+            "from": "public/world.js:250 P.creamHi",
             "nearestReference": {
-              "token": "color.reference.net.2",
-              "dE2000": 3.38
+              "token": "color.reference.clothWhite.3",
+              "dE2000": 0.0
             }
           }
         }
@@ -646,19 +653,19 @@
         "$value": {
           "colorSpace": "srgb",
           "components": [
-            0.7098,
-            0.6314,
-            0.4431
+            0.7961,
+            0.651,
+            0.4471
           ],
-          "hex": "#b5a171"
+          "hex": "#cba672"
         },
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:251 P.creamLo",
+            "from": "public/world.js:250 P.creamLo",
             "nearestReference": {
               "token": "color.reference.clothWhite.1",
-              "dE2000": 6.0
+              "dE2000": 0.0
             }
           }
         }
@@ -667,19 +674,19 @@
         "$value": {
           "colorSpace": "srgb",
           "components": [
-            0.6392,
-            0.3765,
-            0.2078
+            0.7725,
+            0.3922,
+            0.1725
           ],
-          "hex": "#a36035"
+          "hex": "#c5642c"
         },
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:251 P.terra",
+            "from": "public/world.js:250 P.terra",
             "nearestReference": {
-              "token": "color.reference.wicker.2",
-              "dE2000": 3.85
+              "token": "color.reference.terracotta.2",
+              "dE2000": 0.0
             }
           }
         }
@@ -688,19 +695,19 @@
         "$value": {
           "colorSpace": "srgb",
           "components": [
-            0.8235,
-            0.5451,
-            0.2941
+            0.9451,
+            0.549,
+            0.2275
           ],
-          "hex": "#d28b4b"
+          "hex": "#f18c3a"
         },
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:251 P.terraHi",
+            "from": "public/world.js:250 P.terraHi",
             "nearestReference": {
-              "token": "color.reference.thatch.2",
-              "dE2000": 2.69
+              "token": "color.reference.terracotta.3",
+              "dE2000": 0.0
             }
           }
         }
@@ -709,19 +716,19 @@
         "$value": {
           "colorSpace": "srgb",
           "components": [
-            0.7412,
-            0.5333,
-            0.3294
+            0.9451,
+            0.6235,
+            0.3333
           ],
-          "hex": "#bd8854"
+          "hex": "#f19f55"
         },
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:251 P.skin",
+            "from": "public/world.js:250 P.skin",
             "nearestReference": {
-              "token": "color.reference.path.1",
-              "dE2000": 4.77
+              "token": "color.skin.reference.2",
+              "dE2000": 0.0
             }
           }
         }
@@ -730,19 +737,19 @@
         "$value": {
           "colorSpace": "srgb",
           "components": [
-            0.8745,
-            0.6588,
-            0.4471
+            0.9686,
+            0.7059,
+            0.4039
           ],
-          "hex": "#dfa872"
+          "hex": "#f7b467"
         },
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:251 P.skinHi",
+            "from": "public/world.js:250 P.skinHi",
             "nearestReference": {
-              "token": "color.reference.path.2",
-              "dE2000": 5.22
+              "token": "color.skin.reference.3",
+              "dE2000": 0.0
             }
           }
         }
@@ -751,19 +758,19 @@
         "$value": {
           "colorSpace": "srgb",
           "components": [
-            0.5608,
-            0.3765,
-            0.2314
+            0.5255,
+            0.3098,
+            0.1765
           ],
-          "hex": "#8f603b"
+          "hex": "#864f2d"
         },
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:251 P.skinLo",
+            "from": "public/world.js:250 P.skinLo",
             "nearestReference": {
-              "token": "color.reference.wicker.2",
-              "dE2000": 4.16
+              "token": "color.skin.reference.1",
+              "dE2000": 0.0
             }
           }
         }
@@ -773,18 +780,18 @@
           "colorSpace": "srgb",
           "components": [
             0.5569,
-            0.5451,
-            0.4196
+            0.4588,
+            0.3961
           ],
-          "hex": "#8e8b6b"
+          "hex": "#8e7565"
         },
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:251 P.stone",
+            "from": "public/world.js:250 P.stone",
             "nearestReference": {
-              "token": "color.reference.groundShadow.1",
-              "dE2000": 12.65
+              "token": "color.reference.stone.4",
+              "dE2000": 2.76
             }
           }
         }
@@ -793,19 +800,19 @@
         "$value": {
           "colorSpace": "srgb",
           "components": [
-            0.6902,
-            0.6667,
-            0.5137
+            0.8392,
+            0.7294,
+            0.6039
           ],
-          "hex": "#b0aa83"
+          "hex": "#d6ba9a"
         },
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:251 P.stoneHi",
+            "from": "public/world.js:250 P.stoneHi",
             "nearestReference": {
               "token": "color.reference.clothWhite.1",
-              "dE2000": 10.72
+              "dE2000": 7.55
             }
           }
         }
@@ -814,19 +821,418 @@
         "$value": {
           "colorSpace": "srgb",
           "components": [
-            0.3961,
-            0.4078,
-            0.3059
+            0.3608,
+            0.3059,
+            0.2588
           ],
-          "hex": "#65684e"
+          "hex": "#5c4e42"
         },
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:251 P.stoneLo",
+            "from": "public/world.js:250 P.stoneLo",
             "nearestReference": {
-              "token": "color.reference.foliage.2",
-              "dE2000": 6.63
+              "token": "color.reference.stone.2",
+              "dE2000": 5.99
+            }
+          }
+        }
+      },
+      "outline": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.1843,
+            0.1216,
+            0.1059
+          ],
+          "hex": "#2f1f1b"
+        },
+        "$extensions": {
+          "com.viladocaminho": {
+            "source": "runtime",
+            "from": "public/world.js:250 P.outline",
+            "nearestReference": {
+              "token": "color.reference.outline.1",
+              "dE2000": 0.0
+            }
+          }
+        }
+      },
+      "hair": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.2392,
+            0.1647,
+            0.1451
+          ],
+          "hex": "#3d2a25"
+        },
+        "$extensions": {
+          "com.viladocaminho": {
+            "source": "runtime",
+            "from": "public/world.js:250 P.hair",
+            "nearestReference": {
+              "token": "color.reference.hair.1",
+              "dE2000": 0.0
+            }
+          }
+        }
+      },
+      "hairHi": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.3451,
+            0.2275,
+            0.1843
+          ],
+          "hex": "#583a2f"
+        },
+        "$extensions": {
+          "com.viladocaminho": {
+            "source": "runtime",
+            "from": "public/world.js:250 P.hairHi",
+            "nearestReference": {
+              "token": "color.reference.hair.2",
+              "dE2000": 0.0
+            }
+          }
+        }
+      },
+      "sash": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.8118,
+            0.3373,
+            0.1765
+          ],
+          "hex": "#cf562d"
+        },
+        "$extensions": {
+          "com.viladocaminho": {
+            "source": "runtime",
+            "from": "public/world.js:250 P.sash",
+            "nearestReference": {
+              "token": "color.reference.clothRed.2",
+              "dE2000": 0.0
+            }
+          }
+        }
+      },
+      "sashLo": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.5529,
+            0.2392,
+            0.1529
+          ],
+          "hex": "#8d3d27"
+        },
+        "$extensions": {
+          "com.viladocaminho": {
+            "source": "runtime",
+            "from": "public/world.js:250 P.sashLo",
+            "nearestReference": {
+              "token": "color.reference.clothRed.1",
+              "dE2000": 0.0
+            }
+          }
+        }
+      },
+      "sand": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9529,
+            0.6941,
+            0.3569
+          ],
+          "hex": "#f3b15b"
+        },
+        "$extensions": {
+          "com.viladocaminho": {
+            "source": "runtime",
+            "from": "public/world.js:250 P.sand",
+            "nearestReference": {
+              "token": "color.reference.sand.3",
+              "dE2000": 0.0
+            }
+          }
+        }
+      },
+      "sandDark": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.8824,
+            0.6157,
+            0.3059
+          ],
+          "hex": "#e19d4e"
+        },
+        "$extensions": {
+          "com.viladocaminho": {
+            "source": "runtime",
+            "from": "public/world.js:250 P.sandDark",
+            "nearestReference": {
+              "token": "color.reference.sand.1",
+              "dE2000": 1.1
+            }
+          }
+        }
+      },
+      "tuft": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.3843,
+            0.4471,
+            0.1725
+          ],
+          "hex": "#62722c"
+        },
+        "$extensions": {
+          "com.viladocaminho": {
+            "source": "runtime",
+            "from": "public/world.js:250 P.tuft",
+            "nearestReference": {
+              "token": "color.reference.grass.1",
+              "dE2000": 4.98
+            }
+          }
+        }
+      },
+      "tuftHi": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.6196,
+            0.5804,
+            0.2314
+          ],
+          "hex": "#9e943b"
+        },
+        "$extensions": {
+          "com.viladocaminho": {
+            "source": "runtime",
+            "from": "public/world.js:250 P.tuftHi",
+            "nearestReference": {
+              "token": "color.reference.foliage.3",
+              "dE2000": 2.84
+            }
+          }
+        }
+      },
+      "waterLight": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.2902,
+            0.6745,
+            0.7412
+          ],
+          "hex": "#4aacbd"
+        },
+        "$extensions": {
+          "com.viladocaminho": {
+            "source": "runtime",
+            "from": "public/world.js:250 P.waterLight",
+            "nearestReference": {
+              "token": "color.reference.water.4",
+              "dE2000": 0.0
+            }
+          }
+        }
+      },
+      "foamHi": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.3686,
+            0.7608,
+            0.7608
+          ],
+          "hex": "#5ec2c2"
+        },
+        "$extensions": {
+          "com.viladocaminho": {
+            "source": "runtime",
+            "from": "public/world.js:250 P.foamHi",
+            "nearestReference": {
+              "token": "color.reference.shoreEdge.1",
+              "dE2000": 3.56
+            }
+          }
+        }
+      },
+      "reed": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.5333,
+            0.5098,
+            0.2196
+          ],
+          "hex": "#888238"
+        },
+        "$extensions": {
+          "com.viladocaminho": {
+            "source": "runtime",
+            "from": "public/world.js:250 P.reed",
+            "nearestReference": {
+              "token": "color.reference.groundShadow.1",
+              "dE2000": 4.19
+            }
+          }
+        }
+      },
+      "fire": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9098,
+            0.2549,
+            0.0824
+          ],
+          "hex": "#e84115"
+        },
+        "$extensions": {
+          "com.viladocaminho": {
+            "source": "runtime",
+            "from": "public/world.js:250 P.fire",
+            "nearestReference": {
+              "token": "color.reference.fire.1",
+              "dE2000": 0.0
+            }
+          }
+        }
+      },
+      "fireMid": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9686,
+            0.5451,
+            0.0784
+          ],
+          "hex": "#f78b14"
+        },
+        "$extensions": {
+          "com.viladocaminho": {
+            "source": "runtime",
+            "from": "public/world.js:250 P.fireMid",
+            "nearestReference": {
+              "token": "color.reference.terracotta.3",
+              "dE2000": 3.95
+            }
+          }
+        }
+      },
+      "fireHi": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9843,
+            0.7569,
+            0.0784
+          ],
+          "hex": "#fbc114"
+        },
+        "$extensions": {
+          "com.viladocaminho": {
+            "source": "runtime",
+            "from": "public/world.js:250 P.fireHi",
+            "nearestReference": {
+              "token": "color.reference.fire.3",
+              "dE2000": 4.3
+            }
+          }
+        }
+      },
+      "fireCore": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9843,
+            0.9098,
+            0.5608
+          ],
+          "hex": "#fbe88f"
+        },
+        "$extensions": {
+          "com.viladocaminho": {
+            "source": "runtime",
+            "from": "public/world.js:250 P.fireCore",
+            "nearestReference": {
+              "token": "color.reference.clothWhite.3",
+              "dE2000": 5.88
+            }
+          }
+        }
+      },
+      "ash": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.3098,
+            0.2078,
+            0.1804
+          ],
+          "hex": "#4f352e"
+        },
+        "$extensions": {
+          "com.viladocaminho": {
+            "source": "runtime",
+            "from": "public/world.js:250 P.ash",
+            "nearestReference": {
+              "token": "color.reference.hair.2",
+              "dE2000": 2.9
+            }
+          }
+        }
+      },
+      "paper": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9922,
+            0.9529,
+            0.8039
+          ],
+          "hex": "#fdf3cd"
+        },
+        "$extensions": {
+          "com.viladocaminho": {
+            "source": "runtime",
+            "from": "public/world.js:250 P.paper",
+            "nearestReference": {
+              "token": "color.reference.net.2",
+              "dE2000": 0.0
+            }
+          }
+        }
+      },
+      "wool": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9569,
+            0.8549,
+            0.651
+          ],
+          "hex": "#f4daa6"
+        },
+        "$extensions": {
+          "com.viladocaminho": {
+            "source": "runtime",
+            "from": "public/world.js:250 P.wool",
+            "nearestReference": {
+              "token": "color.reference.net.1",
+              "dE2000": 0.0
             }
           }
         }
@@ -847,15 +1253,14 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:274 (literal em drawShelter)",
+                "from": "public/world.js:299 (literal em drawShelter)",
                 "usedIn": [
-                  "drawCharacter",
                   "drawShelter"
                 ],
                 "drawnInAtlasOrTerrain": true,
                 "nearestNamed": {
-                  "token": "color.runtime.grassLo",
-                  "dE2000": 2.03
+                  "token": "color.runtime.reed",
+                  "dE2000": 4.68
                 }
               }
             }
@@ -873,14 +1278,14 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:274 (literal em drawShelter)",
+                "from": "public/world.js:299 (literal em drawShelter)",
                 "usedIn": [
                   "drawShelter"
                 ],
                 "drawnInAtlasOrTerrain": true,
                 "nearestNamed": {
-                  "token": "color.runtime.woodLo",
-                  "dE2000": 6.28
+                  "token": "color.runtime.leafLo",
+                  "dE2000": 9.53
                 }
               }
             }
@@ -898,14 +1303,14 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:275 (literal em drawShelter)",
+                "from": "public/world.js:300 (literal em drawShelter)",
                 "usedIn": [
                   "drawShelter"
                 ],
                 "drawnInAtlasOrTerrain": true,
                 "nearestNamed": {
                   "token": "color.runtime.soil",
-                  "dE2000": 4.2
+                  "dE2000": 8.9
                 }
               }
             }
@@ -923,14 +1328,14 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:276 (literal em drawShelter)",
+                "from": "public/world.js:301 (literal em drawShelter)",
                 "usedIn": [
                   "drawShelter"
                 ],
                 "drawnInAtlasOrTerrain": true,
                 "nearestNamed": {
-                  "token": "color.runtime.strawLo",
-                  "dE2000": 2.21
+                  "token": "color.runtime.soil",
+                  "dE2000": 8.74
                 }
               }
             }
@@ -948,14 +1353,14 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:276 (literal em drawShelter)",
+                "from": "public/world.js:301 (literal em drawShelter)",
                 "usedIn": [
                   "drawShelter"
                 ],
                 "drawnInAtlasOrTerrain": true,
                 "nearestNamed": {
-                  "token": "color.runtime.woodLo",
-                  "dE2000": 5.34
+                  "token": "color.runtime.wood",
+                  "dE2000": 8.94
                 }
               }
             }
@@ -973,14 +1378,14 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:278 (literal em drawShelter)",
+                "from": "public/world.js:303 (literal em drawShelter)",
                 "usedIn": [
                   "drawShelter"
                 ],
                 "drawnInAtlasOrTerrain": true,
                 "nearestNamed": {
-                  "token": "color.runtime.woodLo",
-                  "dE2000": 5.07
+                  "token": "color.runtime.leafLo",
+                  "dE2000": 10.6
                 }
               }
             }
@@ -998,14 +1403,14 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:279 (literal em drawShelter)",
+                "from": "public/world.js:304 (literal em drawShelter)",
                 "usedIn": [
                   "drawShelter"
                 ],
                 "drawnInAtlasOrTerrain": true,
                 "nearestNamed": {
-                  "token": "color.runtime.strawLo",
-                  "dE2000": 2.16
+                  "token": "color.runtime.grassLo",
+                  "dE2000": 7.26
                 }
               }
             }
@@ -1023,14 +1428,14 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:279 (literal em drawShelter)",
+                "from": "public/world.js:304 (literal em drawShelter)",
                 "usedIn": [
                   "drawShelter"
                 ],
                 "drawnInAtlasOrTerrain": true,
                 "nearestNamed": {
                   "token": "color.runtime.soil",
-                  "dE2000": 5.91
+                  "dE2000": 8.13
                 }
               }
             }
@@ -1048,14 +1453,14 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:279 (literal em drawShelter)",
+                "from": "public/world.js:304 (literal em drawShelter)",
                 "usedIn": [
                   "drawShelter"
                 ],
                 "drawnInAtlasOrTerrain": true,
                 "nearestNamed": {
-                  "token": "color.runtime.straw",
-                  "dE2000": 4.56
+                  "token": "color.runtime.leaf",
+                  "dE2000": 4.88
                 }
               }
             }
@@ -1073,14 +1478,14 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:280 (literal em drawShelter)",
+                "from": "public/world.js:305 (literal em drawShelter)",
                 "usedIn": [
                   "drawShelter"
                 ],
                 "drawnInAtlasOrTerrain": true,
                 "nearestNamed": {
-                  "token": "color.runtime.woodLo",
-                  "dE2000": 3.09
+                  "token": "color.runtime.stoneLo",
+                  "dE2000": 8.95
                 }
               }
             }
@@ -1098,14 +1503,14 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:280 (literal em drawShelter)",
+                "from": "public/world.js:305 (literal em drawShelter)",
                 "usedIn": [
                   "drawShelter"
                 ],
                 "drawnInAtlasOrTerrain": true,
                 "nearestNamed": {
-                  "token": "color.runtime.ink",
-                  "dE2000": 2.33
+                  "token": "color.runtime.stoneLo",
+                  "dE2000": 8.25
                 }
               }
             }
@@ -1123,14 +1528,14 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:281 (literal em drawShelter)",
+                "from": "public/world.js:306 (literal em drawShelter)",
                 "usedIn": [
                   "drawShelter"
                 ],
                 "drawnInAtlasOrTerrain": true,
                 "nearestNamed": {
-                  "token": "color.runtime.stoneLo",
-                  "dE2000": 7.41
+                  "token": "color.runtime.leafLo",
+                  "dE2000": 4.53
                 }
               }
             }
@@ -1148,14 +1553,14 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:284 (literal em drawShelter)",
+                "from": "public/world.js:309 (literal em drawShelter)",
                 "usedIn": [
                   "drawShelter"
                 ],
                 "drawnInAtlasOrTerrain": true,
                 "nearestNamed": {
                   "token": "color.runtime.ink",
-                  "dE2000": 4.52
+                  "dE2000": 9.17
                 }
               }
             }
@@ -1173,14 +1578,14 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:285 (literal em drawShelter)",
+                "from": "public/world.js:310 (literal em drawShelter)",
                 "usedIn": [
                   "drawShelter"
                 ],
                 "drawnInAtlasOrTerrain": true,
                 "nearestNamed": {
-                  "token": "color.runtime.woodLo",
-                  "dE2000": 1.97
+                  "token": "color.runtime.stoneLo",
+                  "dE2000": 9.3
                 }
               }
             }
@@ -1198,14 +1603,14 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:293 (literal em drawShelter)",
+                "from": "public/world.js:318 (literal em drawShelter)",
                 "usedIn": [
                   "drawShelter"
                 ],
                 "drawnInAtlasOrTerrain": true,
                 "nearestNamed": {
-                  "token": "color.runtime.straw",
-                  "dE2000": 3.89
+                  "token": "color.runtime.grassHi",
+                  "dE2000": 5.06
                 }
               }
             }
@@ -1223,14 +1628,14 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:297 (literal em drawShelter)",
+                "from": "public/world.js:322 (literal em drawShelter)",
                 "usedIn": [
                   "drawShelter"
                 ],
                 "drawnInAtlasOrTerrain": true,
                 "nearestNamed": {
-                  "token": "color.runtime.strawLo",
-                  "dE2000": 4.8
+                  "token": "color.runtime.tuftHi",
+                  "dE2000": 7.62
                 }
               }
             }
@@ -1248,14 +1653,14 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:298 (literal em drawShelter)",
+                "from": "public/world.js:323 (literal em drawShelter)",
                 "usedIn": [
                   "drawShelter"
                 ],
                 "drawnInAtlasOrTerrain": true,
                 "nearestNamed": {
-                  "token": "color.runtime.strawHi",
-                  "dE2000": 0.71
+                  "token": "color.runtime.leafHi",
+                  "dE2000": 5.18
                 }
               }
             }
@@ -1273,14 +1678,14 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:299 (literal em drawShelter)",
+                "from": "public/world.js:324 (literal em drawShelter)",
                 "usedIn": [
                   "drawShelter"
                 ],
                 "drawnInAtlasOrTerrain": true,
                 "nearestNamed": {
-                  "token": "color.runtime.strawHi",
-                  "dE2000": 3.66
+                  "token": "color.runtime.leafHi",
+                  "dE2000": 4.41
                 }
               }
             }
@@ -1298,14 +1703,14 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:301 (literal em drawShelter)",
+                "from": "public/world.js:326 (literal em drawShelter)",
                 "usedIn": [
                   "drawShelter"
                 ],
                 "drawnInAtlasOrTerrain": true,
                 "nearestNamed": {
-                  "token": "color.runtime.strawLo",
-                  "dE2000": 5.97
+                  "token": "color.runtime.tuftHi",
+                  "dE2000": 7.49
                 }
               }
             }
@@ -1323,14 +1728,14 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:302 (literal em drawShelter)",
+                "from": "public/world.js:327 (literal em drawShelter)",
                 "usedIn": [
                   "drawShelter"
                 ],
                 "drawnInAtlasOrTerrain": true,
                 "nearestNamed": {
-                  "token": "color.runtime.strawHi",
-                  "dE2000": 2.36
+                  "token": "color.runtime.leafHi",
+                  "dE2000": 5.12
                 }
               }
             }
@@ -1348,14 +1753,14 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:305 (literal em drawShelter)",
+                "from": "public/world.js:330 (literal em drawShelter)",
                 "usedIn": [
                   "drawShelter"
                 ],
                 "drawnInAtlasOrTerrain": true,
                 "nearestNamed": {
-                  "token": "color.runtime.strawLo",
-                  "dE2000": 1.19
+                  "token": "color.runtime.grassLo",
+                  "dE2000": 7.89
                 }
               }
             }
@@ -1375,14 +1780,14 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:312 (literal em drawOlive)",
+                "from": "public/world.js:337 (literal em drawOlive)",
                 "usedIn": [
                   "drawOlive"
                 ],
                 "drawnInAtlasOrTerrain": true,
                 "nearestNamed": {
-                  "token": "color.runtime.grassLo",
-                  "dE2000": 0.48
+                  "token": "color.runtime.reed",
+                  "dE2000": 4.52
                 }
               }
             }
@@ -1400,14 +1805,14 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:312 (literal em drawOlive)",
+                "from": "public/world.js:337 (literal em drawOlive)",
                 "usedIn": [
                   "drawOlive"
                 ],
                 "drawnInAtlasOrTerrain": true,
                 "nearestNamed": {
-                  "token": "color.runtime.grassDark",
-                  "dE2000": 2.77
+                  "token": "color.runtime.tuft",
+                  "dE2000": 2.94
                 }
               }
             }
@@ -1425,14 +1830,14 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:329 (literal em drawOlive)",
+                "from": "public/world.js:354 (literal em drawOlive)",
                 "usedIn": [
                   "drawOlive"
                 ],
                 "drawnInAtlasOrTerrain": true,
                 "nearestNamed": {
-                  "token": "color.runtime.leafHi",
-                  "dE2000": 2.2
+                  "token": "color.runtime.leaf",
+                  "dE2000": 6.48
                 }
               }
             }
@@ -1450,14 +1855,14 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:329 (literal em drawOlive)",
+                "from": "public/world.js:354 (literal em drawOlive)",
                 "usedIn": [
                   "drawOlive"
                 ],
                 "drawnInAtlasOrTerrain": true,
                 "nearestNamed": {
-                  "token": "color.runtime.leaf",
-                  "dE2000": 6.41
+                  "token": "color.runtime.reed",
+                  "dE2000": 10.0
                 }
               }
             }
@@ -1475,14 +1880,14 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:335 (literal em drawOlive)",
+                "from": "public/world.js:360 (literal em drawOlive)",
                 "usedIn": [
                   "drawOlive"
                 ],
                 "drawnInAtlasOrTerrain": true,
                 "nearestNamed": {
-                  "token": "color.runtime.leafHi",
-                  "dE2000": 3.57
+                  "token": "color.runtime.leaf",
+                  "dE2000": 6.71
                 }
               }
             }
@@ -1500,14 +1905,14 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:336 (literal em drawOlive)",
+                "from": "public/world.js:361 (literal em drawOlive)",
                 "usedIn": [
                   "drawOlive"
                 ],
                 "drawnInAtlasOrTerrain": true,
                 "nearestNamed": {
-                  "token": "color.runtime.leafLo",
-                  "dE2000": 3.12
+                  "token": "color.runtime.tuft",
+                  "dE2000": 5.05
                 }
               }
             }
@@ -1525,14 +1930,14 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:337 (literal em drawOlive)",
+                "from": "public/world.js:362 (literal em drawOlive)",
                 "usedIn": [
                   "drawOlive"
                 ],
                 "drawnInAtlasOrTerrain": true,
                 "nearestNamed": {
-                  "token": "color.runtime.leafHi",
-                  "dE2000": 7.98
+                  "token": "color.runtime.tuftHi",
+                  "dE2000": 10.25
                 }
               }
             }
@@ -1552,14 +1957,14 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:342 (literal em drawBoat)",
+                "from": "public/world.js:367 (literal em drawBoat)",
                 "usedIn": [
                   "drawBoat"
                 ],
                 "drawnInAtlasOrTerrain": true,
                 "nearestNamed": {
                   "token": "color.runtime.waterDeep",
-                  "dE2000": 3.54
+                  "dE2000": 4.56
                 }
               }
             }
@@ -1577,14 +1982,14 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:344 (literal em drawBoat)",
+                "from": "public/world.js:369 (literal em drawBoat)",
                 "usedIn": [
                   "drawBoat"
                 ],
                 "drawnInAtlasOrTerrain": true,
                 "nearestNamed": {
-                  "token": "color.runtime.wood",
-                  "dE2000": 2.05
+                  "token": "color.runtime.skinLo",
+                  "dE2000": 3.35
                 }
               }
             }
@@ -1602,14 +2007,14 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:345 (literal em drawBoat)",
+                "from": "public/world.js:370 (literal em drawBoat)",
                 "usedIn": [
                   "drawBoat"
                 ],
                 "drawnInAtlasOrTerrain": true,
                 "nearestNamed": {
-                  "token": "color.runtime.ink",
-                  "dE2000": 3.13
+                  "token": "color.runtime.hairHi",
+                  "dE2000": 7.73
                 }
               }
             }
@@ -1627,14 +2032,14 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:346 (literal em drawBoat)",
+                "from": "public/world.js:371 (literal em drawBoat)",
                 "usedIn": [
                   "drawBoat"
                 ],
                 "drawnInAtlasOrTerrain": true,
                 "nearestNamed": {
-                  "token": "color.runtime.soil",
-                  "dE2000": 5.94
+                  "token": "color.runtime.woodHi",
+                  "dE2000": 6.96
                 }
               }
             }
@@ -1652,14 +2057,14 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:349 (literal em drawBoat)",
+                "from": "public/world.js:374 (literal em drawBoat)",
                 "usedIn": [
                   "drawBoat"
                 ],
                 "drawnInAtlasOrTerrain": true,
                 "nearestNamed": {
-                  "token": "color.runtime.woodHi",
-                  "dE2000": 1.85
+                  "token": "color.runtime.pathLo",
+                  "dE2000": 2.2
                 }
               }
             }
@@ -1677,14 +2082,14 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:350 (literal em drawBoat)",
+                "from": "public/world.js:375 (literal em drawBoat)",
                 "usedIn": [
                   "drawBoat"
                 ],
                 "drawnInAtlasOrTerrain": true,
                 "nearestNamed": {
-                  "token": "color.runtime.woodHi",
-                  "dE2000": 4.57
+                  "token": "color.runtime.pathLo",
+                  "dE2000": 4.9
                 }
               }
             }
@@ -1704,14 +2109,14 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:356 (literal em drawNet)",
+                "from": "public/world.js:381 (literal em drawNet)",
                 "usedIn": [
                   "drawNet"
                 ],
                 "drawnInAtlasOrTerrain": true,
                 "nearestNamed": {
-                  "token": "color.runtime.stone",
-                  "dE2000": 6.09
+                  "token": "color.runtime.tuftHi",
+                  "dE2000": 6.98
                 }
               }
             }
@@ -1731,14 +2136,14 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:364 (literal em drawJar)",
+                "from": "public/world.js:389 (literal em drawJar)",
                 "usedIn": [
                   "drawJar"
                 ],
                 "drawnInAtlasOrTerrain": true,
                 "nearestNamed": {
-                  "token": "color.runtime.grassLo",
-                  "dE2000": 5.77
+                  "token": "color.runtime.soil",
+                  "dE2000": 2.12
                 }
               }
             }
@@ -1756,14 +2161,14 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:364 (literal em drawJar)",
+                "from": "public/world.js:389 (literal em drawJar)",
                 "usedIn": [
                   "drawJar"
                 ],
                 "drawnInAtlasOrTerrain": true,
                 "nearestNamed": {
-                  "token": "color.runtime.path",
-                  "dE2000": 3.38
+                  "token": "color.runtime.sandDark",
+                  "dE2000": 1.84
                 }
               }
             }
@@ -1781,14 +2186,14 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:364 (literal em drawJar)",
+                "from": "public/world.js:389 (literal em drawJar)",
                 "usedIn": [
                   "drawJar"
                 ],
                 "drawnInAtlasOrTerrain": true,
                 "nearestNamed": {
                   "token": "color.runtime.wood",
-                  "dE2000": 8.2
+                  "dE2000": 3.09
                 }
               }
             }
@@ -1808,41 +2213,41 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:365 (literal em drawBasket)",
+                "from": "public/world.js:390 (literal em drawBasket)",
                 "usedIn": [
                   "drawBasket"
                 ],
                 "drawnInAtlasOrTerrain": true,
                 "nearestNamed": {
-                  "token": "color.runtime.grassLo",
-                  "dE2000": 4.13
+                  "token": "color.runtime.reed",
+                  "dE2000": 2.61
                 }
               }
             }
           }
         },
-        "drawFirepit": {
+        "topLevel": {
           "1": {
             "$value": {
               "colorSpace": "srgb",
               "components": [
-                0.549,
-                0.502,
-                0.2196
+                0.8588,
+                0.5216,
+                0.2706
               ],
-              "hex": "#8c8038"
+              "hex": "#db8545"
             },
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:366 (literal em drawFirepit)",
+                "from": "public/world.js:412 (literal em topLevel)",
                 "usedIn": [
-                  "drawFirepit"
+                  "topLevel"
                 ],
                 "drawnInAtlasOrTerrain": true,
                 "nearestNamed": {
-                  "token": "color.runtime.grassLo",
-                  "dE2000": 6.65
+                  "token": "color.runtime.terraHi",
+                  "dE2000": 4.7
                 }
               }
             }
@@ -1851,23 +2256,23 @@
             "$value": {
               "colorSpace": "srgb",
               "components": [
-                0.3333,
-                0.2706,
-                0.1647
+                0.5882,
+                0.3451,
+                0.1686
               ],
-              "hex": "#55452a"
+              "hex": "#96582b"
             },
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:366 (literal em drawFirepit)",
+                "from": "public/world.js:412 (literal em topLevel)",
                 "usedIn": [
-                  "drawFirepit"
+                  "topLevel"
                 ],
                 "drawnInAtlasOrTerrain": true,
                 "nearestNamed": {
-                  "token": "color.runtime.ink",
-                  "dE2000": 5.62
+                  "token": "color.runtime.skinLo",
+                  "dE2000": 4.85
                 }
               }
             }
@@ -1876,100 +2281,23 @@
             "$value": {
               "colorSpace": "srgb",
               "components": [
-                0.6118,
-                0.3059,
-                0.1412
+                0.6784,
+                0.3922,
+                0.2
               ],
-              "hex": "#9c4e24"
+              "hex": "#ad6433"
             },
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:366 (literal em drawFirepit)",
+                "from": "public/world.js:412 (literal em topLevel)",
                 "usedIn": [
-                  "drawFirepit"
+                  "topLevel"
                 ],
-                "drawnInAtlasOrTerrain": true,
+                "drawnInAtlasOrTerrain": false,
                 "nearestNamed": {
-                  "token": "color.runtime.terra",
-                  "dE2000": 5.83
-                }
-              }
-            }
-          }
-        },
-        "drawCharacter": {
-          "1": {
-            "$value": {
-              "colorSpace": "srgb",
-              "components": [
-                0.5373,
-                0.5725,
-                0.3216
-              ],
-              "hex": "#899252"
-            },
-            "$extensions": {
-              "com.viladocaminho": {
-                "source": "runtime",
-                "from": "public/world.js:374 (literal em drawCharacter)",
-                "usedIn": [
-                  "drawCharacter"
-                ],
-                "drawnInAtlasOrTerrain": true,
-                "nearestNamed": {
-                  "token": "color.runtime.grassLo",
-                  "dE2000": 6.79
-                }
-              }
-            }
-          },
-          "2": {
-            "$value": {
-              "colorSpace": "srgb",
-              "components": [
-                0.6431,
-                0.6667,
-                0.4235
-              ],
-              "hex": "#a4aa6c"
-            },
-            "$extensions": {
-              "com.viladocaminho": {
-                "source": "runtime",
-                "from": "public/world.js:374 (literal em drawCharacter)",
-                "usedIn": [
-                  "drawCharacter"
-                ],
-                "drawnInAtlasOrTerrain": true,
-                "nearestNamed": {
-                  "token": "color.runtime.stoneHi",
-                  "dE2000": 6.73
-                }
-              }
-            }
-          },
-          "3": {
-            "$value": {
-              "colorSpace": "srgb",
-              "components": [
-                0.349,
-                0.4314,
-                0.2471
-              ],
-              "hex": "#596e3f"
-            },
-            "$extensions": {
-              "com.viladocaminho": {
-                "source": "runtime",
-                "from": "public/world.js:374 (literal em drawCharacter)",
-                "usedIn": [
-                  "drawCharacter"
-                ],
-                "drawnInAtlasOrTerrain": true,
-                "nearestNamed": {
-                  "token": "color.runtime.leafLo",
-                  "dE2000": 4.66
+                  "token": "color.runtime.strawLo",
+                  "dE2000": 3.17
                 }
               }
             }
@@ -1978,23 +2306,23 @@
             "$value": {
               "colorSpace": "srgb",
               "components": [
-                0.4078,
-                0.3373,
-                0.2157
+                0.3529,
+                0.1961,
+                0.1098
               ],
-              "hex": "#685637"
+              "hex": "#5a321c"
             },
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:379 (literal em drawCharacter)",
+                "from": "public/world.js:412 (literal em topLevel)",
                 "usedIn": [
-                  "drawCharacter"
+                  "topLevel"
                 ],
-                "drawnInAtlasOrTerrain": true,
+                "drawnInAtlasOrTerrain": false,
                 "nearestNamed": {
-                  "token": "color.runtime.woodLo",
-                  "dE2000": 6.76
+                  "token": "color.runtime.hairHi",
+                  "dE2000": 5.72
                 }
               }
             }
@@ -2003,23 +2331,23 @@
             "$value": {
               "colorSpace": "srgb",
               "components": [
-                0.5725,
-                0.3451,
-                0.1804
+                0.5765,
+                0.4745,
+                0.4275
               ],
-              "hex": "#92582e"
+              "hex": "#93796d"
             },
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:379 (literal em drawCharacter)",
+                "from": "public/world.js:413 (literal em topLevel)",
                 "usedIn": [
-                  "drawCharacter"
+                  "topLevel"
                 ],
-                "drawnInAtlasOrTerrain": true,
+                "drawnInAtlasOrTerrain": false,
                 "nearestNamed": {
-                  "token": "color.runtime.wood",
-                  "dE2000": 2.84
+                  "token": "color.runtime.stone",
+                  "dE2000": 2.76
                 }
               }
             }
@@ -2028,23 +2356,23 @@
             "$value": {
               "colorSpace": "srgb",
               "components": [
-                0.5804,
-                0.4627,
-                0.2588
+                0.8824,
+                0.7255,
+                0.4941
               ],
-              "hex": "#947642"
+              "hex": "#e1b97e"
             },
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:379 (literal em drawCharacter)",
+                "from": "public/world.js:416 (literal em topLevel)",
                 "usedIn": [
-                  "drawCharacter"
+                  "topLevel"
                 ],
                 "drawnInAtlasOrTerrain": true,
                 "nearestNamed": {
-                  "token": "color.runtime.soil",
-                  "dE2000": 2.39
+                  "token": "color.runtime.creamLo",
+                  "dE2000": 5.43
                 }
               }
             }
@@ -2053,23 +2381,23 @@
             "$value": {
               "colorSpace": "srgb",
               "components": [
-                0.7294,
-                0.4824,
-                0.2588
+                0.4627,
+                0.4863,
+                0.2314
               ],
-              "hex": "#ba7b42"
+              "hex": "#767c3b"
             },
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:379 (literal em drawCharacter)",
+                "from": "public/world.js:416 (literal em topLevel)",
                 "usedIn": [
-                  "drawCharacter"
+                  "topLevel"
                 ],
                 "drawnInAtlasOrTerrain": true,
                 "nearestNamed": {
-                  "token": "color.runtime.skin",
-                  "dE2000": 4.34
+                  "token": "color.runtime.reed",
+                  "dE2000": 5.38
                 }
               }
             }
@@ -2078,23 +2406,23 @@
             "$value": {
               "colorSpace": "srgb",
               "components": [
-                0.2235,
-                0.1765,
-                0.1255
+                0.3333,
+                0.3765,
+                0.2
               ],
-              "hex": "#392d20"
+              "hex": "#556033"
             },
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:388 (literal em drawCharacter)",
+                "from": "public/world.js:416 (literal em topLevel)",
                 "usedIn": [
-                  "drawCharacter"
+                  "topLevel"
                 ],
                 "drawnInAtlasOrTerrain": true,
                 "nearestNamed": {
-                  "token": "color.runtime.ink",
-                  "dE2000": 5.07
+                  "token": "color.runtime.grassDark",
+                  "dE2000": 4.11
                 }
               }
             }
@@ -2103,23 +2431,23 @@
             "$value": {
               "colorSpace": "srgb",
               "components": [
-                0.3176,
-                0.251,
-                0.1647
+                0.3216,
+                0.4,
+                0.4902
               ],
-              "hex": "#51402a"
+              "hex": "#52667d"
             },
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:389 (literal em drawCharacter)",
+                "from": "public/world.js:418 (literal em topLevel)",
                 "usedIn": [
-                  "drawCharacter"
+                  "topLevel"
                 ],
-                "drawnInAtlasOrTerrain": true,
+                "drawnInAtlasOrTerrain": false,
                 "nearestNamed": {
-                  "token": "color.runtime.ink",
-                  "dE2000": 3.01
+                  "token": "color.runtime.waterDeep",
+                  "dE2000": 9.22
                 }
               }
             }
@@ -2128,23 +2456,23 @@
             "$value": {
               "colorSpace": "srgb",
               "components": [
-                0.2471,
-                0.1922,
-                0.1333
+                0.2588,
+                0.3333,
+                0.4157
               ],
-              "hex": "#3f3122"
+              "hex": "#42556a"
             },
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:390 (literal em drawCharacter)",
+                "from": "public/world.js:418 (literal em topLevel)",
                 "usedIn": [
-                  "drawCharacter"
+                  "topLevel"
                 ],
-                "drawnInAtlasOrTerrain": true,
+                "drawnInAtlasOrTerrain": false,
                 "nearestNamed": {
-                  "token": "color.runtime.ink",
-                  "dE2000": 3.27
+                  "token": "color.runtime.waterDeep",
+                  "dE2000": 10.1
                 }
               }
             }
@@ -2153,23 +2481,23 @@
             "$value": {
               "colorSpace": "srgb",
               "components": [
-                0.3412,
-                0.251,
-                0.1647
+                0.2,
+                0.2549,
+                0.3529
               ],
-              "hex": "#57402a"
+              "hex": "#33415a"
             },
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:390 (literal em drawCharacter)",
+                "from": "public/world.js:418 (literal em topLevel)",
                 "usedIn": [
-                  "drawCharacter"
+                  "topLevel"
                 ],
-                "drawnInAtlasOrTerrain": true,
+                "drawnInAtlasOrTerrain": false,
                 "nearestNamed": {
-                  "token": "color.runtime.ink",
-                  "dE2000": 3.63
+                  "token": "color.runtime.waterDeep",
+                  "dE2000": 15.6
                 }
               }
             }
@@ -2178,23 +2506,23 @@
             "$value": {
               "colorSpace": "srgb",
               "components": [
-                0.2863,
-                0.2039,
-                0.1294
+                0.7216,
+                0.2745,
+                0.1765
               ],
-              "hex": "#493421"
+              "hex": "#b8462d"
             },
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:391 (literal em drawCharacter)",
+                "from": "public/world.js:421 (literal em topLevel)",
                 "usedIn": [
-                  "drawCharacter"
+                  "topLevel"
                 ],
-                "drawnInAtlasOrTerrain": true,
+                "drawnInAtlasOrTerrain": false,
                 "nearestNamed": {
-                  "token": "color.runtime.ink",
-                  "dE2000": 2.0
+                  "token": "color.runtime.sash",
+                  "dE2000": 7.53
                 }
               }
             }
@@ -2203,481 +2531,74 @@
             "$value": {
               "colorSpace": "srgb",
               "components": [
-                0.3882,
-                0.2863,
-                0.1686
-              ],
-              "hex": "#63492b"
-            },
-            "$extensions": {
-              "com.viladocaminho": {
-                "source": "runtime",
-                "from": "public/world.js:391 (literal em drawCharacter)",
-                "usedIn": [
-                  "drawCharacter"
-                ],
-                "drawnInAtlasOrTerrain": true,
-                "nearestNamed": {
-                  "token": "color.runtime.woodLo",
-                  "dE2000": 2.36
-                }
-              }
-            }
-          }
-        },
-        "createAtlas": {
-          "1": {
-            "$value": {
-              "colorSpace": "srgb",
-              "components": [
-                0.8431,
-                0.6784,
-                0.3765
-              ],
-              "hex": "#d7ad60"
-            },
-            "$extensions": {
-              "com.viladocaminho": {
-                "source": "runtime",
-                "from": "public/world.js:404 (literal em createAtlas)",
-                "usedIn": [
-                  "createAtlas"
-                ],
-                "drawnInAtlasOrTerrain": true,
-                "nearestNamed": {
-                  "token": "color.runtime.path",
-                  "dE2000": 4.86
-                }
-              }
-            }
-          }
-        },
-        "terrainBase": {
-          "1": {
-            "$value": {
-              "colorSpace": "srgb",
-              "components": [
-                0.6863,
-                0.6667,
-                0.2353
-              ],
-              "hex": "#afaa3c"
-            },
-            "$extensions": {
-              "com.viladocaminho": {
-                "source": "runtime",
-                "from": "public/world.js:423 (literal em terrainBase)",
-                "usedIn": [
-                  "terrainBase"
-                ],
-                "drawnInAtlasOrTerrain": true,
-                "nearestNamed": {
-                  "token": "color.runtime.grass",
-                  "dE2000": 1.15
-                }
-              }
-            }
-          },
-          "2": {
-            "$value": {
-              "colorSpace": "srgb",
-              "components": [
-                0.7216,
-                0.702,
-                0.2667
-              ],
-              "hex": "#b8b344"
-            },
-            "$extensions": {
-              "com.viladocaminho": {
-                "source": "runtime",
-                "from": "public/world.js:423 (literal em terrainBase)",
-                "usedIn": [
-                  "terrainBase"
-                ],
-                "drawnInAtlasOrTerrain": true,
-                "nearestNamed": {
-                  "token": "color.runtime.grass",
-                  "dE2000": 1.41
-                }
-              }
-            }
-          },
-          "3": {
-            "$value": {
-              "colorSpace": "srgb",
-              "components": [
-                0.8627,
-                0.6431,
-                0.3529
-              ],
-              "hex": "#dca45a"
-            },
-            "$extensions": {
-              "com.viladocaminho": {
-                "source": "runtime",
-                "from": "public/world.js:429 (literal em terrainBase)",
-                "usedIn": [
-                  "terrainBase"
-                ],
-                "drawnInAtlasOrTerrain": true,
-                "nearestNamed": {
-                  "token": "color.runtime.path",
-                  "dE2000": 2.35
-                }
-              }
-            }
-          },
-          "4": {
-            "$value": {
-              "colorSpace": "srgb",
-              "components": [
-                0.7451,
-                0.7176,
-                0.2824
-              ],
-              "hex": "#beb748"
-            },
-            "$extensions": {
-              "com.viladocaminho": {
-                "source": "runtime",
-                "from": "public/world.js:431 (literal em terrainBase)",
-                "usedIn": [
-                  "terrainBase"
-                ],
-                "drawnInAtlasOrTerrain": true,
-                "nearestNamed": {
-                  "token": "color.runtime.grassHi",
-                  "dE2000": 1.64
-                }
-              }
-            }
-          },
-          "5": {
-            "$value": {
-              "colorSpace": "srgb",
-              "components": [
-                0.6431,
-                0.6314,
-                0.2275
-              ],
-              "hex": "#a4a13a"
-            },
-            "$extensions": {
-              "com.viladocaminho": {
-                "source": "runtime",
-                "from": "public/world.js:432 (literal em terrainBase)",
-                "usedIn": [
-                  "terrainBase"
-                ],
-                "drawnInAtlasOrTerrain": true,
-                "nearestNamed": {
-                  "token": "color.runtime.leafHi",
-                  "dE2000": 3.01
-                }
-              }
-            }
-          }
-        },
-        "terrain": {
-          "1": {
-            "$value": {
-              "colorSpace": "srgb",
-              "components": [
-                0.1569,
-                0.498,
-                0.6078
-              ],
-              "hex": "#287f9b"
-            },
-            "$extensions": {
-              "com.viladocaminho": {
-                "source": "runtime",
-                "from": "public/world.js:449 (literal em terrain)",
-                "usedIn": [
-                  "terrain"
-                ],
-                "drawnInAtlasOrTerrain": true,
-                "nearestNamed": {
-                  "token": "color.runtime.water",
-                  "dE2000": 5.45
-                }
-              }
-            }
-          },
-          "2": {
-            "$value": {
-              "colorSpace": "srgb",
-              "components": [
-                0.1725,
                 0.5255,
-                0.6275
+                0.1961,
+                0.1373
               ],
-              "hex": "#2c86a0"
+              "hex": "#863223"
             },
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:449 (literal em terrain)",
+                "from": "public/world.js:421 (literal em topLevel)",
                 "usedIn": [
-                  "terrain"
-                ],
-                "drawnInAtlasOrTerrain": true,
-                "nearestNamed": {
-                  "token": "color.runtime.waterHi",
-                  "dE2000": 6.06
-                }
-              }
-            }
-          },
-          "3": {
-            "$value": {
-              "colorSpace": "srgb",
-              "components": [
-                0.6824,
-                0.7059,
-                0.3294
-              ],
-              "hex": "#aeb454"
-            },
-            "$extensions": {
-              "com.viladocaminho": {
-                "source": "runtime",
-                "from": "public/world.js:449 (literal em terrain)",
-                "usedIn": [
-                  "terrain"
-                ],
-                "drawnInAtlasOrTerrain": true,
-                "nearestNamed": {
-                  "token": "color.runtime.grass",
-                  "dE2000": 4.09
-                }
-              }
-            }
-          },
-          "4": {
-            "$value": {
-              "colorSpace": "srgb",
-              "components": [
-                0.7059,
-                0.7255,
-                0.3608
-              ],
-              "hex": "#b4b95c"
-            },
-            "$extensions": {
-              "com.viladocaminho": {
-                "source": "runtime",
-                "from": "public/world.js:449 (literal em terrain)",
-                "usedIn": [
-                  "terrain"
-                ],
-                "drawnInAtlasOrTerrain": true,
-                "nearestNamed": {
-                  "token": "color.runtime.grass",
-                  "dE2000": 4.84
-                }
-              }
-            }
-          },
-          "5": {
-            "$value": {
-              "colorSpace": "srgb",
-              "components": [
-                0.2235,
-                0.5922,
-                0.6784
-              ],
-              "hex": "#3997ad"
-            },
-            "$extensions": {
-              "com.viladocaminho": {
-                "source": "runtime",
-                "from": "public/world.js:451 (literal em terrain)",
-                "usedIn": [
-                  "terrain"
-                ],
-                "drawnInAtlasOrTerrain": true,
-                "nearestNamed": {
-                  "token": "color.runtime.waterHi",
-                  "dE2000": 4.54
-                }
-              }
-            }
-          },
-          "6": {
-            "$value": {
-              "colorSpace": "srgb",
-              "components": [
-                0.1647,
-                0.5333,
-                0.6549
-              ],
-              "hex": "#2a88a7"
-            },
-            "$extensions": {
-              "com.viladocaminho": {
-                "source": "runtime",
-                "from": "public/world.js:459 (literal em terrain)",
-                "usedIn": [
-                  "terrain"
+                  "topLevel"
                 ],
                 "drawnInAtlasOrTerrain": false,
                 "nearestNamed": {
-                  "token": "color.runtime.waterHi",
-                  "dE2000": 4.75
-                }
-              }
-            }
-          }
-        },
-        "flame": {
-          "1": {
-            "$value": {
-              "colorSpace": "srgb",
-              "components": [
-                0.6471,
-                0.2941,
-                0.1412
-              ],
-              "hex": "#a54b24"
-            },
-            "$extensions": {
-              "com.viladocaminho": {
-                "source": "runtime",
-                "from": "public/world.js:468 (literal em flame)",
-                "usedIn": [
-                  "flame"
-                ],
-                "drawnInAtlasOrTerrain": false,
-                "nearestNamed": {
-                  "token": "color.runtime.terra",
-                  "dE2000": 7.0
+                  "token": "color.runtime.sashLo",
+                  "dE2000": 3.51
                 }
               }
             }
           },
-          "2": {
-            "$value": {
-              "colorSpace": "srgb",
-              "components": [
-                0.898,
-                0.4706,
-                0.1412
-              ],
-              "hex": "#e57824"
-            },
-            "$extensions": {
-              "com.viladocaminho": {
-                "source": "runtime",
-                "from": "public/world.js:468 (literal em flame)",
-                "usedIn": [
-                  "flame"
-                ],
-                "drawnInAtlasOrTerrain": false,
-                "nearestNamed": {
-                  "token": "color.runtime.terraHi",
-                  "dE2000": 7.43
-                }
-              }
-            }
-          },
-          "3": {
+          "14": {
             "$value": {
               "colorSpace": "srgb",
               "components": [
                 0.9529,
                 0.6784,
-                0.2235
+                0.3216
               ],
-              "hex": "#f3ad39"
+              "hex": "#f3ad52"
             },
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:469 (literal em flame)",
+                "from": "public/world.js:433 (literal em topLevel)",
                 "usedIn": [
-                  "flame"
+                  "createAtlas",
+                  "topLevel"
+                ],
+                "drawnInAtlasOrTerrain": true,
+                "nearestNamed": {
+                  "token": "color.runtime.path",
+                  "dE2000": 1.16
+                }
+              }
+            }
+          },
+          "15": {
+            "$value": {
+              "colorSpace": "srgb",
+              "components": [
+                0.9098,
+                0.6353,
+                0.2745
+              ],
+              "hex": "#e8a246"
+            },
+            "$extensions": {
+              "com.viladocaminho": {
+                "source": "runtime",
+                "from": "public/world.js:433 (literal em topLevel)",
+                "usedIn": [
+                  "topLevel"
                 ],
                 "drawnInAtlasOrTerrain": false,
                 "nearestNamed": {
                   "token": "color.runtime.path",
-                  "dE2000": 5.9
-                }
-              }
-            }
-          },
-          "4": {
-            "$value": {
-              "colorSpace": "srgb",
-              "components": [
-                0.9725,
-                0.8431,
-                0.4784
-              ],
-              "hex": "#f8d77a"
-            },
-            "$extensions": {
-              "com.viladocaminho": {
-                "source": "runtime",
-                "from": "public/world.js:470 (literal em flame)",
-                "usedIn": [
-                  "flame"
-                ],
-                "drawnInAtlasOrTerrain": false,
-                "nearestNamed": {
-                  "token": "color.runtime.strawHi",
-                  "dE2000": 4.87
-                }
-              }
-            }
-          },
-          "5": {
-            "$value": {
-              "colorSpace": "srgb",
-              "components": [
-                0.7725,
-                0.7569,
-                0.6039
-              ],
-              "hex": "#c5c19a"
-            },
-            "$extensions": {
-              "com.viladocaminho": {
-                "source": "runtime",
-                "from": "public/world.js:471 (literal em flame)",
-                "usedIn": [
-                  "flame"
-                ],
-                "drawnInAtlasOrTerrain": false,
-                "nearestNamed": {
-                  "token": "color.runtime.stoneHi",
-                  "dE2000": 6.24
-                }
-              }
-            }
-          },
-          "6": {
-            "$value": {
-              "colorSpace": "srgb",
-              "components": [
-                0.9373,
-                0.7255,
-                0.2941
-              ],
-              "hex": "#efb94b"
-            },
-            "$extensions": {
-              "com.viladocaminho": {
-                "source": "runtime",
-                "from": "public/world.js:472 (literal em flame)",
-                "usedIn": [
-                  "flame"
-                ],
-                "drawnInAtlasOrTerrain": false,
-                "nearestNamed": {
-                  "token": "color.runtime.pathHi",
-                  "dE2000": 6.17
+                  "dE2000": 2.49
                 }
               }
             }
@@ -2688,23 +2609,23 @@
             "$value": {
               "colorSpace": "srgb",
               "components": [
-                0.9451,
-                0.7608,
-                0.3451
+                0.9725,
+                0.6863,
+                0.251
               ],
-              "hex": "#f1c258"
+              "hex": "#f8af40"
             },
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:481 (literal em renderWorld)",
+                "from": "public/world.js:655 (literal em renderWorld)",
                 "usedIn": [
                   "renderWorld"
                 ],
                 "drawnInAtlasOrTerrain": false,
                 "nearestNamed": {
-                  "token": "color.runtime.pathHi",
-                  "dE2000": 5.92
+                  "token": "color.runtime.sand",
+                  "dE2000": 3.35
                 }
               }
             }
@@ -2752,8 +2673,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.ink",
-                "dE2000": 11.06
+                "token": "color.runtime.outline",
+                "dE2000": 0.0
               }
             }
           }
@@ -2795,7 +2716,7 @@
               ],
               "nearestRuntime": {
                 "token": "color.runtime.ink",
-                "dE2000": 6.93
+                "dE2000": 0.0
               }
             }
           }
@@ -2846,8 +2767,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.grassLo",
-                "dE2000": 3.32
+                "token": "color.runtime.tuft",
+                "dE2000": 4.98
               }
             }
           }
@@ -2896,7 +2817,7 @@
               ],
               "nearestRuntime": {
                 "token": "color.runtime.grass",
-                "dE2000": 4.31
+                "dE2000": 0.0
               }
             }
           }
@@ -2945,7 +2866,7 @@
               ],
               "nearestRuntime": {
                 "token": "color.runtime.grass",
-                "dE2000": 4.19
+                "dE2000": 1.71
               }
             }
           }
@@ -2993,8 +2914,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.grass",
-                "dE2000": 4.8
+                "token": "color.runtime.grassHi",
+                "dE2000": 0.0
               }
             }
           }
@@ -3038,8 +2959,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.grassLo",
-                "dE2000": 6.92
+                "token": "color.runtime.soil",
+                "dE2000": 0.0
               }
             }
           }
@@ -3091,7 +3012,7 @@
               ],
               "nearestRuntime": {
                 "token": "color.runtime.leafDeep",
-                "dE2000": 8.74
+                "dE2000": 0.0
               }
             }
           }
@@ -3139,8 +3060,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.stoneLo",
-                "dE2000": 6.63
+                "token": "color.runtime.leafLo",
+                "dE2000": 0.0
               }
             }
           }
@@ -3188,8 +3109,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.grass",
-                "dE2000": 5.57
+                "token": "color.runtime.leaf",
+                "dE2000": 0.0
               }
             }
           }
@@ -3237,8 +3158,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.grassHi",
-                "dE2000": 3.03
+                "token": "color.runtime.leafHi",
+                "dE2000": 0.0
               }
             }
           }
@@ -3289,8 +3210,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.ink",
-                "dE2000": 8.72
+                "token": "color.runtime.woodLo",
+                "dE2000": 1.77
               }
             }
           }
@@ -3339,7 +3260,7 @@
               ],
               "nearestRuntime": {
                 "token": "color.runtime.wood",
-                "dE2000": 8.27
+                "dE2000": 3.53
               }
             }
           }
@@ -3387,8 +3308,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.terra",
-                "dE2000": 6.48
+                "token": "color.runtime.strawLo",
+                "dE2000": 2.93
               }
             }
           }
@@ -3439,8 +3360,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.woodHi",
-                "dE2000": 2.12
+                "token": "color.runtime.pathLo",
+                "dE2000": 2.15
               }
             }
           }
@@ -3488,8 +3409,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.path",
-                "dE2000": 3.06
+                "token": "color.runtime.sandDark",
+                "dE2000": 1.39
               }
             }
           }
@@ -3538,7 +3459,7 @@
               ],
               "nearestRuntime": {
                 "token": "color.runtime.path",
-                "dE2000": 2.31
+                "dE2000": 0.0
               }
             }
           }
@@ -3586,8 +3507,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.path",
-                "dE2000": 2.67
+                "token": "color.runtime.sand",
+                "dE2000": 0.26
               }
             }
           }
@@ -3631,8 +3552,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.path",
-                "dE2000": 4.92
+                "token": "color.runtime.sandDark",
+                "dE2000": 1.1
               }
             }
           }
@@ -3674,7 +3595,7 @@
               ],
               "nearestRuntime": {
                 "token": "color.runtime.path",
-                "dE2000": 2.31
+                "dE2000": 0.0
               }
             }
           }
@@ -3715,8 +3636,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.path",
-                "dE2000": 2.81
+                "token": "color.runtime.sand",
+                "dE2000": 0.0
               }
             }
           }
@@ -3775,7 +3696,7 @@
               ],
               "nearestRuntime": {
                 "token": "color.runtime.waterDeep",
-                "dE2000": 3.6
+                "dE2000": 0.0
               }
             }
           }
@@ -3830,8 +3751,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.waterDeep",
-                "dE2000": 3.61
+                "token": "color.runtime.water",
+                "dE2000": 0.0
               }
             }
           }
@@ -3887,7 +3808,7 @@
               ],
               "nearestRuntime": {
                 "token": "color.runtime.waterHi",
-                "dE2000": 1.04
+                "dE2000": 0.0
               }
             }
           }
@@ -3942,8 +3863,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.waterHi",
-                "dE2000": 9.55
+                "token": "color.runtime.waterLight",
+                "dE2000": 0.0
               }
             }
           }
@@ -3995,7 +3916,7 @@
               ],
               "nearestRuntime": {
                 "token": "color.runtime.foam",
-                "dE2000": 7.95
+                "dE2000": 0.0
               }
             }
           }
@@ -4032,8 +3953,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.terra",
-                "dE2000": 5.37
+                "token": "color.runtime.strawLo",
+                "dE2000": 0.0
               }
             }
           }
@@ -4067,8 +3988,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.terraHi",
-                "dE2000": 2.69
+                "token": "color.runtime.straw",
+                "dE2000": 0.0
               }
             }
           }
@@ -4102,8 +4023,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.pathHi",
-                "dE2000": 4.51
+                "token": "color.runtime.strawHi",
+                "dE2000": 0.0
               }
             }
           }
@@ -4138,7 +4059,7 @@
               ],
               "nearestRuntime": {
                 "token": "color.runtime.pathHi",
-                "dE2000": 4.58
+                "dE2000": 4.7
               }
             }
           }
@@ -4182,8 +4103,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.ink",
-                "dE2000": 7.91
+                "token": "color.runtime.woodLo",
+                "dE2000": 0.0
               }
             }
           }
@@ -4225,7 +4146,7 @@
               ],
               "nearestRuntime": {
                 "token": "color.runtime.wood",
-                "dE2000": 5.28
+                "dE2000": 0.0
               }
             }
           }
@@ -4266,8 +4187,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.terraHi",
-                "dE2000": 4.75
+                "token": "color.runtime.woodHi",
+                "dE2000": 0.0
               }
             }
           }
@@ -4309,7 +4230,7 @@
               ],
               "nearestRuntime": {
                 "token": "color.runtime.path",
-                "dE2000": 3.31
+                "dE2000": 1.16
               }
             }
           }
@@ -4346,8 +4267,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.ink",
-                "dE2000": 8.87
+                "token": "color.runtime.hairHi",
+                "dE2000": 5.72
               }
             }
           }
@@ -4381,8 +4302,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.wood",
-                "dE2000": 3.59
+                "token": "color.runtime.skinLo",
+                "dE2000": 4.85
               }
             }
           }
@@ -4417,7 +4338,7 @@
               ],
               "nearestRuntime": {
                 "token": "color.runtime.path",
-                "dE2000": 3.9
+                "dE2000": 2.49
               }
             }
           }
@@ -4468,8 +4389,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.ink",
-                "dE2000": 10.02
+                "token": "color.runtime.ash",
+                "dE2000": 6.73
               }
             }
           }
@@ -4517,8 +4438,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.ink",
-                "dE2000": 12.03
+                "token": "color.runtime.stoneLo",
+                "dE2000": 5.99
               }
             }
           }
@@ -4566,8 +4487,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.skinLo",
-                "dE2000": 11.27
+                "token": "color.runtime.stone",
+                "dE2000": 6.05
               }
             }
           }
@@ -4615,8 +4536,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.skinLo",
-                "dE2000": 12.79
+                "token": "color.runtime.stone",
+                "dE2000": 2.76
               }
             }
           }
@@ -4653,8 +4574,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.wood",
-                "dE2000": 9.96
+                "token": "color.runtime.sashLo",
+                "dE2000": 4.32
               }
             }
           }
@@ -4689,7 +4610,7 @@
               ],
               "nearestRuntime": {
                 "token": "color.runtime.terra",
-                "dE2000": 7.74
+                "dE2000": 0.0
               }
             }
           }
@@ -4724,7 +4645,7 @@
               ],
               "nearestRuntime": {
                 "token": "color.runtime.terraHi",
-                "dE2000": 6.3
+                "dE2000": 0.0
               }
             }
           }
@@ -4761,8 +4682,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.cream",
-                "dE2000": 3.74
+                "token": "color.runtime.wool",
+                "dE2000": 0.0
               }
             }
           }
@@ -4796,8 +4717,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.creamHi",
-                "dE2000": 3.38
+                "token": "color.runtime.paper",
+                "dE2000": 0.0
               }
             }
           }
@@ -4834,8 +4755,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.terra",
-                "dE2000": 15.08
+                "token": "color.runtime.fire",
+                "dE2000": 0.0
               }
             }
           }
@@ -4869,8 +4790,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.path",
-                "dE2000": 5.62
+                "token": "color.runtime.sand",
+                "dE2000": 3.35
               }
             }
           }
@@ -4904,8 +4825,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.strawHi",
-                "dE2000": 7.15
+                "token": "color.runtime.fireHi",
+                "dE2000": 4.3
               }
             }
           }
@@ -4942,8 +4863,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.ink",
-                "dE2000": 8.78
+                "token": "color.runtime.hair",
+                "dE2000": 0.0
               }
             }
           }
@@ -4977,8 +4898,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.ink",
-                "dE2000": 8.02
+                "token": "color.runtime.hairHi",
+                "dE2000": 0.0
               }
             }
           }
@@ -5015,8 +4936,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.skinHi",
-                "dE2000": 5.32
+                "token": "color.runtime.creamLo",
+                "dE2000": 0.0
               }
             }
           }
@@ -5050,8 +4971,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.pathHi",
-                "dE2000": 5.15
+                "token": "color.runtime.cream",
+                "dE2000": 0.0
               }
             }
           }
@@ -5085,8 +5006,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.cream",
-                "dE2000": 4.22
+                "token": "color.runtime.creamHi",
+                "dE2000": 0.0
               }
             }
           }
@@ -5123,8 +5044,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.wood",
-                "dE2000": 12.65
+                "token": "color.runtime.sashLo",
+                "dE2000": 0.0
               }
             }
           }
@@ -5158,8 +5079,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.terra",
-                "dE2000": 10.5
+                "token": "color.runtime.sash",
+                "dE2000": 0.0
               }
             }
           }
@@ -5206,8 +5127,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.terra",
-                "dE2000": 7.82
+                "token": "color.runtime.strawLo",
+                "dE2000": 3.55
               },
               "nearestReference": {
                 "token": "color.reference.thatch.1",
@@ -5245,8 +5166,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.terraHi",
-                "dE2000": 5.46
+                "token": "color.runtime.sandDark",
+                "dE2000": 2.6
               },
               "nearestReference": {
                 "token": "color.reference.sand.1",
@@ -5284,8 +5205,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.path",
-                "dE2000": 4.19
+                "token": "color.runtime.strawHi",
+                "dE2000": 1.54
               },
               "nearestReference": {
                 "token": "color.reference.thatch.3",
@@ -5324,7 +5245,7 @@
               ],
               "nearestRuntime": {
                 "token": "color.runtime.pathHi",
-                "dE2000": 4.8
+                "dE2000": 5.25
               },
               "nearestReference": {
                 "token": "color.reference.thatch.4",
@@ -5379,8 +5300,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.skinLo",
-                "dE2000": 3.69
+                "token": "color.runtime.stone",
+                "dE2000": 8.55
               },
               "nearestReference": {
                 "token": "color.reference.wicker.2",
@@ -5432,8 +5353,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.skin",
-                "dE2000": 4.81
+                "token": "color.runtime.woodHi",
+                "dE2000": 7.58
               },
               "nearestReference": {
                 "token": "color.reference.bark.3",
@@ -5485,8 +5406,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.skin",
-                "dE2000": 3.16
+                "token": "color.runtime.pathLo",
+                "dE2000": 5.98
               },
               "nearestReference": {
                 "token": "color.reference.path.1",
@@ -5531,8 +5452,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.pathHi",
-                "dE2000": 3.7
+                "token": "color.runtime.cream",
+                "dE2000": 1.99
               },
               "nearestReference": {
                 "token": "color.reference.clothWhite.2",
@@ -5588,7 +5509,7 @@
               ],
               "nearestRuntime": {
                 "token": "color.runtime.leafDeep",
-                "dE2000": 11.94
+                "dE2000": 8.55
               },
               "nearestReference": {
                 "token": "color.reference.foliage.1",
@@ -5641,7 +5562,7 @@
               ],
               "nearestRuntime": {
                 "token": "color.runtime.leafDeep",
-                "dE2000": 5.01
+                "dE2000": 5.95
               },
               "nearestReference": {
                 "token": "color.reference.foliage.1",
@@ -5693,8 +5614,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.grassDark",
-                "dE2000": 3.61
+                "token": "color.runtime.tuft",
+                "dE2000": 3.08
               },
               "nearestReference": {
                 "token": "color.reference.grass.1",
@@ -5735,8 +5656,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.woodHi",
-                "dE2000": 2.95
+                "token": "color.runtime.pathLo",
+                "dE2000": 2.74
               },
               "nearestReference": {
                 "token": "color.reference.path.1",
@@ -5768,7 +5689,7 @@
               ],
               "nearestRuntime": {
                 "token": "color.runtime.path",
-                "dE2000": 6.02
+                "dE2000": 4.09
               },
               "nearestReference": {
                 "token": "color.reference.wicker.3",
@@ -5806,8 +5727,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.pathHi",
-                "dE2000": 6.86
+                "token": "color.runtime.strawHi",
+                "dE2000": 3.83
               },
               "nearestReference": {
                 "token": "color.reference.thatch.3",
@@ -5845,8 +5766,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.strawHi",
-                "dE2000": 6.01
+                "token": "color.runtime.fireCore",
+                "dE2000": 6.84
               },
               "nearestReference": {
                 "token": "color.reference.fire.3",
@@ -5880,8 +5801,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.ink",
-                "dE2000": 6.45
+                "token": "color.runtime.hairHi",
+                "dE2000": 5.43
               },
               "nearestReference": {
                 "token": "color.reference.wicker.1",
@@ -5913,7 +5834,7 @@
               ],
               "nearestRuntime": {
                 "token": "color.runtime.wood",
-                "dE2000": 6.05
+                "dE2000": 1.85
               },
               "nearestReference": {
                 "token": "color.reference.wood.2",
@@ -5951,8 +5872,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.terra",
-                "dE2000": 3.37
+                "token": "color.runtime.strawLo",
+                "dE2000": 5.43
               },
               "nearestReference": {
                 "token": "color.reference.wicker.2",
@@ -6008,7 +5929,7 @@
               ],
               "nearestRuntime": {
                 "token": "color.runtime.cream",
-                "dE2000": 6.13
+                "dE2000": 3.14
               },
               "nearestReference": {
                 "token": "color.reference.clothWhite.2",
@@ -6053,8 +5974,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.creamHi",
-                "dE2000": 3.81
+                "token": "color.runtime.wool",
+                "dE2000": 2.53
               },
               "nearestReference": {
                 "token": "color.reference.net.1",
@@ -6102,8 +6023,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.skinHi",
-                "dE2000": 4.18
+                "token": "color.runtime.creamLo",
+                "dE2000": 3.58
               },
               "nearestReference": {
                 "token": "color.reference.clothWhite.1",
@@ -6141,8 +6062,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.pathHi",
-                "dE2000": 3.97
+                "token": "color.runtime.cream",
+                "dE2000": 2.13
               },
               "nearestReference": {
                 "token": "color.reference.clothWhite.2",
@@ -6183,8 +6104,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.leafLo",
-                "dE2000": 6.49
+                "token": "color.runtime.grassDark",
+                "dE2000": 4.11
               },
               "nearestReference": {
                 "token": "color.reference.foliage.2",
@@ -6222,8 +6143,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.grassLo",
-                "dE2000": 4.46
+                "token": "color.runtime.reed",
+                "dE2000": 5.38
               },
               "nearestReference": {
                 "token": "color.reference.grass.1",
@@ -6265,7 +6186,7 @@
               ],
               "nearestRuntime": {
                 "token": "color.runtime.waterDeep",
-                "dE2000": 10.86
+                "dE2000": 10.1
               },
               "nearestReference": {
                 "token": "color.reference.water.1",
@@ -6304,7 +6225,7 @@
               ],
               "nearestRuntime": {
                 "token": "color.runtime.waterDeep",
-                "dE2000": 9.56
+                "dE2000": 9.22
               },
               "nearestReference": {
                 "token": "color.reference.water.1",
@@ -6339,7 +6260,7 @@
               ],
               "nearestRuntime": {
                 "token": "color.runtime.skinLo",
-                "dE2000": 2.42
+                "dE2000": 6.17
               },
               "nearestReference": {
                 "token": "color.reference.wicker.2",
@@ -6377,8 +6298,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.pathHi",
-                "dE2000": 3.25
+                "token": "color.runtime.creamLo",
+                "dE2000": 5.43
               },
               "nearestReference": {
                 "token": "color.reference.clothWhite.1",
@@ -6426,8 +6347,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.wood",
-                "dE2000": 15.76
+                "token": "color.runtime.sashLo",
+                "dE2000": 3.51
               },
               "nearestReference": {
                 "token": "color.reference.clothRed.1",
@@ -6472,8 +6393,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.terra",
-                "dE2000": 10.85
+                "token": "color.runtime.sash",
+                "dE2000": 7.53
               },
               "nearestReference": {
                 "token": "color.reference.clothRed.2",
@@ -6514,8 +6435,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.waterHi",
-                "dE2000": 16.7
+                "token": "color.runtime.waterLight",
+                "dE2000": 15.07
               },
               "nearestReference": {
                 "token": "color.reference.water.4",
@@ -6553,8 +6474,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.foam",
-                "dE2000": 20.42
+                "token": "color.runtime.waterLight",
+                "dE2000": 17.67
               },
               "nearestReference": {
                 "token": "color.reference.water.4",
@@ -6596,7 +6517,7 @@
               ],
               "nearestRuntime": {
                 "token": "color.runtime.waterHi",
-                "dE2000": 12.13
+                "dE2000": 12.69
               },
               "nearestReference": {
                 "token": "color.reference.water.3",
@@ -6634,8 +6555,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.waterHi",
-                "dE2000": 16.29
+                "token": "color.runtime.waterLight",
+                "dE2000": 14.9
               },
               "nearestReference": {
                 "token": "color.reference.water.4",
@@ -6691,7 +6612,7 @@
               ],
               "nearestRuntime": {
                 "token": "color.runtime.stoneHi",
-                "dE2000": 11.24
+                "dE2000": 12.73
               },
               "nearestReference": {
                 "token": "color.reference.clothWhite.1",
@@ -6744,7 +6665,7 @@
               ],
               "nearestRuntime": {
                 "token": "color.runtime.stoneHi",
-                "dE2000": 16.34
+                "dE2000": 13.73
               },
               "nearestReference": {
                 "token": "color.reference.net.2",
@@ -6796,8 +6717,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.creamHi",
-                "dE2000": 17.06
+                "token": "color.runtime.stoneHi",
+                "dE2000": 14.56
               },
               "nearestReference": {
                 "token": "color.reference.net.2",
@@ -6834,8 +6755,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.terra",
-                "dE2000": 3.0
+                "token": "color.runtime.skinLo",
+                "dE2000": 6.07
               },
               "nearestReference": {
                 "token": "color.reference.wicker.2",
@@ -6874,7 +6795,7 @@
               ],
               "nearestRuntime": {
                 "token": "color.runtime.terraHi",
-                "dE2000": 3.5
+                "dE2000": 4.7
               },
               "nearestReference": {
                 "token": "color.reference.terracotta.3",
@@ -6905,8 +6826,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.skinHi",
-                "dE2000": 5.57
+                "token": "color.runtime.skin",
+                "dE2000": 1.29
               },
               "nearestReference": {
                 "token": "color.skin.reference.2",
@@ -6954,8 +6875,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.wood",
-                "dE2000": 4.92
+                "token": "color.runtime.skinLo",
+                "dE2000": 3.18
               },
               "nearestReference": {
                 "token": "color.reference.wicker.2",
@@ -7000,8 +6921,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.skinHi",
-                "dE2000": 5.82
+                "token": "color.runtime.skin",
+                "dE2000": 0.3
               },
               "nearestReference": {
                 "token": "color.skin.reference.2",
@@ -7046,8 +6967,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.path",
-                "dE2000": 5.04
+                "token": "color.runtime.skin",
+                "dE2000": 2.09
               },
               "nearestReference": {
                 "token": "color.skin.reference.2",
@@ -7095,8 +7016,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.terra",
-                "dE2000": 2.47
+                "token": "color.runtime.skinLo",
+                "dE2000": 6.0
               },
               "nearestReference": {
                 "token": "color.reference.wicker.2",
@@ -7141,8 +7062,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.terraHi",
-                "dE2000": 5.08
+                "token": "color.runtime.woodHi",
+                "dE2000": 2.36
               },
               "nearestReference": {
                 "token": "color.reference.wood.3",
@@ -7187,8 +7108,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.terraHi",
-                "dE2000": 2.84
+                "token": "color.runtime.straw",
+                "dE2000": 2.88
               },
               "nearestReference": {
                 "token": "color.reference.thatch.2",
@@ -7236,8 +7157,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.wood",
-                "dE2000": 2.45
+                "token": "color.runtime.skinLo",
+                "dE2000": 2.85
               },
               "nearestReference": {
                 "token": "color.reference.wicker.2",
@@ -7282,8 +7203,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.skinHi",
-                "dE2000": 5.77
+                "token": "color.runtime.skin",
+                "dE2000": 0.56
               },
               "nearestReference": {
                 "token": "color.skin.reference.2",
@@ -7328,8 +7249,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.path",
-                "dE2000": 4.82
+                "token": "color.runtime.skin",
+                "dE2000": 2.39
               },
               "nearestReference": {
                 "token": "color.skin.reference.2",
@@ -7377,8 +7298,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.wood",
-                "dE2000": 6.39
+                "token": "color.runtime.skinLo",
+                "dE2000": 2.13
               },
               "nearestReference": {
                 "token": "color.skin.reference.1",
@@ -7430,8 +7351,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.terra",
-                "dE2000": 2.72
+                "token": "color.runtime.strawLo",
+                "dE2000": 3.17
               },
               "nearestReference": {
                 "token": "color.reference.thatch.1",
@@ -7476,8 +7397,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.terra",
-                "dE2000": 5.2
+                "token": "color.runtime.strawLo",
+                "dE2000": 2.29
               },
               "nearestReference": {
                 "token": "color.reference.thatch.1",
@@ -7532,8 +7453,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.terra",
-                "dE2000": 1.72
+                "token": "color.runtime.strawLo",
+                "dE2000": 4.6
               },
               "nearestReference": {
                 "token": "color.reference.thatch.1",
@@ -7578,8 +7499,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.skinHi",
-                "dE2000": 5.87
+                "token": "color.runtime.skin",
+                "dE2000": 0.31
               },
               "nearestReference": {
                 "token": "color.skin.reference.2",
@@ -7624,8 +7545,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.path",
-                "dE2000": 4.74
+                "token": "color.runtime.skin",
+                "dE2000": 2.22
               },
               "nearestReference": {
                 "token": "color.skin.reference.2",
@@ -7666,8 +7587,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.wood",
-                "dE2000": 4.88
+                "token": "color.runtime.skinLo",
+                "dE2000": 0.0
               }
             }
           }
@@ -7701,8 +7622,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.skinHi",
-                "dE2000": 6.06
+                "token": "color.runtime.skin",
+                "dE2000": 0.0
               }
             }
           }
@@ -7736,8 +7657,8 @@
                 ]
               ],
               "nearestRuntime": {
-                "token": "color.runtime.path",
-                "dE2000": 3.31
+                "token": "color.runtime.skinHi",
+                "dE2000": 0.0
               }
             }
           }
@@ -8396,7 +8317,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:507 rgba(25,38,68,night*0.28)"
+            "from": "public/world.js:690 rgba(25,38,68,night*0.28)"
           }
         }
       },
@@ -8404,18 +8325,18 @@
         "$value": {
           "colorSpace": "srgb",
           "components": [
-            0.9451,
-            0.7608,
-            0.3451
+            0.9725,
+            0.6863,
+            0.251
           ],
-          "hex": "#f1c258",
+          "hex": "#f8af40",
           "alpha": 0.14
         },
         "$description": "brilho da fogueira no chão",
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:481"
+            "from": "public/world.js:655"
           }
         }
       }
@@ -8432,7 +8353,7 @@
       "$extensions": {
         "com.viladocaminho": {
           "source": "runtime",
-          "from": "public/world.js:250 const T"
+          "from": "public/world.js:249 const T"
         }
       }
     },
@@ -8445,7 +8366,7 @@
       "$extensions": {
         "com.viladocaminho": {
           "source": "runtime",
-          "from": "public/world.js:400"
+          "from": "public/world.js:462"
         }
       }
     },
@@ -8458,7 +8379,7 @@
       "$extensions": {
         "com.viladocaminho": {
           "source": "runtime",
-          "from": "public/world.js:474 canvas.width/384"
+          "from": "public/world.js:588 canvas.width/384"
         }
       }
     },
@@ -8472,7 +8393,7 @@
           "$extensions": {
             "com.viladocaminho": {
               "source": "runtime",
-              "from": "public/world.js:496"
+              "from": "public/world.js:673"
             }
           }
         },
@@ -8484,7 +8405,7 @@
           "$extensions": {
             "com.viladocaminho": {
               "source": "runtime",
-              "from": "public/world.js:496"
+              "from": "public/world.js:673"
             }
           }
         }
@@ -8492,7 +8413,7 @@
       "figure": {
         "width": {
           "$value": {
-            "value": 24,
+            "value": 30,
             "unit": "px"
           },
           "$extensions": {
@@ -8500,15 +8421,15 @@
               "source": "runtime",
               "from": "atlas renderizado: maior largura opaca entre os 24 quadros, sem sombra",
               "minMax": [
-                23,
-                24
+                28,
+                30
               ]
             }
           }
         },
         "height": {
           "$value": {
-            "value": 40,
+            "value": 46,
             "unit": "px"
           },
           "$extensions": {
@@ -8516,10 +8437,10 @@
               "source": "runtime",
               "from": "atlas renderizado: maior altura opaca entre os 24 quadros, sem sombra",
               "minMax": [
-                38,
-                40
+                44,
+                46
               ],
-              "median": 39.0,
+              "median": 46.0,
               "frames": 24
             }
           }
@@ -8527,7 +8448,7 @@
       }
     },
     "sprite": {
-      "$description": "Retângulo de cada sprite no atlas (CELLS, public/world.js:258); o tamanho desenhado sem sombra vai em $extensions.",
+      "$description": "Retângulo de cada sprite no atlas (CELLS, public/world.js:260); o tamanho desenhado sem sombra vai em $extensions.",
       "grass": {
         "width": {
           "$value": {
@@ -8537,7 +8458,7 @@
           "$extensions": {
             "com.viladocaminho": {
               "source": "runtime",
-              "from": "public/world.js:258 CELLS.grass[2]",
+              "from": "public/world.js:260 CELLS.grass[2]",
               "drawn": 16
             }
           }
@@ -8550,7 +8471,7 @@
           "$extensions": {
             "com.viladocaminho": {
               "source": "runtime",
-              "from": "public/world.js:258 CELLS.grass[3]",
+              "from": "public/world.js:260 CELLS.grass[3]",
               "drawn": 16
             }
           }
@@ -8565,7 +8486,7 @@
           "$extensions": {
             "com.viladocaminho": {
               "source": "runtime",
-              "from": "public/world.js:258 CELLS.sand[2]",
+              "from": "public/world.js:260 CELLS.sand[2]",
               "drawn": 16
             }
           }
@@ -8578,7 +8499,7 @@
           "$extensions": {
             "com.viladocaminho": {
               "source": "runtime",
-              "from": "public/world.js:258 CELLS.sand[3]",
+              "from": "public/world.js:260 CELLS.sand[3]",
               "drawn": 16
             }
           }
@@ -8593,7 +8514,7 @@
           "$extensions": {
             "com.viladocaminho": {
               "source": "runtime",
-              "from": "public/world.js:258 CELLS.path[2]",
+              "from": "public/world.js:260 CELLS.path[2]",
               "drawn": 16
             }
           }
@@ -8606,7 +8527,7 @@
           "$extensions": {
             "com.viladocaminho": {
               "source": "runtime",
-              "from": "public/world.js:258 CELLS.path[3]",
+              "from": "public/world.js:260 CELLS.path[3]",
               "drawn": 16
             }
           }
@@ -8621,7 +8542,7 @@
           "$extensions": {
             "com.viladocaminho": {
               "source": "runtime",
-              "from": "public/world.js:258 CELLS.water[2]",
+              "from": "public/world.js:260 CELLS.water[2]",
               "drawn": 16
             }
           }
@@ -8634,7 +8555,7 @@
           "$extensions": {
             "com.viladocaminho": {
               "source": "runtime",
-              "from": "public/world.js:258 CELLS.water[3]",
+              "from": "public/world.js:260 CELLS.water[3]",
               "drawn": 16
             }
           }
@@ -8649,7 +8570,7 @@
           "$extensions": {
             "com.viladocaminho": {
               "source": "runtime",
-              "from": "public/world.js:258 CELLS.shelter[2]",
+              "from": "public/world.js:260 CELLS.shelter[2]",
               "drawn": 137
             }
           }
@@ -8662,7 +8583,7 @@
           "$extensions": {
             "com.viladocaminho": {
               "source": "runtime",
-              "from": "public/world.js:258 CELLS.shelter[3]",
+              "from": "public/world.js:260 CELLS.shelter[3]",
               "drawn": 127
             }
           }
@@ -8677,7 +8598,7 @@
           "$extensions": {
             "com.viladocaminho": {
               "source": "runtime",
-              "from": "public/world.js:258 CELLS.olive[2]",
+              "from": "public/world.js:260 CELLS.olive[2]",
               "drawn": 86
             }
           }
@@ -8690,7 +8611,7 @@
           "$extensions": {
             "com.viladocaminho": {
               "source": "runtime",
-              "from": "public/world.js:258 CELLS.olive[3]",
+              "from": "public/world.js:260 CELLS.olive[3]",
               "drawn": 94
             }
           }
@@ -8705,7 +8626,7 @@
           "$extensions": {
             "com.viladocaminho": {
               "source": "runtime",
-              "from": "public/world.js:258 CELLS.boat[2]",
+              "from": "public/world.js:260 CELLS.boat[2]",
               "drawn": 86
             }
           }
@@ -8718,7 +8639,7 @@
           "$extensions": {
             "com.viladocaminho": {
               "source": "runtime",
-              "from": "public/world.js:258 CELLS.boat[3]",
+              "from": "public/world.js:260 CELLS.boat[3]",
               "drawn": 41
             }
           }
@@ -8733,7 +8654,7 @@
           "$extensions": {
             "com.viladocaminho": {
               "source": "runtime",
-              "from": "public/world.js:258 CELLS.net[2]",
+              "from": "public/world.js:260 CELLS.net[2]",
               "drawn": 46
             }
           }
@@ -8746,7 +8667,7 @@
           "$extensions": {
             "com.viladocaminho": {
               "source": "runtime",
-              "from": "public/world.js:258 CELLS.net[3]",
+              "from": "public/world.js:260 CELLS.net[3]",
               "drawn": 53
             }
           }
@@ -8761,7 +8682,7 @@
           "$extensions": {
             "com.viladocaminho": {
               "source": "runtime",
-              "from": "public/world.js:258 CELLS.jar[2]",
+              "from": "public/world.js:260 CELLS.jar[2]",
               "drawn": 23
             }
           }
@@ -8774,7 +8695,7 @@
           "$extensions": {
             "com.viladocaminho": {
               "source": "runtime",
-              "from": "public/world.js:258 CELLS.jar[3]",
+              "from": "public/world.js:260 CELLS.jar[3]",
               "drawn": 30
             }
           }
@@ -8789,7 +8710,7 @@
           "$extensions": {
             "com.viladocaminho": {
               "source": "runtime",
-              "from": "public/world.js:258 CELLS.basket[2]",
+              "from": "public/world.js:260 CELLS.basket[2]",
               "drawn": 27
             }
           }
@@ -8802,7 +8723,7 @@
           "$extensions": {
             "com.viladocaminho": {
               "source": "runtime",
-              "from": "public/world.js:258 CELLS.basket[3]",
+              "from": "public/world.js:260 CELLS.basket[3]",
               "drawn": 23
             }
           }
@@ -8817,8 +8738,8 @@
           "$extensions": {
             "com.viladocaminho": {
               "source": "runtime",
-              "from": "public/world.js:258 CELLS.firepit[2]",
-              "drawn": 45
+              "from": "public/world.js:260 CELLS.firepit[2]",
+              "drawn": 44
             }
           }
         },
@@ -8830,8 +8751,8 @@
           "$extensions": {
             "com.viladocaminho": {
               "source": "runtime",
-              "from": "public/world.js:258 CELLS.firepit[3]",
-              "drawn": 28
+              "from": "public/world.js:260 CELLS.firepit[3]",
+              "drawn": 26
             }
           }
         }
@@ -8845,8 +8766,8 @@
           "$extensions": {
             "com.viladocaminho": {
               "source": "runtime",
-              "from": "public/world.js:258 CELLS.bread[2]",
-              "drawn": 18
+              "from": "public/world.js:260 CELLS.bread[2]",
+              "drawn": 20
             }
           }
         },
@@ -8858,8 +8779,8 @@
           "$extensions": {
             "com.viladocaminho": {
               "source": "runtime",
-              "from": "public/world.js:258 CELLS.bread[3]",
-              "drawn": 10
+              "from": "public/world.js:260 CELLS.bread[3]",
+              "drawn": 12
             }
           }
         }
@@ -8873,8 +8794,8 @@
           "$extensions": {
             "com.viladocaminho": {
               "source": "runtime",
-              "from": "public/world.js:258 CELLS.rocks[2]",
-              "drawn": 45
+              "from": "public/world.js:260 CELLS.rocks[2]",
+              "drawn": 44
             }
           }
         },
@@ -8886,8 +8807,8 @@
           "$extensions": {
             "com.viladocaminho": {
               "source": "runtime",
-              "from": "public/world.js:258 CELLS.rocks[3]",
-              "drawn": 23
+              "from": "public/world.js:260 CELLS.rocks[3]",
+              "drawn": 24
             }
           }
         }
@@ -8901,8 +8822,8 @@
           "$extensions": {
             "com.viladocaminho": {
               "source": "runtime",
-              "from": "public/world.js:258 CELLS.reeds[2]",
-              "drawn": 26
+              "from": "public/world.js:260 CELLS.reeds[2]",
+              "drawn": 30
             }
           }
         },
@@ -8914,8 +8835,8 @@
           "$extensions": {
             "com.viladocaminho": {
               "source": "runtime",
-              "from": "public/world.js:258 CELLS.reeds[3]",
-              "drawn": 22
+              "from": "public/world.js:260 CELLS.reeds[3]",
+              "drawn": 32
             }
           }
         }
@@ -8929,8 +8850,8 @@
           "$extensions": {
             "com.viladocaminho": {
               "source": "runtime",
-              "from": "public/world.js:258 CELLS.bush[2]",
-              "drawn": 31
+              "from": "public/world.js:260 CELLS.bush[2]",
+              "drawn": 30
             }
           }
         },
@@ -8942,8 +8863,8 @@
           "$extensions": {
             "com.viladocaminho": {
               "source": "runtime",
-              "from": "public/world.js:258 CELLS.bush[3]",
-              "drawn": 18
+              "from": "public/world.js:260 CELLS.bush[3]",
+              "drawn": 22
             }
           }
         }
@@ -8954,13 +8875,13 @@
       "hut": {
         "width": {
           "$value": {
-            "value": 109.4,
+            "value": 129.1,
             "unit": "px"
           },
           "$extensions": {
             "com.viladocaminho": {
               "source": "derived",
-              "from": "61.5 art px × 39.0 / 21.92",
+              "from": "61.5 art px × 46.0 / 21.92",
               "referenceArtPx": [
                 61.5,
                 55.7
@@ -8976,13 +8897,13 @@
         },
         "height": {
           "$value": {
-            "value": 99.1,
+            "value": 116.9,
             "unit": "px"
           },
           "$extensions": {
             "com.viladocaminho": {
               "source": "derived",
-              "from": "55.7 art px × 39.0 / 21.92",
+              "from": "55.7 art px × 46.0 / 21.92",
               "referenceArtPx": [
                 61.5,
                 55.7
@@ -9000,13 +8921,13 @@
       "oliveLarge": {
         "width": {
           "$value": {
-            "value": 73.1,
+            "value": 86.2,
             "unit": "px"
           },
           "$extensions": {
             "com.viladocaminho": {
               "source": "derived",
-              "from": "41.1 art px × 39.0 / 21.92",
+              "from": "41.1 art px × 46.0 / 21.92",
               "referenceArtPx": [
                 41.1,
                 39.4
@@ -9022,13 +8943,13 @@
         },
         "height": {
           "$value": {
-            "value": 70.1,
+            "value": 82.7,
             "unit": "px"
           },
           "$extensions": {
             "com.viladocaminho": {
               "source": "derived",
-              "from": "39.4 art px × 39.0 / 21.92",
+              "from": "39.4 art px × 46.0 / 21.92",
               "referenceArtPx": [
                 41.1,
                 39.4
@@ -9046,13 +8967,13 @@
       "oliveSmall": {
         "width": {
           "$value": {
-            "value": 61.9,
+            "value": 73.0,
             "unit": "px"
           },
           "$extensions": {
             "com.viladocaminho": {
               "source": "derived",
-              "from": "34.8 art px × 39.0 / 21.92",
+              "from": "34.8 art px × 46.0 / 21.92",
               "referenceArtPx": [
                 34.8,
                 34.3
@@ -9068,13 +8989,13 @@
         },
         "height": {
           "$value": {
-            "value": 61.0,
+            "value": 72.0,
             "unit": "px"
           },
           "$extensions": {
             "com.viladocaminho": {
               "source": "derived",
-              "from": "34.3 art px × 39.0 / 21.92",
+              "from": "34.3 art px × 46.0 / 21.92",
               "referenceArtPx": [
                 34.8,
                 34.3
@@ -9092,13 +9013,13 @@
       "boat": {
         "width": {
           "$value": {
-            "value": 52.7,
+            "value": 62.1,
             "unit": "px"
           },
           "$extensions": {
             "com.viladocaminho": {
               "source": "derived",
-              "from": "29.6 art px × 39.0 / 21.92",
+              "from": "29.6 art px × 46.0 / 21.92",
               "referenceArtPx": [
                 29.6,
                 15.4
@@ -9114,13 +9035,13 @@
         },
         "height": {
           "$value": {
-            "value": 27.4,
+            "value": 32.3,
             "unit": "px"
           },
           "$extensions": {
             "com.viladocaminho": {
               "source": "derived",
-              "from": "15.4 art px × 39.0 / 21.92",
+              "from": "15.4 art px × 46.0 / 21.92",
               "referenceArtPx": [
                 29.6,
                 15.4
@@ -9138,13 +9059,13 @@
       "jar": {
         "width": {
           "$value": {
-            "value": 18.5,
+            "value": 21.8,
             "unit": "px"
           },
           "$extensions": {
             "com.viladocaminho": {
               "source": "derived",
-              "from": "10.4 art px × 39.0 / 21.92",
+              "from": "10.4 art px × 46.0 / 21.92",
               "referenceArtPx": [
                 10.4,
                 12.3
@@ -9160,13 +9081,13 @@
         },
         "height": {
           "$value": {
-            "value": 21.9,
+            "value": 25.8,
             "unit": "px"
           },
           "$extensions": {
             "com.viladocaminho": {
               "source": "derived",
-              "from": "12.3 art px × 39.0 / 21.92",
+              "from": "12.3 art px × 46.0 / 21.92",
               "referenceArtPx": [
                 10.4,
                 12.3
@@ -9184,13 +9105,13 @@
       "basket": {
         "width": {
           "$value": {
-            "value": 24.7,
+            "value": 29.2,
             "unit": "px"
           },
           "$extensions": {
             "com.viladocaminho": {
               "source": "derived",
-              "from": "13.9 art px × 39.0 / 21.92",
+              "from": "13.9 art px × 46.0 / 21.92",
               "referenceArtPx": [
                 13.9,
                 12.0
@@ -9206,13 +9127,13 @@
         },
         "height": {
           "$value": {
-            "value": 21.4,
+            "value": 25.2,
             "unit": "px"
           },
           "$extensions": {
             "com.viladocaminho": {
               "source": "derived",
-              "from": "12.0 art px × 39.0 / 21.92",
+              "from": "12.0 art px × 46.0 / 21.92",
               "referenceArtPx": [
                 13.9,
                 12.0
@@ -9230,13 +9151,13 @@
       "firepit": {
         "width": {
           "$value": {
-            "value": 34.7,
+            "value": 40.9,
             "unit": "px"
           },
           "$extensions": {
             "com.viladocaminho": {
               "source": "derived",
-              "from": "19.5 art px × 39.0 / 21.92",
+              "from": "19.5 art px × 46.0 / 21.92",
               "referenceArtPx": [
                 19.5,
                 10.6
@@ -9252,13 +9173,13 @@
         },
         "height": {
           "$value": {
-            "value": 18.9,
+            "value": 22.2,
             "unit": "px"
           },
           "$extensions": {
             "com.viladocaminho": {
               "source": "derived",
-              "from": "10.6 art px × 39.0 / 21.92",
+              "from": "10.6 art px × 46.0 / 21.92",
               "referenceArtPx": [
                 19.5,
                 10.6
@@ -9276,14 +9197,14 @@
       "net": {
         "width": {
           "$value": {
-            "value": 42.7,
+            "value": 50.4,
             "unit": "px"
           },
           "$description": "rede",
           "$extensions": {
             "com.viladocaminho": {
               "source": "derived",
-              "from": "24.0 art px × 39.0 / 21.92",
+              "from": "24.0 art px × 46.0 / 21.92",
               "referenceArtPx": [
                 24.0,
                 20.6
@@ -9299,13 +9220,13 @@
         },
         "height": {
           "$value": {
-            "value": 36.7,
+            "value": 43.2,
             "unit": "px"
           },
           "$extensions": {
             "com.viladocaminho": {
               "source": "derived",
-              "from": "20.6 art px × 39.0 / 21.92",
+              "from": "20.6 art px × 46.0 / 21.92",
               "referenceArtPx": [
                 24.0,
                 20.6
@@ -9323,13 +9244,13 @@
       "rocks": {
         "width": {
           "$value": {
-            "value": 32.9,
+            "value": 38.8,
             "unit": "px"
           },
           "$extensions": {
             "com.viladocaminho": {
               "source": "derived",
-              "from": "18.5 art px × 39.0 / 21.92",
+              "from": "18.5 art px × 46.0 / 21.92",
               "referenceArtPx": [
                 18.5,
                 11.8
@@ -9345,13 +9266,13 @@
         },
         "height": {
           "$value": {
-            "value": 21.0,
+            "value": 24.8,
             "unit": "px"
           },
           "$extensions": {
             "com.viladocaminho": {
               "source": "derived",
-              "from": "11.8 art px × 39.0 / 21.92",
+              "from": "11.8 art px × 46.0 / 21.92",
               "referenceArtPx": [
                 18.5,
                 11.8
@@ -9369,13 +9290,13 @@
       "houseStone": {
         "width": {
           "$value": {
-            "value": 107.1,
+            "value": 126.3,
             "unit": "px"
           },
           "$extensions": {
             "com.viladocaminho": {
               "source": "derived",
-              "from": "60.2 art px × 39.0 / 21.92",
+              "from": "60.2 art px × 46.0 / 21.92",
               "referenceArtPx": [
                 60.2,
                 42.8
@@ -9401,13 +9322,13 @@
         },
         "height": {
           "$value": {
-            "value": 76.1,
+            "value": 89.8,
             "unit": "px"
           },
           "$extensions": {
             "com.viladocaminho": {
               "source": "derived",
-              "from": "42.8 art px × 39.0 / 21.92",
+              "from": "42.8 art px × 46.0 / 21.92",
               "referenceArtPx": [
                 60.2,
                 42.8
@@ -9435,13 +9356,13 @@
       "well": {
         "width": {
           "$value": {
-            "value": 49.5,
+            "value": 58.3,
             "unit": "px"
           },
           "$extensions": {
             "com.viladocaminho": {
               "source": "derived",
-              "from": "27.8 art px × 39.0 / 21.92",
+              "from": "27.8 art px × 46.0 / 21.92",
               "referenceArtPx": [
                 27.8,
                 31.5
@@ -9467,13 +9388,13 @@
         },
         "height": {
           "$value": {
-            "value": 56.0,
+            "value": 66.1,
             "unit": "px"
           },
           "$extensions": {
             "com.viladocaminho": {
               "source": "derived",
-              "from": "31.5 art px × 39.0 / 21.92",
+              "from": "31.5 art px × 46.0 / 21.92",
               "referenceArtPx": [
                 27.8,
                 31.5
@@ -9501,13 +9422,13 @@
       "oven": {
         "width": {
           "$value": {
-            "value": 70.8,
+            "value": 83.5,
             "unit": "px"
           },
           "$extensions": {
             "com.viladocaminho": {
               "source": "derived",
-              "from": "39.8 art px × 39.0 / 21.92",
+              "from": "39.8 art px × 46.0 / 21.92",
               "referenceArtPx": [
                 39.8,
                 29.9
@@ -9533,13 +9454,13 @@
         },
         "height": {
           "$value": {
-            "value": 53.2,
+            "value": 62.7,
             "unit": "px"
           },
           "$extensions": {
             "com.viladocaminho": {
               "source": "derived",
-              "from": "29.9 art px × 39.0 / 21.92",
+              "from": "29.9 art px × 46.0 / 21.92",
               "referenceArtPx": [
                 39.8,
                 29.9
@@ -9567,13 +9488,13 @@
       "sheep": {
         "width": {
           "$value": {
-            "value": 32.4,
+            "value": 38.2,
             "unit": "px"
           },
           "$extensions": {
             "com.viladocaminho": {
               "source": "derived",
-              "from": "18.2 art px × 39.0 / 21.92",
+              "from": "18.2 art px × 46.0 / 21.92",
               "referenceArtPx": [
                 18.2,
                 12.8
@@ -9599,13 +9520,13 @@
         },
         "height": {
           "$value": {
-            "value": 22.8,
+            "value": 26.9,
             "unit": "px"
           },
           "$extensions": {
             "com.viladocaminho": {
               "source": "derived",
-              "from": "12.8 art px × 39.0 / 21.92",
+              "from": "12.8 art px × 46.0 / 21.92",
               "referenceArtPx": [
                 18.2,
                 12.8
@@ -9633,13 +9554,13 @@
       "sailboat": {
         "width": {
           "$value": {
-            "value": 70.8,
+            "value": 83.5,
             "unit": "px"
           },
           "$extensions": {
             "com.viladocaminho": {
               "source": "derived",
-              "from": "39.8 art px × 39.0 / 21.92",
+              "from": "39.8 art px × 46.0 / 21.92",
               "referenceArtPx": [
                 39.8,
                 46.5
@@ -9665,13 +9586,13 @@
         },
         "height": {
           "$value": {
-            "value": 82.7,
+            "value": 97.6,
             "unit": "px"
           },
           "$extensions": {
             "com.viladocaminho": {
               "source": "derived",
-              "from": "46.5 art px × 39.0 / 21.92",
+              "from": "46.5 art px × 46.0 / 21.92",
               "referenceArtPx": [
                 39.8,
                 46.5
@@ -9706,7 +9627,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:481"
+            "from": "public/world.js:655"
           }
         }
       },
@@ -9718,7 +9639,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:481"
+            "from": "public/world.js:655"
           }
         }
       }
@@ -9732,7 +9653,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:500 c.font"
+            "from": "public/world.js:687 c.font"
           }
         }
       },
@@ -9744,7 +9665,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:508 c.font"
+            "from": "public/world.js:691 c.font"
           }
         }
       }
@@ -9785,7 +9706,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:447"
+            "from": "public/world.js:550"
           }
         }
       },
@@ -9794,7 +9715,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:447"
+            "from": "public/world.js:550"
           }
         }
       },
@@ -9803,7 +9724,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:447"
+            "from": "public/world.js:550"
           }
         }
       },
@@ -9812,7 +9733,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:447"
+            "from": "public/world.js:550"
           }
         }
       }
@@ -9823,7 +9744,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:518"
+            "from": "public/world.js:701"
           }
         }
       },
@@ -9832,7 +9753,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:526"
+            "from": "public/world.js:709"
           }
         }
       },
@@ -9841,7 +9762,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:531"
+            "from": "public/world.js:714"
           }
         }
       },
@@ -9851,7 +9772,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:531"
+            "from": "public/world.js:714"
           }
         }
       },
@@ -9860,7 +9781,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:532"
+            "from": "public/world.js:715"
           }
         }
       },
@@ -9869,7 +9790,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:524"
+            "from": "public/world.js:707"
           }
         }
       }
@@ -9880,7 +9801,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:541"
+            "from": "public/world.js:724"
           }
         }
       },
@@ -9889,7 +9810,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:495 %3"
+            "from": "public/world.js:671 %3"
           }
         }
       }
@@ -9908,16 +9829,16 @@
     },
     "scale": {
       "runtimePxPerReferenceArtPx": {
-        "$value": 1.779,
+        "$value": 2.099,
         "$extensions": {
           "com.viladocaminho": {
             "source": "derived",
-            "from": "altura do personagem no runtime (39.0 px) / altura do pescador na referência (21.92 art px)"
+            "from": "altura do personagem no runtime (46.0 px) / altura do pescador na referência (21.92 art px)"
           }
         }
       },
       "runtimePxPerReferenceArtPxSprites": {
-        "$value": 2.294,
+        "$value": 2.268,
         "$extensions": {
           "com.viladocaminho": {
             "source": "derived",
@@ -9944,59 +9865,59 @@
                 1.917
               ],
               "firepit": [
-                2.308,
-                2.642
+                2.256,
+                2.453
               ],
               "net": [
                 1.917,
                 2.573
               ],
               "rocks": [
-                2.432,
-                1.949
+                2.378,
+                2.034
               ]
             }
           }
         }
       },
       "runtimeToReferenceProportion": {
-        "$value": 1.29,
+        "$value": 1.08,
         "$extensions": {
           "com.viladocaminho": {
             "source": "derived",
             "from": "mediana de (tamanho do sprite / altura do personagem no runtime) ÷ (objeto / altura do pescador na referência), 8 objetos",
             "perObject": {
               "shelter": [
-                1.25,
-                1.28
+                1.06,
+                1.09
               ],
               "olive": [
-                1.18,
-                1.34
+                1.0,
+                1.14
               ],
               "boat": [
-                1.63,
-                1.5
+                1.38,
+                1.27
               ],
               "jar": [
-                1.24,
-                1.37
+                1.05,
+                1.16
               ],
               "basket": [
-                1.09,
-                1.08
+                0.93,
+                0.91
               ],
               "firepit": [
-                1.3,
-                1.48
+                1.08,
+                1.17
               ],
               "net": [
-                1.08,
-                1.45
+                0.91,
+                1.23
               ],
               "rocks": [
-                1.37,
-                1.1
+                1.13,
+                0.97
               ]
             }
           }
@@ -10014,7 +9935,7 @@
       "$extensions": {
         "com.viladocaminho": {
           "source": "runtime",
-          "from": "public/world.js:495 Math.floor(time*6)%3"
+          "from": "public/world.js:671 Math.floor(time*6)%3"
         }
       }
     },
@@ -10026,7 +9947,7 @@
       "$extensions": {
         "com.viladocaminho": {
           "source": "runtime",
-          "from": "public/world.js:466 Math.floor(time*5)%4"
+          "from": "public/world.js:583 Math.floor(time*5)%4"
         }
       }
     },
@@ -10038,7 +9959,7 @@
       "$extensions": {
         "com.viladocaminho": {
           "source": "runtime",
-          "from": "public/world.js:458 Math.floor(time*2)"
+          "from": "public/world.js:563 Math.floor(time*2)"
         }
       }
     }
@@ -10071,7 +9992,7 @@
       "$extensions": {
         "com.viladocaminho": {
           "source": "runtime",
-          "from": "public/world.js:500 c.font"
+          "from": "public/world.js:687 c.font"
         }
       }
     }

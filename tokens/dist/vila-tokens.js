@@ -9,40 +9,59 @@
     "version": "1.0.0",
     "color": {
       "runtime": {
-        "grass": "#b3ae3f",
-        "grassHi": "#c4bd4a",
-        "grassLo": "#7b842d",
-        "grassDark": "#617329",
-        "path": "#e6ac62",
-        "pathHi": "#efc079",
-        "pathLo": "#c48a46",
-        "ink": "#4a3825",
-        "soil": "#947335",
-        "water": "#1477a1",
-        "waterDeep": "#19688a",
-        "waterHi": "#3595b8",
-        "foam": "#85b8aa",
-        "leaf": "#71882c",
-        "leafHi": "#9ba33c",
-        "leafLo": "#4c6b2a",
-        "leafDeep": "#344c27",
-        "wood": "#8a592d",
-        "woodHi": "#c68c43",
-        "woodLo": "#634621",
-        "straw": "#c3a44b",
-        "strawHi": "#dfc66b",
-        "strawLo": "#9c7b31",
-        "cream": "#e4d4a1",
-        "creamHi": "#f4e7b9",
-        "creamLo": "#b5a171",
-        "terra": "#a36035",
-        "terraHi": "#d28b4b",
-        "skin": "#bd8854",
-        "skinHi": "#dfa872",
-        "skinLo": "#8f603b",
-        "stone": "#8e8b6b",
-        "stoneHi": "#b0aa83",
-        "stoneLo": "#65684e",
+        "grass": "#b4a332",
+        "grassHi": "#c4af35",
+        "grassLo": "#8d8438",
+        "grassDark": "#4e6326",
+        "path": "#eeab56",
+        "pathHi": "#f5bb67",
+        "pathLo": "#c78b3f",
+        "ink": "#432c22",
+        "soil": "#81772d",
+        "water": "#146b99",
+        "waterDeep": "#146490",
+        "waterHi": "#3096b7",
+        "foam": "#53b6b3",
+        "leaf": "#a89c3d",
+        "leafHi": "#cebc47",
+        "leafLo": "#646435",
+        "leafDeep": "#3b4230",
+        "wood": "#7e4d2c",
+        "woodHi": "#c47c3a",
+        "woodLo": "#422a21",
+        "straw": "#d88d3f",
+        "strawHi": "#fabb5e",
+        "strawLo": "#b06a30",
+        "cream": "#f3d195",
+        "creamHi": "#f8dfa2",
+        "creamLo": "#cba672",
+        "terra": "#c5642c",
+        "terraHi": "#f18c3a",
+        "skin": "#f19f55",
+        "skinHi": "#f7b467",
+        "skinLo": "#864f2d",
+        "stone": "#8e7565",
+        "stoneHi": "#d6ba9a",
+        "stoneLo": "#5c4e42",
+        "outline": "#2f1f1b",
+        "hair": "#3d2a25",
+        "hairHi": "#583a2f",
+        "sash": "#cf562d",
+        "sashLo": "#8d3d27",
+        "sand": "#f3b15b",
+        "sandDark": "#e19d4e",
+        "tuft": "#62722c",
+        "tuftHi": "#9e943b",
+        "waterLight": "#4aacbd",
+        "foamHi": "#5ec2c2",
+        "reed": "#888238",
+        "fire": "#e84115",
+        "fireMid": "#f78b14",
+        "fireHi": "#fbc114",
+        "fireCore": "#fbe88f",
+        "ash": "#4f352e",
+        "paper": "#fdf3cd",
+        "wool": "#f4daa6",
         "inline": {
           "drawShelter": {
             "1": "#788033",
@@ -95,54 +114,25 @@
           "drawBasket": {
             "1": "#7f7d36"
           },
-          "drawFirepit": {
-            "1": "#8c8038",
-            "2": "#55452a",
-            "3": "#9c4e24"
-          },
-          "drawCharacter": {
-            "1": "#899252",
-            "2": "#a4aa6c",
-            "3": "#596e3f",
-            "4": "#685637",
-            "5": "#92582e",
-            "6": "#947642",
-            "7": "#ba7b42",
-            "8": "#392d20",
-            "9": "#51402a",
-            "10": "#3f3122",
-            "11": "#57402a",
-            "12": "#493421",
-            "13": "#63492b"
-          },
-          "createAtlas": {
-            "1": "#d7ad60"
-          },
-          "terrainBase": {
-            "1": "#afaa3c",
-            "2": "#b8b344",
-            "3": "#dca45a",
-            "4": "#beb748",
-            "5": "#a4a13a"
-          },
-          "terrain": {
-            "1": "#287f9b",
-            "2": "#2c86a0",
-            "3": "#aeb454",
-            "4": "#b4b95c",
-            "5": "#3997ad",
-            "6": "#2a88a7"
-          },
-          "flame": {
-            "1": "#a54b24",
-            "2": "#e57824",
-            "3": "#f3ad39",
-            "4": "#f8d77a",
-            "5": "#c5c19a",
-            "6": "#efb94b"
+          "topLevel": {
+            "1": "#db8545",
+            "2": "#96582b",
+            "3": "#ad6433",
+            "4": "#5a321c",
+            "5": "#93796d",
+            "6": "#e1b97e",
+            "7": "#767c3b",
+            "8": "#556033",
+            "9": "#52667d",
+            "10": "#42556a",
+            "11": "#33415a",
+            "12": "#b8462d",
+            "13": "#863223",
+            "14": "#f3ad52",
+            "15": "#e8a246"
           },
           "renderWorld": {
-            "1": "#f1c258"
+            "1": "#f8af40"
           }
         }
       },
@@ -397,7 +387,7 @@
       },
       "light": {
         "nightTint": "#19264447",
-        "fireGlow": "#f1c25824"
+        "fireGlow": "#f8af4024"
       }
     },
     "dimension": {
@@ -410,8 +400,8 @@
           "height": 48
         },
         "figure": {
-          "width": 24,
-          "height": 40
+          "width": 30,
+          "height": 46
         }
       },
       "sprite": {
@@ -478,60 +468,60 @@
       },
       "referenceScale": {
         "hut": {
-          "width": 109.4,
-          "height": 99.1
+          "width": 129.1,
+          "height": 116.9
         },
         "oliveLarge": {
-          "width": 73.1,
-          "height": 70.1
+          "width": 86.2,
+          "height": 82.7
         },
         "oliveSmall": {
-          "width": 61.9,
-          "height": 61
+          "width": 73,
+          "height": 72
         },
         "boat": {
-          "width": 52.7,
-          "height": 27.4
+          "width": 62.1,
+          "height": 32.3
         },
         "jar": {
-          "width": 18.5,
-          "height": 21.9
+          "width": 21.8,
+          "height": 25.8
         },
         "basket": {
-          "width": 24.7,
-          "height": 21.4
+          "width": 29.2,
+          "height": 25.2
         },
         "firepit": {
-          "width": 34.7,
-          "height": 18.9
+          "width": 40.9,
+          "height": 22.2
         },
         "net": {
-          "width": 42.7,
-          "height": 36.7
+          "width": 50.4,
+          "height": 43.2
         },
         "rocks": {
-          "width": 32.9,
-          "height": 21
+          "width": 38.8,
+          "height": 24.8
         },
         "houseStone": {
-          "width": 107.1,
-          "height": 76.1
+          "width": 126.3,
+          "height": 89.8
         },
         "well": {
-          "width": 49.5,
-          "height": 56
+          "width": 58.3,
+          "height": 66.1
         },
         "oven": {
-          "width": 70.8,
-          "height": 53.2
+          "width": 83.5,
+          "height": 62.7
         },
         "sheep": {
-          "width": 32.4,
-          "height": 22.8
+          "width": 38.2,
+          "height": 26.9
         },
         "sailboat": {
-          "width": 70.8,
-          "height": 82.7
+          "width": 83.5,
+          "height": 97.6
         }
       },
       "light": {
@@ -569,9 +559,9 @@
         "nightMaxEpisode": 0.72
       },
       "scale": {
-        "runtimePxPerReferenceArtPx": 1.779,
-        "runtimePxPerReferenceArtPxSprites": 2.294,
-        "runtimeToReferenceProportion": 1.29
+        "runtimePxPerReferenceArtPx": 2.099,
+        "runtimePxPerReferenceArtPxSprites": 2.268,
+        "runtimeToReferenceProportion": 1.08
       }
     },
     "duration": {
