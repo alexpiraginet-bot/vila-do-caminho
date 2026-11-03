@@ -2618,7 +2618,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:658 (literal em renderWorld)",
+                "from": "public/world.js:657 (literal em renderWorld)",
                 "usedIn": [
                   "renderWorld"
                 ],
@@ -8317,7 +8317,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:694 rgba(25,38,68,night*0.28)"
+            "from": "public/world.js:693 rgba(25,38,68,night*0.28)"
           }
         }
       },
@@ -8336,7 +8336,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:658"
+            "from": "public/world.js:657"
           }
         }
       }
@@ -8379,7 +8379,7 @@
       "$extensions": {
         "com.viladocaminho": {
           "source": "runtime",
-          "from": "public/world.js:591 canvas.width/384"
+          "from": "public/world.js:590 canvas.width/384"
         }
       }
     },
@@ -8393,7 +8393,7 @@
           "$extensions": {
             "com.viladocaminho": {
               "source": "runtime",
-              "from": "public/world.js:676"
+              "from": "public/world.js:675"
             }
           }
         },
@@ -8405,7 +8405,7 @@
           "$extensions": {
             "com.viladocaminho": {
               "source": "runtime",
-              "from": "public/world.js:676"
+              "from": "public/world.js:675"
             }
           }
         }
@@ -9627,7 +9627,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:658"
+            "from": "public/world.js:657"
           }
         }
       },
@@ -9639,7 +9639,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:658"
+            "from": "public/world.js:657"
           }
         }
       }
@@ -9653,7 +9653,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:690 c.font"
+            "from": "public/world.js:689 c.font"
           }
         }
       },
@@ -9665,7 +9665,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:695 c.font"
+            "from": "public/world.js:694 c.font"
           }
         }
       }
@@ -9706,7 +9706,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:553"
+            "from": "public/world.js:552"
           }
         }
       },
@@ -9715,7 +9715,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:553"
+            "from": "public/world.js:552"
           }
         }
       },
@@ -9724,7 +9724,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:553"
+            "from": "public/world.js:552"
           }
         }
       },
@@ -9733,7 +9733,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:553"
+            "from": "public/world.js:552"
           }
         }
       }
@@ -9744,7 +9744,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:705"
+            "from": "public/world.js:704"
           }
         }
       },
@@ -9753,7 +9753,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:713"
+            "from": "public/world.js:712"
           }
         }
       },
@@ -9762,7 +9762,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:718"
+            "from": "public/world.js:717"
           }
         }
       },
@@ -9772,7 +9772,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:718"
+            "from": "public/world.js:717"
           }
         }
       },
@@ -9781,7 +9781,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:719"
+            "from": "public/world.js:718"
           }
         }
       },
@@ -9790,7 +9790,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:711"
+            "from": "public/world.js:710"
           }
         }
       }
@@ -9801,7 +9801,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:728"
+            "from": "public/world.js:727"
           }
         }
       },
@@ -9810,7 +9810,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:674 %3"
+            "from": "public/world.js:673 %3"
           }
         }
       }
@@ -9935,7 +9935,7 @@
       "$extensions": {
         "com.viladocaminho": {
           "source": "runtime",
-          "from": "public/world.js:674 Math.floor(time*6)%3"
+          "from": "public/world.js:673 Math.floor(time*6)%3"
         }
       }
     },
@@ -9947,7 +9947,7 @@
       "$extensions": {
         "com.viladocaminho": {
           "source": "runtime",
-          "from": "public/world.js:586 Math.floor(time*5)%4"
+          "from": "public/world.js:585 Math.floor(time*5)%4"
         }
       }
     },
@@ -9959,7 +9959,7 @@
       "$extensions": {
         "com.viladocaminho": {
           "source": "runtime",
-          "from": "public/world.js:566 Math.floor(time*2)"
+          "from": "public/world.js:565 Math.floor(time*2)"
         }
       }
     }
@@ -9992,7 +9992,7 @@
       "$extensions": {
         "com.viladocaminho": {
           "source": "runtime",
-          "from": "public/world.js:690 c.font"
+          "from": "public/world.js:689 c.font"
         }
       }
     }

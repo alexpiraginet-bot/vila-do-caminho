@@ -473,12 +473,16 @@ function createAtlas(){
   for(let role=0;role<2;role++)for(let dir=0;dir<4;dir++)for(let f=0;f<3;f++)local(c,role*112+f*32,176+dir*48,()=>drawCharacter(c,role,dir,f));
   cachedAtlas=a;return a;
 }
-const kitRasters=new Map();
-function kitArt(kit,name,w,h){
-  // The kit is redrawn at half size and enlarged 2x, so its pixels match the 2 px art pixel of the rest.
-  const key=name+':'+w+'x'+h;if(kitRasters.has(key))return kitRasters.get(key);
-  const r=document.createElement('canvas');r.width=Math.ceil(w/AP);r.height=Math.ceil(h/AP);const rc=r.getContext('2d');rc.imageSmoothingEnabled=false;
-  const ok=kit.drawSprite(rc,name,0,0,r.width,r.height);kitRasters.set(key,ok?r:null);return ok?r:null;
+const artRasters=new Map();
+function spriteArt(c,a,name,x,y){
+  // The six camp objects (kit or atlas fallback) are pixelated to the 2 px art grid: sprite() draws them once at
+  // half size into a cached raster, contact shadow included, and the raster is enlarged 2x here.
+  if(!['shelter','olive','jar','basket','boat','net'].includes(name))return sprite(c,a,name,x,y);
+  const[, ,w,h]=CELLS[name],key=name+(globalThis.VilaVisualAssets?.isReady()?':kit':':atlas');
+  let r=artRasters.get(key);
+  if(!r){r=document.createElement('canvas');r.width=Math.ceil(w/AP);r.height=Math.ceil(h/AP)+2;const rc=r.getContext('2d');
+    rc.imageSmoothingEnabled=false;rc.scale(1/AP,1/AP);sprite(rc,a,name,0,0);artRasters.set(key,r);}
+  c.drawImage(r,Math.round(x/AP)*AP,Math.round(y/AP)*AP,r.width*AP,r.height*AP);
 }
 function sprite(c,a,name,x,y){
   const[sx,sy,w,h]=CELLS[name];
@@ -486,13 +490,8 @@ function sprite(c,a,name,x,y){
   const scale=({jar:.72,basket:.9,boat:.88,net:.9})[name]||1;
   const dw=Math.round(w*scale),dh=Math.round(h*scale),dx=Math.round(x+(w-dw)/2),dy=Math.round(y+h-dh);
   if(kit?.isReady()&&['shelter','olive','jar','basket','boat','net'].includes(name)){
-    // Small stepped contact shadow, aligned to the existing sprite baseline.
-    c.save();c.globalAlpha=.18;c.fillStyle=P.ink;
-    c.fillRect(Math.round(dx+dw*.2),dy+dh-4,Math.round(dw*.6),5);
-    c.fillRect(Math.round(dx+dw*.32),dy+dh+1,Math.round(dw*.36),2);c.restore();
-    const art=kitArt(kit,name,dw,dh);
-    if(art){const ax=Math.round(dx/AP)*AP,ay=Math.round((dy+dh)/AP)*AP-art.height*AP;c.drawImage(art,ax,ay,art.width*AP,art.height*AP);return;}
-    if(kit.drawSprite(c,name,dx,dy,dw,dh))return;
+    // Shadow and sprite reach the destination together; failure leaves it untouched.
+    if(kit.drawSprite(c,name,dx,dy,dw,dh,{shadowColor:P.ink}))return;
   }
   c.drawImage(a,sx,sy,w,h,Math.round(x),Math.round(y),w,h);
 }
@@ -555,7 +554,7 @@ function terrain(c,a,time){
       expandedGround=groundImage(g);}
     expandedTerrain=document.createElement('canvas');expandedTerrain.width=1536;expandedTerrain.height=1536;
     const e=expandedTerrain.getContext('2d');e.putImageData(expandedGround,0,0);e.imageSmoothingEnabled=false;e.translate(576,384);
-    for(let y=-18;y<70;y+=9)for(let x=-31;x<17;x+=8){if(x>=0&&y>=0&&y<43)continue;const h=hash(x+57,y+41,9);if(h%3===0)sprite(e,a,'olive',x*16-44,y*16-91);else if(h%3===1)sprite(e,a,'bush',x*16-10,y*16-8);}
+    for(let y=-18;y<70;y+=9)for(let x=-31;x<17;x+=8){if(x>=0&&y>=0&&y<43)continue;const h=hash(x+57,y+41,9);if(h%3===0)spriteArt(e,a,'olive',x*16-44,y*16-91);else if(h%3===1)sprite(e,a,'bush',x*16-10,y*16-8);}
   }
   c.drawImage(expandedTerrain,-576,-384);
   c.drawImage(terrainBase(),-16,-32);
@@ -681,7 +680,7 @@ function renderWorld(canvas,state,options={}){
       if(options.showLabels)bubbles.push({label:true,x:Math.round(e.x*16),y:Math.round(e.y*16-50),text:visitor?'VISITANTE':'PESCADOR'});
     }else if(o.type==='folk')drawFolk(c,o.n,time,bubbles,options);
     else if(o.type==='bread'&&bread.shared){c.drawImage(a,368,88,10,16,o.x-3,o.y,10,16);c.drawImage(a,378,88,10,16,o.x+13,o.y,10,16);}
-    else sprite(c,a,o.type,o.x,o.y);
+    else spriteArt(c,a,o.type,o.x,o.y);
   });
   if(shelter.reinforced){poly(c,[[shelter.x*16+8,shelter.y*16+60],[shelter.x*16+113,shelter.y*16+66],[shelter.x*16+113,shelter.y*16+71],[shelter.x*16+8,shelter.y*16+65]],P.woodHi);}
   if(fire.lit)flame(c,fx,fy-3,time);

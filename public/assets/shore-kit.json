@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "image": "assets/shore-kit.png",
   "sprites": {
     "shelter": {
@@ -12,11 +12,12 @@
     },
     "olive": {
       "source": [
-        521,
-        13,
-        495,
-        486
-      ]
+        29,
+        45,
+        673,
+        621
+      ],
+      "image": "assets/shore-details-v2.png"
     },
     "boat": {
       "source": [
@@ -28,11 +29,12 @@
     },
     "net": {
       "source": [
-        12,
-        552,
-        486,
-        449
-      ]
+        796,
+        211,
+        579,
+        459
+      ],
+      "image": "assets/shore-details-v2.png"
     },
     "jar": {
       "source": [
@@ -44,16 +46,22 @@
     },
     "basket": {
       "source": [
-        1068,
-        574,
-        420,
-        404
-      ]
+        1567,
+        222,
+        490,
+        444
+      ],
+      "image": "assets/shore-details-v2.png"
     }
   },
   "provenance": {
     "method": "Generated modular pixel-art assets; reference-guided palette and silhouettes. Individual cells are cropped only at Canvas draw time.",
     "sha256": "ce0339d9b3dfa71450b77002b3d42f57a959b5e005ee0f5ff523525ce0c34807",
-    "palette": "Reference token ramps guided the brief; exact palette quantization is not claimed."
+    "palette": "Reference token ramps guided the brief; exact palette quantization is not claimed.",
+    "revision2": {
+      "method": "Generated three simpler replacements for olive/net/basket; original shelter/boat/jar bytes and crops unchanged. Runtime crops only.",
+      "sha256": "eb8f46348aa59929074980174683f9914909d578e457401608edac8fe363c156",
+      "palette": "Reference foliage and bark ramps used as generation direction; no exact quantization claimed."
+    }
   }
 }

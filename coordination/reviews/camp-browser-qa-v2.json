@@ -1,0 +1,30 @@
+[
+  {
+    "name": "desktop",
+    "viewport": {
+      "width": 1280,
+      "height": 1000
+    },
+    "dpr": 1,
+    "kit": {
+      "state": "ready",
+      "error": null
+    },
+    "errors": [],
+    "overflow": false
+  },
+  {
+    "name": "mobile",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "dpr": 1,
+    "kit": {
+      "state": "ready",
+      "error": null
+    },
+    "errors": [],
+    "overflow": false
+  }
+]

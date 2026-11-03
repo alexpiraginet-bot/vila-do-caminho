@@ -1,0 +1,25 @@
+{
+  "cases": [
+    {
+      "mode": "missing-override",
+      "status": {
+        "state": "failed",
+        "error": "Failed to fetch"
+      },
+      "pixelSha256": "91e89647688cab541259789ae42e27e641c476c6bbf141dcffbf9460c79502d3",
+      "width": 364,
+      "height": 462
+    },
+    {
+      "mode": "destination-draw-failure",
+      "status": {
+        "state": "ready",
+        "error": null
+      },
+      "pixelSha256": "91e89647688cab541259789ae42e27e641c476c6bbf141dcffbf9460c79502d3",
+      "width": 364,
+      "height": 462
+    }
+  ],
+  "identicalFallbackPixels": true
+}

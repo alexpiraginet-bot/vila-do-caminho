@@ -30,3 +30,15 @@ Estado: implementação e QA concluídos; avaliação visual do usuário pendent
 Terreno, água, rochas, fogo e personagem ainda têm a arte anterior. A oliveira nova tem detalhes mais finos que a copa da referência; a coerência da vegetação e da escala ainda exige avaliação. Não alegamos quantização exata às cores dos tokens nem aprovação de fidelidade final. Os tokens medidos da referência continuam sendo direção, não prova de equivalência de pixels.
 
 Próximo responsável: direção visual, após comentário do usuário sobre esta comparação. Próxima ação concreta: alinhar terreno/vegetação e personagem ao acabamento do acampamento, preservando a geometria e a cronologia. Não produzir o episódio 1 aqui: Claude conduz esse artefato em tarefa independente. Não implantar esta branch automaticamente.
+
+## Revisão 2 — leitura e fallback
+
+![Rodada 1 e rodada 2, no mesmo enquadramento](../previews/camp-comparison-v2.png)
+
+A revisão independente identificou detalhe excessivo na oliveira e leitura fraca da rede/cesta no celular. Esses três objetos usam agora uma segunda folha: copa em blocos maiores, tronco simples, malha aberta e pães separados. Abrigo, barco e jarro mantêm os bytes e recortes anteriores. A comparação é entre duas rodadas reais do jogo, sem a referência original ao lado; não comprova fidelidade integral nem aprovação final.
+
+A sombra foi movida para o raster transparente do objeto. Sombra e sprite chegam ao destino em uma única chamada; falhas anteriores ao desenho não deixam sombra residual antes do fallback. O adapter aceita `sprite.image` opcional, valida os caminhos e os recortes contra a folha correta, decodifica cada URL uma vez e ativa o conjunto apenas quando todas as imagens estão prontas. O cache continua limitado a 32 variantes.
+
+Verificação atual: **31 testes passaram**. Capturas desktop/mobile sem erros JavaScript e sem overflow. Em Chromium, uma falha simulada na folha adicional e outra no desenho final produziram fallback com SHA-256 de pixels idêntico; registro em `camp-fallback-regression.json`. O registro das capturas está em `camp-browser-qa-v2.json`. Uma segunda revisão visual confirmou melhor leitura dos três objetos, com a ressalva de não ter a referência original local para comparação direta.
+
+A limitação de ruído fino da oliveira descrita na rodada 1 foi tratada nesta revisão; terreno, água, fogo, rochas e personagem seguem com a arte anterior. Estado, câmera e controles permanecem fora deste ajuste. Avaliação visual pendente; nenhum merge, deploy ou novo Reel.
