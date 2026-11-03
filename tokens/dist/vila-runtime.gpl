@@ -2,40 +2,59 @@ GIMP Palette
 Name: Vila do Caminho - runtime (P + literais)
 Columns: 8
 # Gerado por tools/tokens/build.cjs a partir de tokens/vila.tokens.json. Não editar à mão.
-179 174  63	runtime.grass
-196 189  74	runtime.grassHi
-123 132  45	runtime.grassLo
- 97 115  41	runtime.grassDark
-230 172  98	runtime.path
-239 192 121	runtime.pathHi
-196 138  70	runtime.pathLo
- 74  56  37	runtime.ink
-148 115  53	runtime.soil
- 20 119 161	runtime.water
- 25 104 138	runtime.waterDeep
- 53 149 184	runtime.waterHi
-133 184 170	runtime.foam
-113 136  44	runtime.leaf
-155 163  60	runtime.leafHi
- 76 107  42	runtime.leafLo
- 52  76  39	runtime.leafDeep
-138  89  45	runtime.wood
-198 140  67	runtime.woodHi
- 99  70  33	runtime.woodLo
-195 164  75	runtime.straw
-223 198 107	runtime.strawHi
-156 123  49	runtime.strawLo
-228 212 161	runtime.cream
-244 231 185	runtime.creamHi
-181 161 113	runtime.creamLo
-163  96  53	runtime.terra
-210 139  75	runtime.terraHi
-189 136  84	runtime.skin
-223 168 114	runtime.skinHi
-143  96  59	runtime.skinLo
-142 139 107	runtime.stone
-176 170 131	runtime.stoneHi
-101 104  78	runtime.stoneLo
+180 163  50	runtime.grass
+196 175  53	runtime.grassHi
+141 132  56	runtime.grassLo
+ 78  99  38	runtime.grassDark
+238 171  86	runtime.path
+245 187 103	runtime.pathHi
+199 139  63	runtime.pathLo
+ 67  44  34	runtime.ink
+129 119  45	runtime.soil
+ 20 107 153	runtime.water
+ 20 100 144	runtime.waterDeep
+ 48 150 183	runtime.waterHi
+ 83 182 179	runtime.foam
+168 156  61	runtime.leaf
+206 188  71	runtime.leafHi
+100 100  53	runtime.leafLo
+ 59  66  48	runtime.leafDeep
+126  77  44	runtime.wood
+196 124  58	runtime.woodHi
+ 66  42  33	runtime.woodLo
+216 141  63	runtime.straw
+250 187  94	runtime.strawHi
+176 106  48	runtime.strawLo
+243 209 149	runtime.cream
+248 223 162	runtime.creamHi
+203 166 114	runtime.creamLo
+197 100  44	runtime.terra
+241 140  58	runtime.terraHi
+241 159  85	runtime.skin
+247 180 103	runtime.skinHi
+134  79  45	runtime.skinLo
+142 117 101	runtime.stone
+214 186 154	runtime.stoneHi
+ 92  78  66	runtime.stoneLo
+ 47  31  27	runtime.outline
+ 61  42  37	runtime.hair
+ 88  58  47	runtime.hairHi
+207  86  45	runtime.sash
+141  61  39	runtime.sashLo
+243 177  91	runtime.sand
+225 157  78	runtime.sandDark
+ 98 114  44	runtime.tuft
+158 148  59	runtime.tuftHi
+ 74 172 189	runtime.waterLight
+ 94 194 194	runtime.foamHi
+136 130  56	runtime.reed
+232  65  21	runtime.fire
+247 139  20	runtime.fireMid
+251 193  20	runtime.fireHi
+251 232 143	runtime.fireCore
+ 79  53  46	runtime.ash
+253 243 205	runtime.paper
+244 218 166	runtime.wool
 120 128  51	runtime.inline.drawShelter.1
 105  85  44	runtime.inline.drawShelter.2
 135 106  52	runtime.inline.drawShelter.3
@@ -75,38 +94,19 @@ Columns: 8
 225 161  91	runtime.inline.drawJar.2
 124  70  42	runtime.inline.drawJar.3
 127 125  54	runtime.inline.drawBasket.1
-140 128  56	runtime.inline.drawFirepit.1
- 85  69  42	runtime.inline.drawFirepit.2
-156  78  36	runtime.inline.drawFirepit.3
-137 146  82	runtime.inline.drawCharacter.1
-164 170 108	runtime.inline.drawCharacter.2
- 89 110  63	runtime.inline.drawCharacter.3
-104  86  55	runtime.inline.drawCharacter.4
-146  88  46	runtime.inline.drawCharacter.5
-148 118  66	runtime.inline.drawCharacter.6
-186 123  66	runtime.inline.drawCharacter.7
- 57  45  32	runtime.inline.drawCharacter.8
- 81  64  42	runtime.inline.drawCharacter.9
- 63  49  34	runtime.inline.drawCharacter.10
- 87  64  42	runtime.inline.drawCharacter.11
- 73  52  33	runtime.inline.drawCharacter.12
- 99  73  43	runtime.inline.drawCharacter.13
-215 173  96	runtime.inline.createAtlas.1
-175 170  60	runtime.inline.terrainBase.1
-184 179  68	runtime.inline.terrainBase.2
-220 164  90	runtime.inline.terrainBase.3
-190 183  72	runtime.inline.terrainBase.4
-164 161  58	runtime.inline.terrainBase.5
- 40 127 155	runtime.inline.terrain.1
- 44 134 160	runtime.inline.terrain.2
-174 180  84	runtime.inline.terrain.3
-180 185  92	runtime.inline.terrain.4
- 57 151 173	runtime.inline.terrain.5
- 42 136 167	runtime.inline.terrain.6
-165  75  36	runtime.inline.flame.1
-229 120  36	runtime.inline.flame.2
-243 173  57	runtime.inline.flame.3
-248 215 122	runtime.inline.flame.4
-197 193 154	runtime.inline.flame.5
-239 185  75	runtime.inline.flame.6
-241 194  88	runtime.inline.renderWorld.1
+219 133  69	runtime.inline.topLevel.1
+150  88  43	runtime.inline.topLevel.2
+173 100  51	runtime.inline.topLevel.3
+ 90  50  28	runtime.inline.topLevel.4
+147 121 109	runtime.inline.topLevel.5
+225 185 126	runtime.inline.topLevel.6
+118 124  59	runtime.inline.topLevel.7
+ 85  96  51	runtime.inline.topLevel.8
+ 82 102 125	runtime.inline.topLevel.9
+ 66  85 106	runtime.inline.topLevel.10
+ 51  65  90	runtime.inline.topLevel.11
+184  70  45	runtime.inline.topLevel.12
+134  50  35	runtime.inline.topLevel.13
+243 173  82	runtime.inline.topLevel.14
+232 162  70	runtime.inline.topLevel.15
+248 175  64	runtime.inline.renderWorld.1

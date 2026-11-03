@@ -59,45 +59,21 @@ Cada pixel da referência (1 a cada 3, nos dois eixos) levado à cor mais próxi
 
 | paleta | cores | ΔE médio | mediana | p90 | pixels com ΔE < 5 |
 |---|---:|---:|---:|---:|---:|
-| P do runtime | 34 | 4,48 | 4,19 | 6,5 | 79,2% |
-| tudo que o runtime desenha | 98 | 3,97 | 3,85 | 4,91 | 90,9% |
+| P do runtime | 53 | 1,92 | 1,39 | 4,3 | 92,5% |
+| tudo que o runtime desenha | 91 | 1,8 | 1,37 | 3,73 | 94,9% |
 | paleta medida da referência | 59 | 1,76 | 0,98 | 4,41 | 92,1% |
 
 ### Cores de P mais longe da referência (ΔE > 6)
 
 | token | runtime | referência mais próxima | ΔE |
 |---|---|---|---:|
-| `color.runtime.stone` | #8e8b6b | `color.reference.groundShadow.1` #81772d | 12,65 |
-| `color.runtime.stoneHi` | #b0aa83 | `color.reference.clothWhite.1` #cba672 | 10,72 |
-| `color.runtime.leafLo` | #4c6b2a | `color.reference.foliage.2` #646435 | 9,09 |
-| `color.runtime.leafDeep` | #344c27 | `color.reference.foliage.1` #3b4230 | 8,74 |
-| `color.runtime.soil` | #947335 | `color.reference.groundShadow.1` #81772d | 8,6 |
-| `color.runtime.strawLo` | #9c7b31 | `color.reference.groundShadow.1` #81772d | 8,49 |
-| `color.runtime.woodLo` | #634621 | `color.reference.wood.2` #7e4d2c | 8,25 |
-| `color.runtime.foam` | #85b8aa | `color.reference.shoreEdge.1` #53b6b3 | 7,95 |
-| `color.runtime.ink` | #4a3825 | `color.reference.outline.2` #432c22 | 6,93 |
-| `color.runtime.stoneLo` | #65684e | `color.reference.foliage.2` #646435 | 6,63 |
+| `color.runtime.stoneHi` | #d6ba9a | `color.reference.clothWhite.1` #cba672 | 7,55 |
+| `color.runtime.grassDark` | #4e6326 | `color.reference.foliage.2` #646435 | 7,08 |
 
 ### Cores da referência sem par em P (ΔE > 8)
 
 | token | medida | mais próxima em P | ΔE |
 |---|---|---|---:|
-| `color.reference.fire.1` | #e84115 | `color.runtime.terra` #a36035 | 15,08 |
-| `color.reference.stone.4` | #93796d | `color.runtime.skinLo` #8f603b | 12,79 |
-| `color.reference.clothRed.1` | #8d3d27 | `color.runtime.wood` #8a592d | 12,65 |
-| `color.reference.stone.2` | #64514d | `color.runtime.ink` #4a3825 | 12,03 |
-| `color.reference.stone.3` | #80685f | `color.runtime.skinLo` #8f603b | 11,27 |
-| `color.reference.outline.1` | #2f1f1b | `color.runtime.ink` #4a3825 | 11,06 |
-| `color.reference.clothRed.2` | #cf562d | `color.runtime.terra` #a36035 | 10,5 |
-| `color.reference.stone.1` | #4f4140 | `color.runtime.ink` #4a3825 | 10,02 |
-| `color.reference.terracotta.1` | #7f4024 | `color.runtime.wood` #8a592d | 9,96 |
-| `color.reference.water.4` | #4aacbd | `color.runtime.waterHi` #3595b8 | 9,55 |
-| `color.reference.wicker.1` | #5a321c | `color.runtime.ink` #4a3825 | 8,87 |
-| `color.reference.hair.1` | #3d2a25 | `color.runtime.ink` #4a3825 | 8,78 |
-| `color.reference.foliage.1` | #3b4230 | `color.runtime.leafDeep` #344c27 | 8,74 |
-| `color.reference.bark.1` | #432c26 | `color.runtime.ink` #4a3825 | 8,72 |
-| `color.reference.bark.2` | #774b34 | `color.runtime.wood` #8a592d | 8,27 |
-| `color.reference.hair.2` | #583a2f | `color.runtime.ink` #4a3825 | 8,02 |
 
 ### Proporção dos sprites em relação ao personagem
 
@@ -105,23 +81,23 @@ Cada pixel da referência (1 a cada 3, nos dois eixos) levado à cor mais próxi
 
 | sprite | largura | altura |
 |---|---:|---:|
-| shelter | 1,25 | 1,28 |
-| olive | 1,18 | 1,34 |
-| boat | 1,63 | 1,5 |
-| jar | 1,24 | 1,37 |
-| basket | 1,09 | 1,08 |
-| firepit | 1,3 | 1,48 |
-| net | 1,08 | 1,45 |
-| rocks | 1,37 | 1,1 |
+| shelter | 1,06 | 1,09 |
+| olive | 1 | 1,14 |
+| boat | 1,38 | 1,27 |
+| jar | 1,05 | 1,16 |
+| basket | 0,93 | 0,91 |
+| firepit | 1,08 | 1,17 |
+| net | 0,91 | 1,23 |
+| rocks | 1,13 | 0,97 |
 
-Mediana: 1,29.
+Mediana: 1,08.
 
 ### Escala e contagem
 
-- Pelo personagem, 1 pixel de arte da referência = 1,779 px no runtime (personagem do runtime com 39 px de altura, mediana dos 24 quadros sem sombra; pescador da referência com 12,2 × 21,9 px de arte).
-- Pelos objetos, 1 pixel de arte da referência = 2,294 px no runtime (mediana de largura e altura de 8 sprites).
-- Pixel nítido pede uma escala inteira; entre as duas medidas cabe 2. A escolha é da direção visual.
-- 347 tokens: 253 cores (34 nomeadas em P e 74 literais do runtime), 30 cores propostas e 25 cores de temporada que reaproveitam a referência (aliases).
+- Pelo personagem, 1 pixel de arte da referência = 2,099 px no runtime (personagem do runtime com 46 px de altura, mediana dos 24 quadros sem sombra; pescador da referência com 12,2 × 21,9 px de arte).
+- Pelos objetos, 1 pixel de arte da referência = 2,268 px no runtime (mediana de largura e altura de 8 sprites).
+- Pixel nítido pede uma escala inteira; nenhum inteiro cabe entre as duas medidas. A escolha é da direção visual.
+- 347 tokens: 253 cores (53 nomeadas em P e 55 literais do runtime), 30 cores propostas e 25 cores de temporada que reaproveitam a referência (aliases).
 - Variação de altura dos moradores no conceito de temporada: 25,6% (por isso os tamanhos vindos dele têm faixa).
 <!-- gerado por tools/tokens/build.cjs: fim -->
 

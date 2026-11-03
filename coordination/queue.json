@@ -119,6 +119,42 @@
         "visual-integration"
       ],
       "nextAction": "Review the delivered buildings module against INSTRUCTIONS-CLAUDE.md before implementing an adapter."
+    },
+    {
+      "id": "visual-v3-step1",
+      "status": "review",
+      "owner": "Claude — visual turn requested by the owner on 2026-11-02",
+      "paths": [
+        "public/world.js",
+        "tokens/vila.tokens.json",
+        "tokens/README.md",
+        "tokens/dist/preview.html",
+        "tokens/dist/vila-runtime-named.hex",
+        "tokens/dist/vila-runtime.gpl",
+        "tokens/dist/vila-tokens.css",
+        "tokens/dist/vila-tokens.js",
+        "coordination/reviews/visual-v3-step1.md",
+        "coordination/previews/visual-v3-comparison.png"
+      ],
+      "dependsOn": [
+        "visual-integration"
+      ],
+      "branch": "claude/visual-v3-step1",
+      "nextAction": "Codex review and owner visual evaluation. Merged PR7 revision 2 (baa6d16); sprite() kept byte-identical. If approved, deploy together with Ep. 2 (2026-11-03 ~20:00 BRT), whose story introduces the new residents. No automatic merge or deploy.",
+      "verification": {
+        "testsPassed": 31,
+        "syntaxPassed": true,
+        "tokensCheck": true,
+        "fixedClockSeconds": 5.2,
+        "viewports": [
+          "390x844@1",
+          "1280x1000@1",
+          "375x812@2",
+          "1440x900@2"
+        ],
+        "consoleErrors": 0,
+        "frameIntervalMedianMs": 16.7
+      }
     }
   ],
   "publishedEpisodes": [
