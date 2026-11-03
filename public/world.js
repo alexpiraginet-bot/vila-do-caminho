@@ -413,11 +413,8 @@ function sprite(c,a,name,x,y){
   const scale=({jar:.72,basket:.9,boat:.88,net:.9})[name]||1;
   const dw=Math.round(w*scale),dh=Math.round(h*scale),dx=Math.round(x+(w-dw)/2),dy=Math.round(y+h-dh);
   if(kit?.isReady()&&['shelter','olive','jar','basket','boat','net'].includes(name)){
-    // Small stepped contact shadow, aligned to the existing sprite baseline.
-    c.save();c.globalAlpha=.18;c.fillStyle=P.ink;
-    c.fillRect(Math.round(dx+dw*.2),dy+dh-4,Math.round(dw*.6),5);
-    c.fillRect(Math.round(dx+dw*.32),dy+dh+1,Math.round(dw*.36),2);c.restore();
-    if(kit.drawSprite(c,name,dx,dy,dw,dh))return;
+    // Shadow and sprite reach the destination together; failure leaves it untouched.
+    if(kit.drawSprite(c,name,dx,dy,dw,dh,{shadowColor:P.ink}))return;
   }
   c.drawImage(a,sx,sy,w,h,Math.round(x),Math.round(y),w,h);
 }

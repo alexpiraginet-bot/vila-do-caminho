@@ -17,7 +17,7 @@ Toque no chão, use WASD/setas ou controles para mover o pescador. Alterne para 
 - Território renderizado determinístico de 96 × 96 tiles; composição central original de 24 × 42.
 - Um morador visível inicialmente. Seguidores não viram personagens automaticamente.
 - Sem multiplayer, autenticação, servidor de presença, analytics ou contador de visitantes.
-- Atlas procedural em `public/world.js`, com uma camada local opcional de seis objetos em `public/assets/shore-kit.png`. Não há voz, imagem de referência privada ou áudio nesta entrega. A nova arte está em revisão visual; não representa aprovação do cenário inteiro.
+- Atlas procedural em `public/world.js`, com uma camada local opcional de seis objetos descrita em `public/assets/shore-kit.json`. Não há voz, imagem de referência privada ou áudio nesta entrega. A nova arte está em revisão visual; não representa aprovação do cenário inteiro.
 - Cópia sanitizada do runtime Site v3: câmera, DPR, resize e controle local preservados. Identificadores e rótulos pessoais foram substituídos por personagens genéricos.
 - O JS contém funções legadas de direção de episódio, não chamadas pela interface jogável. Não são o roteiro aprovado do capítulo 1. Não publicar nem usar esse roteiro como cronologia oficial.
 
