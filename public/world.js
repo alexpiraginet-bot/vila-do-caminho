@@ -436,12 +436,12 @@ const SHEEP=Object.freeze(['.....oooooo../...ooWWWWWWo./.oooWWWwWWWWo/oHHHoWWWWW
   '.....oooooo../...ooWWWWWWo./.oooWWWwWWWWo/oHHHoWWWWWwWo/oHeHoWWwWWWWo/.oHHoWWWWWwqo/..oooqqqqqqo./...oHo....oHo/...oo......oo',
   '.....oooooo../...ooWWWWWWo./..ooWWWwWWWWo/.oooWWWWWWwWo/oHHHoWWwWWWWo/oHeHoWWWWWwqo/.oHHoqqqqqqo./....oHo..oHo./....oo....oo.']);
 const SHEEP_PAL=Object.freeze({o:P.outline,W:P.paper,w:P.wool,q:P.creamLo,H:P.hair,e:P.paper});
-const FOLK_ORDER=Object.freeze(['pastor','carpinteiro','carpinteiroBare','pedreiro','agricultora','padeira','pescador']);
+const FOLK_ORDER=Object.freeze(['pastor','carpinteiro','carpinteiroBare','pedreiro','agricultora','padeira','pescador','pedreiroBare']);
 let cachedFolk;
 function folkAtlas(){
   if(cachedFolk)return cachedFolk;
-  const a=document.createElement('canvas');a.width=672;a.height=216;const g=a.getContext('2d');g.imageSmoothingEnabled=false;const c=g;
-  FOLK_ORDER.forEach((name,i)=>{const bare=name==='carpinteiroBare',f=FOLK[bare?'carpinteiro':name],pal=folkPalette(f);
+  const a=document.createElement('canvas');a.width=768;a.height=216;const g=a.getContext('2d');g.imageSmoothingEnabled=false;const c=g;
+  FOLK_ORDER.forEach((name,i)=>{const bare=name.endsWith('Bare'),f=FOLK[bare?name.slice(0,-4):name],pal=folkPalette(f);
     ['down','left','right','up'].forEach((view,d)=>{for(let fr=0;fr<3;fr++)local(c,i*96+fr*32,d*48,()=>{
       if(view==='up'&&!bare)drawProp(c,f.prop,view,fr);pix(c,0,0,figureRows(f.t,view,fr),pal);if(view!=='up'&&!bare)drawProp(c,f.prop,view,fr);});});});
   for(let fr=0;fr<3;fr++){const rows=SHEEP[fr].split('/');pix(c,fr*32+2,196,rows,SHEEP_PAL);pix(c,96+fr*32+2,196,mirror(rows),SHEEP_PAL);}
@@ -627,7 +627,7 @@ function drawFolk(c,n,time,bubbles,options){
     if(n.watered)for(let i=0;i<3;i++){const u=(time*2+i/3)%1;rect(c,x-2+(i-1)*4,y-10-Math.round(u*6),AP,AP,P.waterLight);}return;}
   if(n.kind==='ovelha'){shadow(c,n.x,n.y,10);const fr=n.graze?2:n.walking?1+Math.floor(time*(n.run?12:6))%2:0;
     c.drawImage(atlas,(n.facing==='right'?96:0)+fr*32,192,32,24,x-16,y-22,32,24);if(n.bubble)bubbles.push({x:n.x*16,y:n.y*16-20,text:n.bubble});return;}
-  const f=FOLK[n.kind==='carpinteiroBare'?'carpinteiro':n.kind],dir={down:0,left:1,right:2,up:3}[n.facing]??0,frame=n.walking?Math.floor(time*(n.run?11:6))%3:0;
+  const f=FOLK[n.kind.replace(/Bare$/,'')],dir={down:0,left:1,right:2,up:3}[n.facing]??0,frame=n.walking?Math.floor(time*(n.run?11:6))%3:0;
   const lift=n.hop?Math.round(Math.abs(Math.sin(time*16))*3):0,dx=x-16+(n.lean||0)*AP,dy=y-46-lift*AP+(n.crouch?AP:0);
   shadow(c,n.x,n.y,8);
   if(n.plank){rect(c,x-30,y-4,16,4,P.woodLo);rect(c,x-28,y-4,12,2,P.woodHi);}
