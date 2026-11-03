@@ -36,9 +36,32 @@ Horário local equivalente: 02/11/2026, 21:07:46–21:08:00 BRT. Esta é a prime
 
 O Reel estava visível, com 2 curtidas indicadas e nenhum comentário além da própria legenda no modal consultado. A lista de seguidores manteve as mesmas 4 entradas na comparação privada dessa rodada; nenhuma nova entrada foi observada nesse intervalo. Nenhuma identidade foi copiada para este registro. Essas verificações não garantem exaustividade em tempo real.
 
+## Snapshot — 03/11/2026, 07:38 BRT (10:38 UTC)
+
+Fonte: capturas da interface do Instagram enviadas pelo proprietário ao Claude (perfil e aba de comentários do Reel do episódio 1). Leitura manual das capturas; nenhum dado pessoal copiado.
+
+| Indicador | Valor observado | Fonte |
+| --- | ---: | --- |
+| Seguidores totais do perfil | 6 | Interface do perfil Instagram |
+| Publicações totais do perfil | 1 | Interface do perfil Instagram |
+| Visualizações do Reel (grade do perfil) | 206 | Contador na miniatura do Reel |
+| Visualizações do perfil, últimos 30 dias | 185 | Painel do perfil |
+| Comentários no Reel | 2 | Aba de comentários do Reel |
+
+### Contribuições voluntárias por comentário
+
+Dois comentários, de duas contas distintas, cada um nomeando um ofício para a vila: **agricultura** e **pescador**. São as primeiras escolhas de ofício recebidas e cumprem a mecânica anunciada no episódio 1 ("os primeiros a comentar chegam no episódio 2, pela estrada"). Nomes, @ e texto literal ficam fora deste registro.
+
+### Limites da coleta
+
+- Captura em um instante só; comentários e seguidores podem ter mudado depois.
+- O contador de visualizações da grade e o painel do perfil medem coisas diferentes e não se somam.
+- 6 seguidores é o total observado (4 no snapshot anterior, pouco depois da publicação), não uma taxa.
+
 ## Sinais para os próximos capítulos
 
-Nenhuma contribuição voluntária por comentário foi recebida na coleta acima. Não há ofício escolhido, candidato a morador ou ideia comunitária a registrar como fato nesta rodada.
+- Proposta editorial (Claude, frente de episódios): o episódio 2 traz uma agricultora e um segundo pescador como moradores fictícios, por ofício, em resposta aos dois comentários. Não há vínculo entre morador e conta de ninguém.
+- Os demais ofícios do episódio (pastor, carpinteiro, pedreiro, padeira) são escolha editorial, não pedidos da comunidade.
 
 Próxima coleta: registrar novo snapshot com horário, fonte e limites; comparar indicadores apenas quando forem compatíveis. Quando houver sugestões voluntárias verificadas, resumir temas sem nomes ou citações literais e separar claramente observação de proposta editorial. Não alterar automaticamente cronologia, população ou estado do jogo.
 
