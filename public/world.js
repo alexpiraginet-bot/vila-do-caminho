@@ -286,7 +286,10 @@ function txtWidth(str){let w=-1;for(const ch of str)w+=glyph(ch).g[0].length+1;r
 function txt(c,x,y,str,color){c.fillStyle=color;let cx=x;for(const ch of str){const {g,acc}=glyph(ch);
   for(let r=0;r<5;r++)for(let b=0;b<g[r].length;b++)if(g[r][b]==='#')c.fillRect(cx+b*AP,y+r*AP,AP,AP);
   if(acc)for(const [px,py] of MARK[+acc[1]])c.fillRect(cx+px*AP,y+py*AP,AP,AP);cx+=(g[0].length+1)*AP;}}
-function bubble(c,cx,top,str){const W=txtWidth(str)+4,H=11,x0=Math.round(cx/AP-W/2),y0=Math.round(top/AP)-H-3,m=Math.floor(W/2);
+function bubble(c,cx,top,str,lo,hi){const W=txtWidth(str)+4,H=11,y0=Math.round(top/AP)-H-3;let x0=Math.round(cx/AP-W/2);
+  // Keep the balloon inside the view (lo/hi in world px) while the tail still points at the speaker.
+  if(Number.isFinite(lo)&&Number.isFinite(hi))x0=Math.max(Math.ceil(lo/AP)+1,Math.min(Math.floor(hi/AP)-W-1,x0));
+  const m=Math.max(2,Math.min(W-3,Math.round(cx/AP)-x0));
   const R=(i,j,w,h,col)=>rect(c,(x0+i)*AP,(y0+j)*AP,w*AP,h*AP,col);
   R(1,0,W-2,H,P.outline);R(0,1,W,H-2,P.outline);R(1,1,W-2,H-2,P.paper);
   R(m-1,H-1,3,1,P.outline);R(m,H-1,1,1,P.paper);R(m-1,H,3,1,P.outline);R(m,H,1,1,P.paper);R(m,H+1,1,1,P.outline);
@@ -685,7 +688,8 @@ function renderWorld(canvas,state,options={}){
   if(options.ambient!==false)ambient(c,time);
   // Names and speech go on top of everything, labels first.
   bubbles.filter(b=>b.label).forEach(b=>{c.font='8px monospace';c.textAlign='center';c.fillStyle=P.ink;c.fillText(b.text,b.x,b.y);});
-  bubbles.filter(b=>!b.label).forEach(b=>bubble(c,b.x,b.y,b.text));
+  const inv=c.getTransform().inverse(),v0=inv.transformPoint(new DOMPoint(0,0)),v1=inv.transformPoint(new DOMPoint(canvas.width,canvas.height));
+  bubbles.filter(b=>!b.label).forEach(b=>bubble(c,b.x,b.y,b.text,v0.x,v1.x));
   if(options.showGrid){c.strokeStyle='rgba(74,56,37,.16)';c.lineWidth=.5;for(let x=0;x<=24;x++){c.beginPath();c.moveTo(x*16,0);c.lineTo(x*16,672);c.stroke();}for(let y=0;y<=42;y++){c.beginPath();c.moveTo(0,y*16);c.lineTo(384,y*16);c.stroke();}}
   c.restore();const night=Math.max(0,Math.min(1,state.lighting?.night||0));if(night){c.fillStyle=`rgba(25,38,68,${night*.28})`;c.fillRect(0,0,canvas.width,canvas.height);}
   if(options.watermark){c.font='10px monospace';c.fillStyle=P.creamHi;c.textAlign='left';c.fillText('PROTÓTIPO • TOP-DOWN v0.2',12,canvas.height-14);}

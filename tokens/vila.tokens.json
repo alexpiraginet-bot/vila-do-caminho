@@ -1253,7 +1253,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:299 (literal em drawShelter)",
+                "from": "public/world.js:302 (literal em drawShelter)",
                 "usedIn": [
                   "drawShelter"
                 ],
@@ -1278,7 +1278,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:299 (literal em drawShelter)",
+                "from": "public/world.js:302 (literal em drawShelter)",
                 "usedIn": [
                   "drawShelter"
                 ],
@@ -1303,7 +1303,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:300 (literal em drawShelter)",
+                "from": "public/world.js:303 (literal em drawShelter)",
                 "usedIn": [
                   "drawShelter"
                 ],
@@ -1328,7 +1328,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:301 (literal em drawShelter)",
+                "from": "public/world.js:304 (literal em drawShelter)",
                 "usedIn": [
                   "drawShelter"
                 ],
@@ -1353,7 +1353,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:301 (literal em drawShelter)",
+                "from": "public/world.js:304 (literal em drawShelter)",
                 "usedIn": [
                   "drawShelter"
                 ],
@@ -1378,7 +1378,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:303 (literal em drawShelter)",
+                "from": "public/world.js:306 (literal em drawShelter)",
                 "usedIn": [
                   "drawShelter"
                 ],
@@ -1403,7 +1403,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:304 (literal em drawShelter)",
+                "from": "public/world.js:307 (literal em drawShelter)",
                 "usedIn": [
                   "drawShelter"
                 ],
@@ -1428,7 +1428,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:304 (literal em drawShelter)",
+                "from": "public/world.js:307 (literal em drawShelter)",
                 "usedIn": [
                   "drawShelter"
                 ],
@@ -1453,7 +1453,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:304 (literal em drawShelter)",
+                "from": "public/world.js:307 (literal em drawShelter)",
                 "usedIn": [
                   "drawShelter"
                 ],
@@ -1478,7 +1478,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:305 (literal em drawShelter)",
+                "from": "public/world.js:308 (literal em drawShelter)",
                 "usedIn": [
                   "drawShelter"
                 ],
@@ -1503,7 +1503,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:305 (literal em drawShelter)",
+                "from": "public/world.js:308 (literal em drawShelter)",
                 "usedIn": [
                   "drawShelter"
                 ],
@@ -1528,7 +1528,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:306 (literal em drawShelter)",
+                "from": "public/world.js:309 (literal em drawShelter)",
                 "usedIn": [
                   "drawShelter"
                 ],
@@ -1553,7 +1553,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:309 (literal em drawShelter)",
+                "from": "public/world.js:312 (literal em drawShelter)",
                 "usedIn": [
                   "drawShelter"
                 ],
@@ -1578,7 +1578,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:310 (literal em drawShelter)",
+                "from": "public/world.js:313 (literal em drawShelter)",
                 "usedIn": [
                   "drawShelter"
                 ],
@@ -1603,7 +1603,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:318 (literal em drawShelter)",
+                "from": "public/world.js:321 (literal em drawShelter)",
                 "usedIn": [
                   "drawShelter"
                 ],
@@ -1628,7 +1628,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:322 (literal em drawShelter)",
+                "from": "public/world.js:325 (literal em drawShelter)",
                 "usedIn": [
                   "drawShelter"
                 ],
@@ -1653,7 +1653,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:323 (literal em drawShelter)",
+                "from": "public/world.js:326 (literal em drawShelter)",
                 "usedIn": [
                   "drawShelter"
                 ],
@@ -1678,7 +1678,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:324 (literal em drawShelter)",
+                "from": "public/world.js:327 (literal em drawShelter)",
                 "usedIn": [
                   "drawShelter"
                 ],
@@ -1703,7 +1703,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:326 (literal em drawShelter)",
+                "from": "public/world.js:329 (literal em drawShelter)",
                 "usedIn": [
                   "drawShelter"
                 ],
@@ -1728,7 +1728,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:327 (literal em drawShelter)",
+                "from": "public/world.js:330 (literal em drawShelter)",
                 "usedIn": [
                   "drawShelter"
                 ],
@@ -1753,7 +1753,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:330 (literal em drawShelter)",
+                "from": "public/world.js:333 (literal em drawShelter)",
                 "usedIn": [
                   "drawShelter"
                 ],
@@ -1780,7 +1780,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:337 (literal em drawOlive)",
+                "from": "public/world.js:340 (literal em drawOlive)",
                 "usedIn": [
                   "drawOlive"
                 ],
@@ -1805,7 +1805,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:337 (literal em drawOlive)",
+                "from": "public/world.js:340 (literal em drawOlive)",
                 "usedIn": [
                   "drawOlive"
                 ],
@@ -1830,7 +1830,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:354 (literal em drawOlive)",
+                "from": "public/world.js:357 (literal em drawOlive)",
                 "usedIn": [
                   "drawOlive"
                 ],
@@ -1855,7 +1855,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:354 (literal em drawOlive)",
+                "from": "public/world.js:357 (literal em drawOlive)",
                 "usedIn": [
                   "drawOlive"
                 ],
@@ -1880,7 +1880,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:360 (literal em drawOlive)",
+                "from": "public/world.js:363 (literal em drawOlive)",
                 "usedIn": [
                   "drawOlive"
                 ],
@@ -1905,7 +1905,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:361 (literal em drawOlive)",
+                "from": "public/world.js:364 (literal em drawOlive)",
                 "usedIn": [
                   "drawOlive"
                 ],
@@ -1930,7 +1930,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:362 (literal em drawOlive)",
+                "from": "public/world.js:365 (literal em drawOlive)",
                 "usedIn": [
                   "drawOlive"
                 ],
@@ -1957,7 +1957,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:367 (literal em drawBoat)",
+                "from": "public/world.js:370 (literal em drawBoat)",
                 "usedIn": [
                   "drawBoat"
                 ],
@@ -1982,7 +1982,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:369 (literal em drawBoat)",
+                "from": "public/world.js:372 (literal em drawBoat)",
                 "usedIn": [
                   "drawBoat"
                 ],
@@ -2007,7 +2007,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:370 (literal em drawBoat)",
+                "from": "public/world.js:373 (literal em drawBoat)",
                 "usedIn": [
                   "drawBoat"
                 ],
@@ -2032,7 +2032,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:371 (literal em drawBoat)",
+                "from": "public/world.js:374 (literal em drawBoat)",
                 "usedIn": [
                   "drawBoat"
                 ],
@@ -2057,7 +2057,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:374 (literal em drawBoat)",
+                "from": "public/world.js:377 (literal em drawBoat)",
                 "usedIn": [
                   "drawBoat"
                 ],
@@ -2082,7 +2082,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:375 (literal em drawBoat)",
+                "from": "public/world.js:378 (literal em drawBoat)",
                 "usedIn": [
                   "drawBoat"
                 ],
@@ -2109,7 +2109,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:381 (literal em drawNet)",
+                "from": "public/world.js:384 (literal em drawNet)",
                 "usedIn": [
                   "drawNet"
                 ],
@@ -2136,7 +2136,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:389 (literal em drawJar)",
+                "from": "public/world.js:392 (literal em drawJar)",
                 "usedIn": [
                   "drawJar"
                 ],
@@ -2161,7 +2161,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:389 (literal em drawJar)",
+                "from": "public/world.js:392 (literal em drawJar)",
                 "usedIn": [
                   "drawJar"
                 ],
@@ -2186,7 +2186,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:389 (literal em drawJar)",
+                "from": "public/world.js:392 (literal em drawJar)",
                 "usedIn": [
                   "drawJar"
                 ],
@@ -2213,7 +2213,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:390 (literal em drawBasket)",
+                "from": "public/world.js:393 (literal em drawBasket)",
                 "usedIn": [
                   "drawBasket"
                 ],
@@ -2240,7 +2240,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:412 (literal em topLevel)",
+                "from": "public/world.js:415 (literal em topLevel)",
                 "usedIn": [
                   "topLevel"
                 ],
@@ -2265,7 +2265,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:412 (literal em topLevel)",
+                "from": "public/world.js:415 (literal em topLevel)",
                 "usedIn": [
                   "topLevel"
                 ],
@@ -2290,7 +2290,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:412 (literal em topLevel)",
+                "from": "public/world.js:415 (literal em topLevel)",
                 "usedIn": [
                   "topLevel"
                 ],
@@ -2315,7 +2315,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:412 (literal em topLevel)",
+                "from": "public/world.js:415 (literal em topLevel)",
                 "usedIn": [
                   "topLevel"
                 ],
@@ -2340,7 +2340,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:413 (literal em topLevel)",
+                "from": "public/world.js:416 (literal em topLevel)",
                 "usedIn": [
                   "topLevel"
                 ],
@@ -2365,7 +2365,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:416 (literal em topLevel)",
+                "from": "public/world.js:419 (literal em topLevel)",
                 "usedIn": [
                   "topLevel"
                 ],
@@ -2390,7 +2390,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:416 (literal em topLevel)",
+                "from": "public/world.js:419 (literal em topLevel)",
                 "usedIn": [
                   "topLevel"
                 ],
@@ -2415,7 +2415,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:416 (literal em topLevel)",
+                "from": "public/world.js:419 (literal em topLevel)",
                 "usedIn": [
                   "topLevel"
                 ],
@@ -2440,7 +2440,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:418 (literal em topLevel)",
+                "from": "public/world.js:421 (literal em topLevel)",
                 "usedIn": [
                   "topLevel"
                 ],
@@ -2465,7 +2465,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:418 (literal em topLevel)",
+                "from": "public/world.js:421 (literal em topLevel)",
                 "usedIn": [
                   "topLevel"
                 ],
@@ -2490,7 +2490,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:418 (literal em topLevel)",
+                "from": "public/world.js:421 (literal em topLevel)",
                 "usedIn": [
                   "topLevel"
                 ],
@@ -2515,7 +2515,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:421 (literal em topLevel)",
+                "from": "public/world.js:424 (literal em topLevel)",
                 "usedIn": [
                   "topLevel"
                 ],
@@ -2540,7 +2540,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:421 (literal em topLevel)",
+                "from": "public/world.js:424 (literal em topLevel)",
                 "usedIn": [
                   "topLevel"
                 ],
@@ -2565,7 +2565,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:433 (literal em topLevel)",
+                "from": "public/world.js:436 (literal em topLevel)",
                 "usedIn": [
                   "createAtlas",
                   "topLevel"
@@ -2591,7 +2591,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:433 (literal em topLevel)",
+                "from": "public/world.js:436 (literal em topLevel)",
                 "usedIn": [
                   "topLevel"
                 ],
@@ -2618,7 +2618,7 @@
             "$extensions": {
               "com.viladocaminho": {
                 "source": "runtime",
-                "from": "public/world.js:655 (literal em renderWorld)",
+                "from": "public/world.js:658 (literal em renderWorld)",
                 "usedIn": [
                   "renderWorld"
                 ],
@@ -8317,7 +8317,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:690 rgba(25,38,68,night*0.28)"
+            "from": "public/world.js:694 rgba(25,38,68,night*0.28)"
           }
         }
       },
@@ -8336,7 +8336,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:655"
+            "from": "public/world.js:658"
           }
         }
       }
@@ -8366,7 +8366,7 @@
       "$extensions": {
         "com.viladocaminho": {
           "source": "runtime",
-          "from": "public/world.js:462"
+          "from": "public/world.js:465"
         }
       }
     },
@@ -8379,7 +8379,7 @@
       "$extensions": {
         "com.viladocaminho": {
           "source": "runtime",
-          "from": "public/world.js:588 canvas.width/384"
+          "from": "public/world.js:591 canvas.width/384"
         }
       }
     },
@@ -8393,7 +8393,7 @@
           "$extensions": {
             "com.viladocaminho": {
               "source": "runtime",
-              "from": "public/world.js:673"
+              "from": "public/world.js:676"
             }
           }
         },
@@ -8405,7 +8405,7 @@
           "$extensions": {
             "com.viladocaminho": {
               "source": "runtime",
-              "from": "public/world.js:673"
+              "from": "public/world.js:676"
             }
           }
         }
@@ -9627,7 +9627,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:655"
+            "from": "public/world.js:658"
           }
         }
       },
@@ -9639,7 +9639,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:655"
+            "from": "public/world.js:658"
           }
         }
       }
@@ -9653,7 +9653,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:687 c.font"
+            "from": "public/world.js:690 c.font"
           }
         }
       },
@@ -9665,7 +9665,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:691 c.font"
+            "from": "public/world.js:695 c.font"
           }
         }
       }
@@ -9706,7 +9706,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:550"
+            "from": "public/world.js:553"
           }
         }
       },
@@ -9715,7 +9715,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:550"
+            "from": "public/world.js:553"
           }
         }
       },
@@ -9724,7 +9724,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:550"
+            "from": "public/world.js:553"
           }
         }
       },
@@ -9733,7 +9733,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:550"
+            "from": "public/world.js:553"
           }
         }
       }
@@ -9744,7 +9744,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:701"
+            "from": "public/world.js:705"
           }
         }
       },
@@ -9753,7 +9753,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:709"
+            "from": "public/world.js:713"
           }
         }
       },
@@ -9762,7 +9762,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:714"
+            "from": "public/world.js:718"
           }
         }
       },
@@ -9772,7 +9772,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:714"
+            "from": "public/world.js:718"
           }
         }
       },
@@ -9781,7 +9781,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:715"
+            "from": "public/world.js:719"
           }
         }
       },
@@ -9790,7 +9790,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:707"
+            "from": "public/world.js:711"
           }
         }
       }
@@ -9801,7 +9801,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:724"
+            "from": "public/world.js:728"
           }
         }
       },
@@ -9810,7 +9810,7 @@
         "$extensions": {
           "com.viladocaminho": {
             "source": "runtime",
-            "from": "public/world.js:671 %3"
+            "from": "public/world.js:674 %3"
           }
         }
       }
@@ -9935,7 +9935,7 @@
       "$extensions": {
         "com.viladocaminho": {
           "source": "runtime",
-          "from": "public/world.js:671 Math.floor(time*6)%3"
+          "from": "public/world.js:674 Math.floor(time*6)%3"
         }
       }
     },
@@ -9947,7 +9947,7 @@
       "$extensions": {
         "com.viladocaminho": {
           "source": "runtime",
-          "from": "public/world.js:583 Math.floor(time*5)%4"
+          "from": "public/world.js:586 Math.floor(time*5)%4"
         }
       }
     },
@@ -9959,7 +9959,7 @@
       "$extensions": {
         "com.viladocaminho": {
           "source": "runtime",
-          "from": "public/world.js:563 Math.floor(time*2)"
+          "from": "public/world.js:566 Math.floor(time*2)"
         }
       }
     }
@@ -9992,7 +9992,7 @@
       "$extensions": {
         "com.viladocaminho": {
           "source": "runtime",
-          "from": "public/world.js:687 c.font"
+          "from": "public/world.js:690 c.font"
         }
       }
     }
