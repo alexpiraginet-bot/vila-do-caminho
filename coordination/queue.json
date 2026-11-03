@@ -3,13 +3,13 @@
   "repository": "alexpiraginet-bot/vila-do-caminho",
   "baseline": {
     "branch": "main",
-    "commit": "9c755eaa5506182fb0ac73fa92e72ee6ebe25211",
-    "checkedAt": "2026-11-02T23:05:57Z",
-    "testsPassed": 7,
+    "commit": "91d4c1dc2d8858fe997d15ada8afa138d284949d",
+    "checkedAt": "2026-11-02T23:55:18.953973+00:00",
+    "testsPassed": 18,
     "syntaxPassed": true,
     "checksumsPassed": true
   },
-  "visualStatus": "previous_implementation_rejected",
+  "visualStatus": "camp_pass_2_awaiting_visual_review",
   "tasks": [
     {
       "id": "design-tokens-receipt",
@@ -57,23 +57,58 @@
     },
     {
       "id": "visual-integration",
-      "status": "ready",
-      "owner": "visual-and-integration",
-      "paths": [],
+      "status": "handoff_ready",
+      "owner": "Claude — next visual implementation; Codex — review and continuity",
+      "paths": [
+        "public/world.js",
+        "public/index.html",
+        "public/visual-assets.js",
+        "public/assets/shore-kit.png",
+        "public/assets/shore-kit.json",
+        "tests/visual-assets.test.cjs",
+        "coordination/reviews/camp-visual-pass.md",
+        "coordination/previews/camp-comparison.png",
+        "public/assets/shore-details-v2.png",
+        "coordination/previews/camp-comparison-v2.png",
+        "coordination/reviews/camp-browser-qa-v2.json",
+        "coordination/reviews/camp-fallback-regression.json"
+      ],
       "dependsOn": [
         "design-tokens-review"
       ],
-      "nextAction": "Prepare one small visible asset improvement using the reviewed tokens; compare a real scene at fixed camera with the approved reference before a full Motion. Image-derived measurements remain unverified until source images are available."
+      "nextAction": "Claude assumes subsequent improvements, per owner direction. Review PR7 revision2 and PR8 community record, preserve approved world invariants, and record a concrete handoff before editing. Codex does not make concurrent visual edits. No automatic merge or deploy.",
+      "branch": "codex/camp-visual-pass",
+      "verification": {
+        "testsPassed": 31,
+        "fixedClockSeconds": 1,
+        "camera": {
+          "x": 11,
+          "y": 16,
+          "zoom": 1.05
+        },
+        "viewports": [
+          "1280x1000",
+          "390x844"
+        ],
+        "devicePixelRatio": 1,
+        "controlsAndLocalRestore": true,
+        "fallbackPixelsIdenticalUnderTwoFailures": true
+      }
     },
     {
       "id": "world-continuity",
-      "status": "blocked",
-      "owner": "continuity",
-      "paths": [],
+      "status": "completed",
+      "owner": "Codex / continuidade_e_comunidade — read-only verification",
+      "paths": [
+        "public/world.js",
+        "contracts/asset-manifest.json",
+        "contracts/world-state.schema.json"
+      ],
       "dependsOn": [
         "visual-integration"
       ],
-      "nextAction": "Verify geography, one-resident historical start, and explicit permanent state changes."
+      "nextAction": "Keep this invariant check for the next visual increment.",
+      "verification": "Independent static comparison with main91d4c1dc: state, geography, collision, allowlist, actor, camera and controls identical. Runtime validated separately in browser."
     },
     {
       "id": "incremental-buildings",
@@ -84,6 +119,16 @@
         "visual-integration"
       ],
       "nextAction": "Review the delivered buildings module against INSTRUCTIONS-CLAUDE.md before implementing an adapter."
+    }
+  ],
+  "publishedEpisodes": [
+    {
+      "chapter": 1,
+      "url": "https://www.instagram.com/reel/DfQizALABGQ/",
+      "sourceCommit": "53dc07618b4bbfc87893e2f3b9a6082101f5bfed",
+      "publishedAt": "2026-11-02T21:00:37-03:00",
+      "confirmationSource": "parent coordinator, Windsor and UI verification reported",
+      "nextAction": "Already posted by the sole publishing executor; do not duplicate."
     }
   ]
 }

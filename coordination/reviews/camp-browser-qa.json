@@ -1,0 +1,49 @@
+[
+  {
+    "name": "desktop",
+    "dpr": 1,
+    "kit": {
+      "state": "ready",
+      "error": null
+    },
+    "errors": [],
+    "overflow": false,
+    "moved": {
+      "x": 13,
+      "y": 18.866800000000012
+    },
+    "restored": {
+      "x": 13,
+      "y": 18.866800000000012
+    },
+    "explore": "Modo explorar",
+    "play": "Modo jogar"
+  },
+  {
+    "name": "mobile",
+    "dpr": 2,
+    "kit": {
+      "state": "ready",
+      "error": null
+    },
+    "errors": [],
+    "overflow": false,
+    "moved": {
+      "x": 13,
+      "y": 18.866800000000012
+    },
+    "restored": {
+      "x": 13,
+      "y": 18.866800000000012
+    },
+    "explore": "Modo explorar",
+    "play": "Modo jogar"
+  },
+  {
+    "fallback": {
+      "state": "failed",
+      "error": "Failed to fetch"
+    },
+    "canvasHasPixels": true
+  }
+]
